@@ -1,0 +1,3833 @@
+{
+  "generated_at": "2026-08-04T15:25:30.563741",
+  "parks": {
+    "TDL": [
+      {
+        "date": "2026-08-04",
+        "park": "TDL",
+        "score": 55.8,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_natsu_yasumi": 12.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -6.2
+          }
+        }
+      },
+      {
+        "date": "2026-08-05",
+        "park": "TDL",
+        "score": 55.8,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_natsu_yasumi": 12.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -6.2
+          }
+        }
+      },
+      {
+        "date": "2026-08-06",
+        "park": "TDL",
+        "score": 55.8,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_natsu_yasumi": 12.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -6.2
+          }
+        }
+      },
+      {
+        "date": "2026-08-07",
+        "park": "TDL",
+        "score": 64.8,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_natsu_yasumi": 12.0,
+          "is_shortened_hours": 10.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.2
+          }
+        }
+      },
+      {
+        "date": "2026-08-08",
+        "park": "TDL",
+        "score": 73.8,
+        "grade": "E",
+        "label": "混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "is_natsu_yasumi": 12.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -8.2
+          }
+        }
+      },
+      {
+        "date": "2026-08-09",
+        "park": "TDL",
+        "score": 73.8,
+        "grade": "E",
+        "label": "混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "is_natsu_yasumi": 12.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -8.2
+          }
+        }
+      },
+      {
+        "date": "2026-08-10",
+        "park": "TDL",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "is_natsu_yasumi": 12.0,
+          "is_bridge_day": -12.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-08-11",
+        "park": "TDL",
+        "score": 69.3,
+        "grade": "E",
+        "label": "混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_national_holiday": 15.0,
+          "is_natsu_yasumi": 12.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.7
+          }
+        }
+      },
+      {
+        "date": "2026-08-12",
+        "park": "TDL",
+        "score": 55.8,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_natsu_yasumi": 12.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -6.2
+          }
+        }
+      },
+      {
+        "date": "2026-08-13",
+        "park": "TDL",
+        "score": 69.3,
+        "grade": "E",
+        "label": "混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_natsu_yasumi": 12.0,
+          "is_obon": 15.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.7
+          }
+        }
+      },
+      {
+        "date": "2026-08-14",
+        "park": "TDL",
+        "score": 69.3,
+        "grade": "E",
+        "label": "混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_natsu_yasumi": 12.0,
+          "is_obon": 15.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.7
+          }
+        }
+      },
+      {
+        "date": "2026-08-15",
+        "park": "TDL",
+        "score": 87.3,
+        "grade": "F",
+        "label": "大混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "is_natsu_yasumi": 12.0,
+          "is_obon": 15.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -9.7
+          }
+        }
+      },
+      {
+        "date": "2026-08-16",
+        "park": "TDL",
+        "score": 87.3,
+        "grade": "F",
+        "label": "大混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "is_natsu_yasumi": 12.0,
+          "is_obon": 15.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -9.7
+          }
+        }
+      },
+      {
+        "date": "2026-08-17",
+        "park": "TDL",
+        "score": 55.8,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_natsu_yasumi": 12.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -6.2
+          }
+        }
+      },
+      {
+        "date": "2026-08-18",
+        "park": "TDL",
+        "score": 55.8,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_natsu_yasumi": 12.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -6.2
+          }
+        }
+      },
+      {
+        "date": "2026-08-19",
+        "park": "TDL",
+        "score": 55.8,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_natsu_yasumi": 12.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -6.2
+          }
+        }
+      },
+      {
+        "date": "2026-08-20",
+        "park": "TDL",
+        "score": 55.8,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_natsu_yasumi": 12.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -6.2
+          }
+        }
+      },
+      {
+        "date": "2026-08-21",
+        "park": "TDL",
+        "score": 55.8,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_natsu_yasumi": 12.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -6.2
+          }
+        }
+      },
+      {
+        "date": "2026-08-22",
+        "park": "TDL",
+        "score": 73.8,
+        "grade": "E",
+        "label": "混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "is_natsu_yasumi": 12.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -8.2
+          }
+        }
+      },
+      {
+        "date": "2026-08-23",
+        "park": "TDL",
+        "score": 73.8,
+        "grade": "E",
+        "label": "混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "is_natsu_yasumi": 12.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -8.2
+          }
+        }
+      },
+      {
+        "date": "2026-08-24",
+        "park": "TDL",
+        "score": 55.8,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_natsu_yasumi": 12.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -6.2
+          }
+        }
+      },
+      {
+        "date": "2026-08-25",
+        "park": "TDL",
+        "score": 55.8,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_natsu_yasumi": 12.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -6.2
+          }
+        }
+      },
+      {
+        "date": "2026-08-26",
+        "park": "TDL",
+        "score": 55.8,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_natsu_yasumi": 12.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -6.2
+          }
+        }
+      },
+      {
+        "date": "2026-08-27",
+        "park": "TDL",
+        "score": 55.8,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_natsu_yasumi": 12.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -6.2
+          }
+        }
+      },
+      {
+        "date": "2026-08-28",
+        "park": "TDL",
+        "score": 64.8,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_natsu_yasumi": 12.0,
+          "is_shortened_hours": 10.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.2
+          }
+        }
+      },
+      {
+        "date": "2026-08-29",
+        "park": "TDL",
+        "score": 73.8,
+        "grade": "E",
+        "label": "混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "is_natsu_yasumi": 12.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -8.2
+          }
+        }
+      },
+      {
+        "date": "2026-08-30",
+        "park": "TDL",
+        "score": 73.8,
+        "grade": "E",
+        "label": "混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "is_natsu_yasumi": 12.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -8.2
+          }
+        }
+      },
+      {
+        "date": "2026-08-31",
+        "park": "TDL",
+        "score": 55.8,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_natsu_yasumi": 12.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -6.2
+          }
+        }
+      },
+      {
+        "date": "2026-09-01",
+        "park": "TDL",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-09-02",
+        "park": "TDL",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-09-03",
+        "park": "TDL",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-09-04",
+        "park": "TDL",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-09-05",
+        "park": "TDL",
+        "score": 63.0,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.0
+          }
+        }
+      },
+      {
+        "date": "2026-09-06",
+        "park": "TDL",
+        "score": 63.0,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.0
+          }
+        }
+      },
+      {
+        "date": "2026-09-07",
+        "park": "TDL",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-09-08",
+        "park": "TDL",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-09-09",
+        "park": "TDL",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-09-10",
+        "park": "TDL",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-09-11",
+        "park": "TDL",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-09-12",
+        "park": "TDL",
+        "score": 63.0,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.0
+          }
+        }
+      },
+      {
+        "date": "2026-09-13",
+        "park": "TDL",
+        "score": 63.0,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.0
+          }
+        }
+      },
+      {
+        "date": "2026-09-14",
+        "park": "TDL",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-09-15",
+        "park": "TDL",
+        "score": 52.2,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_shirogane_week": 8.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.8
+          }
+        }
+      },
+      {
+        "date": "2026-09-16",
+        "park": "TDL",
+        "score": 52.2,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_shirogane_week": 8.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.8
+          }
+        }
+      },
+      {
+        "date": "2026-09-17",
+        "park": "TDL",
+        "score": 52.2,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_shirogane_week": 8.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.8
+          }
+        }
+      },
+      {
+        "date": "2026-09-18",
+        "park": "TDL",
+        "score": 52.2,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_shirogane_week": 8.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.8
+          }
+        }
+      },
+      {
+        "date": "2026-09-19",
+        "park": "TDL",
+        "score": 70.2,
+        "grade": "E",
+        "label": "混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "is_shirogane_week": 8.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.8
+          }
+        }
+      },
+      {
+        "date": "2026-09-20",
+        "park": "TDL",
+        "score": 70.2,
+        "grade": "E",
+        "label": "混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "is_shirogane_week": 8.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.8
+          }
+        }
+      },
+      {
+        "date": "2026-09-21",
+        "park": "TDL",
+        "score": 65.7,
+        "grade": "E",
+        "label": "混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_national_holiday": 15.0,
+          "is_shirogane_week": 8.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.3
+          }
+        }
+      },
+      {
+        "date": "2026-09-22",
+        "park": "TDL",
+        "score": 65.7,
+        "grade": "E",
+        "label": "混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_national_holiday": 15.0,
+          "is_shirogane_week": 8.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.3
+          }
+        }
+      },
+      {
+        "date": "2026-09-23",
+        "park": "TDL",
+        "score": 65.7,
+        "grade": "E",
+        "label": "混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_national_holiday": 15.0,
+          "is_shirogane_week": 8.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.3
+          }
+        }
+      },
+      {
+        "date": "2026-09-24",
+        "park": "TDL",
+        "score": 52.2,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_foreign_holiday_window": 8.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.8
+          }
+        }
+      },
+      {
+        "date": "2026-09-25",
+        "park": "TDL",
+        "score": 52.2,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_foreign_holiday_window": 8.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.8
+          }
+        }
+      },
+      {
+        "date": "2026-09-26",
+        "park": "TDL",
+        "score": 70.2,
+        "grade": "E",
+        "label": "混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "is_foreign_holiday_window": 8.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.8
+          }
+        }
+      },
+      {
+        "date": "2026-09-27",
+        "park": "TDL",
+        "score": 63.0,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.0
+          }
+        }
+      },
+      {
+        "date": "2026-09-28",
+        "park": "TDL",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-09-29",
+        "park": "TDL",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-09-30",
+        "park": "TDL",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-10-01",
+        "park": "TDL",
+        "score": 52.2,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_foreign_holiday_window": 8.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.8
+          }
+        }
+      },
+      {
+        "date": "2026-10-02",
+        "park": "TDL",
+        "score": 61.2,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_foreign_holiday_window": 8.0,
+          "is_shortened_hours": 10.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -6.8
+          }
+        }
+      },
+      {
+        "date": "2026-10-03",
+        "park": "TDL",
+        "score": 70.2,
+        "grade": "E",
+        "label": "混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "is_foreign_holiday_window": 8.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.8
+          }
+        }
+      },
+      {
+        "date": "2026-10-04",
+        "park": "TDL",
+        "score": 70.2,
+        "grade": "E",
+        "label": "混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "is_foreign_holiday_window": 8.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.8
+          }
+        }
+      },
+      {
+        "date": "2026-10-05",
+        "park": "TDL",
+        "score": 52.2,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_foreign_holiday_window": 8.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.8
+          }
+        }
+      },
+      {
+        "date": "2026-10-06",
+        "park": "TDL",
+        "score": 52.2,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_foreign_holiday_window": 8.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.8
+          }
+        }
+      },
+      {
+        "date": "2026-10-07",
+        "park": "TDL",
+        "score": 52.2,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_foreign_holiday_window": 8.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.8
+          }
+        }
+      },
+      {
+        "date": "2026-10-08",
+        "park": "TDL",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-10-09",
+        "park": "TDL",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-10-10",
+        "park": "TDL",
+        "score": 63.0,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.0
+          }
+        }
+      },
+      {
+        "date": "2026-10-11",
+        "park": "TDL",
+        "score": 63.0,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.0
+          }
+        }
+      },
+      {
+        "date": "2026-10-12",
+        "park": "TDL",
+        "score": 58.5,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_national_holiday": 15.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -6.5
+          }
+        }
+      },
+      {
+        "date": "2026-10-13",
+        "park": "TDL",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-10-14",
+        "park": "TDL",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-10-15",
+        "park": "TDL",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-10-16",
+        "park": "TDL",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-10-17",
+        "park": "TDL",
+        "score": 63.0,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.0
+          }
+        }
+      },
+      {
+        "date": "2026-10-18",
+        "park": "TDL",
+        "score": 63.0,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.0
+          }
+        }
+      },
+      {
+        "date": "2026-10-19",
+        "park": "TDL",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-10-20",
+        "park": "TDL",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-10-21",
+        "park": "TDL",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-10-22",
+        "park": "TDL",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-10-23",
+        "park": "TDL",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-10-24",
+        "park": "TDL",
+        "score": 63.0,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.0
+          }
+        }
+      },
+      {
+        "date": "2026-10-25",
+        "park": "TDL",
+        "score": 63.0,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.0
+          }
+        }
+      },
+      {
+        "date": "2026-10-26",
+        "park": "TDL",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-10-27",
+        "park": "TDL",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-10-28",
+        "park": "TDL",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-10-29",
+        "park": "TDL",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-10-30",
+        "park": "TDL",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-10-31",
+        "park": "TDL",
+        "score": 63.0,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-01",
+        "park": "TDL",
+        "score": 63.0,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-02",
+        "park": "TDL",
+        "score": 34.2,
+        "grade": "B",
+        "label": "空いている",
+        "breakdown": {
+          "base": 50.0,
+          "is_bridge_day": -12.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -3.8
+          }
+        }
+      },
+      {
+        "date": "2026-11-03",
+        "park": "TDL",
+        "score": 58.5,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_national_holiday": 15.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -6.5
+          }
+        }
+      },
+      {
+        "date": "2026-11-04",
+        "park": "TDL",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-05",
+        "park": "TDL",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-06",
+        "park": "TDL",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-07",
+        "park": "TDL",
+        "score": 63.0,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-08",
+        "park": "TDL",
+        "score": 63.0,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-09",
+        "park": "TDL",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-10",
+        "park": "TDL",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-11",
+        "park": "TDL",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-12",
+        "park": "TDL",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-13",
+        "park": "TDL",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-14",
+        "park": "TDL",
+        "score": 63.0,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-15",
+        "park": "TDL",
+        "score": 63.0,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-16",
+        "park": "TDL",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-17",
+        "park": "TDL",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-18",
+        "park": "TDL",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-19",
+        "park": "TDL",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-20",
+        "park": "TDL",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-21",
+        "park": "TDL",
+        "score": 63.0,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-22",
+        "park": "TDL",
+        "score": 63.0,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-23",
+        "park": "TDL",
+        "score": 58.5,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_national_holiday": 15.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -6.5
+          }
+        }
+      },
+      {
+        "date": "2026-11-24",
+        "park": "TDL",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-25",
+        "park": "TDL",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-26",
+        "park": "TDL",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-27",
+        "park": "TDL",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-28",
+        "park": "TDL",
+        "score": 63.0,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-29",
+        "park": "TDL",
+        "score": 63.0,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-30",
+        "park": "TDL",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-12-01",
+        "park": "TDL",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-12-02",
+        "park": "TDL",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      }
+    ],
+    "TDS": [
+      {
+        "date": "2026-08-04",
+        "park": "TDS",
+        "score": 55.8,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_natsu_yasumi": 12.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -6.2
+          }
+        }
+      },
+      {
+        "date": "2026-08-05",
+        "park": "TDS",
+        "score": 55.8,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_natsu_yasumi": 12.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -6.2
+          }
+        }
+      },
+      {
+        "date": "2026-08-06",
+        "park": "TDS",
+        "score": 55.8,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_natsu_yasumi": 12.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -6.2
+          }
+        }
+      },
+      {
+        "date": "2026-08-07",
+        "park": "TDS",
+        "score": 55.8,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_natsu_yasumi": 12.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -6.2
+          }
+        }
+      },
+      {
+        "date": "2026-08-08",
+        "park": "TDS",
+        "score": 73.8,
+        "grade": "E",
+        "label": "混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "is_natsu_yasumi": 12.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -8.2
+          }
+        }
+      },
+      {
+        "date": "2026-08-09",
+        "park": "TDS",
+        "score": 73.8,
+        "grade": "E",
+        "label": "混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "is_natsu_yasumi": 12.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -8.2
+          }
+        }
+      },
+      {
+        "date": "2026-08-10",
+        "park": "TDS",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "is_natsu_yasumi": 12.0,
+          "is_bridge_day": -12.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-08-11",
+        "park": "TDS",
+        "score": 69.3,
+        "grade": "E",
+        "label": "混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_national_holiday": 15.0,
+          "is_natsu_yasumi": 12.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.7
+          }
+        }
+      },
+      {
+        "date": "2026-08-12",
+        "park": "TDS",
+        "score": 55.8,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_natsu_yasumi": 12.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -6.2
+          }
+        }
+      },
+      {
+        "date": "2026-08-13",
+        "park": "TDS",
+        "score": 69.3,
+        "grade": "E",
+        "label": "混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_natsu_yasumi": 12.0,
+          "is_obon": 15.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.7
+          }
+        }
+      },
+      {
+        "date": "2026-08-14",
+        "park": "TDS",
+        "score": 69.3,
+        "grade": "E",
+        "label": "混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_natsu_yasumi": 12.0,
+          "is_obon": 15.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.7
+          }
+        }
+      },
+      {
+        "date": "2026-08-15",
+        "park": "TDS",
+        "score": 87.3,
+        "grade": "F",
+        "label": "大混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "is_natsu_yasumi": 12.0,
+          "is_obon": 15.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -9.7
+          }
+        }
+      },
+      {
+        "date": "2026-08-16",
+        "park": "TDS",
+        "score": 87.3,
+        "grade": "F",
+        "label": "大混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "is_natsu_yasumi": 12.0,
+          "is_obon": 15.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -9.7
+          }
+        }
+      },
+      {
+        "date": "2026-08-17",
+        "park": "TDS",
+        "score": 55.8,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_natsu_yasumi": 12.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -6.2
+          }
+        }
+      },
+      {
+        "date": "2026-08-18",
+        "park": "TDS",
+        "score": 55.8,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_natsu_yasumi": 12.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -6.2
+          }
+        }
+      },
+      {
+        "date": "2026-08-19",
+        "park": "TDS",
+        "score": 55.8,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_natsu_yasumi": 12.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -6.2
+          }
+        }
+      },
+      {
+        "date": "2026-08-20",
+        "park": "TDS",
+        "score": 55.8,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_natsu_yasumi": 12.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -6.2
+          }
+        }
+      },
+      {
+        "date": "2026-08-21",
+        "park": "TDS",
+        "score": 64.8,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_natsu_yasumi": 12.0,
+          "is_shortened_hours": 10.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.2
+          }
+        }
+      },
+      {
+        "date": "2026-08-22",
+        "park": "TDS",
+        "score": 73.8,
+        "grade": "E",
+        "label": "混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "is_natsu_yasumi": 12.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -8.2
+          }
+        }
+      },
+      {
+        "date": "2026-08-23",
+        "park": "TDS",
+        "score": 73.8,
+        "grade": "E",
+        "label": "混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "is_natsu_yasumi": 12.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -8.2
+          }
+        }
+      },
+      {
+        "date": "2026-08-24",
+        "park": "TDS",
+        "score": 55.8,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_natsu_yasumi": 12.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -6.2
+          }
+        }
+      },
+      {
+        "date": "2026-08-25",
+        "park": "TDS",
+        "score": 55.8,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_natsu_yasumi": 12.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -6.2
+          }
+        }
+      },
+      {
+        "date": "2026-08-26",
+        "park": "TDS",
+        "score": 55.8,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_natsu_yasumi": 12.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -6.2
+          }
+        }
+      },
+      {
+        "date": "2026-08-27",
+        "park": "TDS",
+        "score": 55.8,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_natsu_yasumi": 12.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -6.2
+          }
+        }
+      },
+      {
+        "date": "2026-08-28",
+        "park": "TDS",
+        "score": 55.8,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_natsu_yasumi": 12.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -6.2
+          }
+        }
+      },
+      {
+        "date": "2026-08-29",
+        "park": "TDS",
+        "score": 73.8,
+        "grade": "E",
+        "label": "混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "is_natsu_yasumi": 12.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -8.2
+          }
+        }
+      },
+      {
+        "date": "2026-08-30",
+        "park": "TDS",
+        "score": 73.8,
+        "grade": "E",
+        "label": "混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "is_natsu_yasumi": 12.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -8.2
+          }
+        }
+      },
+      {
+        "date": "2026-08-31",
+        "park": "TDS",
+        "score": 55.8,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_natsu_yasumi": 12.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -6.2
+          }
+        }
+      },
+      {
+        "date": "2026-09-01",
+        "park": "TDS",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-09-02",
+        "park": "TDS",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-09-03",
+        "park": "TDS",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-09-04",
+        "park": "TDS",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-09-05",
+        "park": "TDS",
+        "score": 63.0,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.0
+          }
+        }
+      },
+      {
+        "date": "2026-09-06",
+        "park": "TDS",
+        "score": 63.0,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.0
+          }
+        }
+      },
+      {
+        "date": "2026-09-07",
+        "park": "TDS",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-09-08",
+        "park": "TDS",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-09-09",
+        "park": "TDS",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-09-10",
+        "park": "TDS",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-09-11",
+        "park": "TDS",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-09-12",
+        "park": "TDS",
+        "score": 63.0,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.0
+          }
+        }
+      },
+      {
+        "date": "2026-09-13",
+        "park": "TDS",
+        "score": 63.0,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.0
+          }
+        }
+      },
+      {
+        "date": "2026-09-14",
+        "park": "TDS",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-09-15",
+        "park": "TDS",
+        "score": 52.2,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_shirogane_week": 8.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.8
+          }
+        }
+      },
+      {
+        "date": "2026-09-16",
+        "park": "TDS",
+        "score": 52.2,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_shirogane_week": 8.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.8
+          }
+        }
+      },
+      {
+        "date": "2026-09-17",
+        "park": "TDS",
+        "score": 52.2,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_shirogane_week": 8.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.8
+          }
+        }
+      },
+      {
+        "date": "2026-09-18",
+        "park": "TDS",
+        "score": 52.2,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_shirogane_week": 8.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.8
+          }
+        }
+      },
+      {
+        "date": "2026-09-19",
+        "park": "TDS",
+        "score": 70.2,
+        "grade": "E",
+        "label": "混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "is_shirogane_week": 8.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.8
+          }
+        }
+      },
+      {
+        "date": "2026-09-20",
+        "park": "TDS",
+        "score": 70.2,
+        "grade": "E",
+        "label": "混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "is_shirogane_week": 8.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.8
+          }
+        }
+      },
+      {
+        "date": "2026-09-21",
+        "park": "TDS",
+        "score": 65.7,
+        "grade": "E",
+        "label": "混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_national_holiday": 15.0,
+          "is_shirogane_week": 8.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.3
+          }
+        }
+      },
+      {
+        "date": "2026-09-22",
+        "park": "TDS",
+        "score": 65.7,
+        "grade": "E",
+        "label": "混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_national_holiday": 15.0,
+          "is_shirogane_week": 8.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.3
+          }
+        }
+      },
+      {
+        "date": "2026-09-23",
+        "park": "TDS",
+        "score": 65.7,
+        "grade": "E",
+        "label": "混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_national_holiday": 15.0,
+          "is_shirogane_week": 8.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.3
+          }
+        }
+      },
+      {
+        "date": "2026-09-24",
+        "park": "TDS",
+        "score": 52.2,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_foreign_holiday_window": 8.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.8
+          }
+        }
+      },
+      {
+        "date": "2026-09-25",
+        "park": "TDS",
+        "score": 61.2,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_foreign_holiday_window": 8.0,
+          "is_shortened_hours": 10.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -6.8
+          }
+        }
+      },
+      {
+        "date": "2026-09-26",
+        "park": "TDS",
+        "score": 70.2,
+        "grade": "E",
+        "label": "混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "is_foreign_holiday_window": 8.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.8
+          }
+        }
+      },
+      {
+        "date": "2026-09-27",
+        "park": "TDS",
+        "score": 63.0,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.0
+          }
+        }
+      },
+      {
+        "date": "2026-09-28",
+        "park": "TDS",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-09-29",
+        "park": "TDS",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-09-30",
+        "park": "TDS",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-10-01",
+        "park": "TDS",
+        "score": 52.2,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_foreign_holiday_window": 8.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.8
+          }
+        }
+      },
+      {
+        "date": "2026-10-02",
+        "park": "TDS",
+        "score": 52.2,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_foreign_holiday_window": 8.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.8
+          }
+        }
+      },
+      {
+        "date": "2026-10-03",
+        "park": "TDS",
+        "score": 70.2,
+        "grade": "E",
+        "label": "混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "is_foreign_holiday_window": 8.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.8
+          }
+        }
+      },
+      {
+        "date": "2026-10-04",
+        "park": "TDS",
+        "score": 70.2,
+        "grade": "E",
+        "label": "混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "is_foreign_holiday_window": 8.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.8
+          }
+        }
+      },
+      {
+        "date": "2026-10-05",
+        "park": "TDS",
+        "score": 52.2,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_foreign_holiday_window": 8.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.8
+          }
+        }
+      },
+      {
+        "date": "2026-10-06",
+        "park": "TDS",
+        "score": 52.2,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_foreign_holiday_window": 8.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.8
+          }
+        }
+      },
+      {
+        "date": "2026-10-07",
+        "park": "TDS",
+        "score": 52.2,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_foreign_holiday_window": 8.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.8
+          }
+        }
+      },
+      {
+        "date": "2026-10-08",
+        "park": "TDS",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-10-09",
+        "park": "TDS",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-10-10",
+        "park": "TDS",
+        "score": 63.0,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.0
+          }
+        }
+      },
+      {
+        "date": "2026-10-11",
+        "park": "TDS",
+        "score": 63.0,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.0
+          }
+        }
+      },
+      {
+        "date": "2026-10-12",
+        "park": "TDS",
+        "score": 58.5,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_national_holiday": 15.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -6.5
+          }
+        }
+      },
+      {
+        "date": "2026-10-13",
+        "park": "TDS",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-10-14",
+        "park": "TDS",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-10-15",
+        "park": "TDS",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-10-16",
+        "park": "TDS",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-10-17",
+        "park": "TDS",
+        "score": 63.0,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.0
+          }
+        }
+      },
+      {
+        "date": "2026-10-18",
+        "park": "TDS",
+        "score": 63.0,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.0
+          }
+        }
+      },
+      {
+        "date": "2026-10-19",
+        "park": "TDS",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-10-20",
+        "park": "TDS",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-10-21",
+        "park": "TDS",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-10-22",
+        "park": "TDS",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-10-23",
+        "park": "TDS",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-10-24",
+        "park": "TDS",
+        "score": 63.0,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.0
+          }
+        }
+      },
+      {
+        "date": "2026-10-25",
+        "park": "TDS",
+        "score": 63.0,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.0
+          }
+        }
+      },
+      {
+        "date": "2026-10-26",
+        "park": "TDS",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-10-27",
+        "park": "TDS",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-10-28",
+        "park": "TDS",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-10-29",
+        "park": "TDS",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-10-30",
+        "park": "TDS",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-10-31",
+        "park": "TDS",
+        "score": 63.0,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-01",
+        "park": "TDS",
+        "score": 63.0,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-02",
+        "park": "TDS",
+        "score": 34.2,
+        "grade": "B",
+        "label": "空いている",
+        "breakdown": {
+          "base": 50.0,
+          "is_bridge_day": -12.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -3.8
+          }
+        }
+      },
+      {
+        "date": "2026-11-03",
+        "park": "TDS",
+        "score": 58.5,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_national_holiday": 15.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -6.5
+          }
+        }
+      },
+      {
+        "date": "2026-11-04",
+        "park": "TDS",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-05",
+        "park": "TDS",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-06",
+        "park": "TDS",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-07",
+        "park": "TDS",
+        "score": 63.0,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-08",
+        "park": "TDS",
+        "score": 63.0,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-09",
+        "park": "TDS",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-10",
+        "park": "TDS",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-11",
+        "park": "TDS",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-12",
+        "park": "TDS",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-13",
+        "park": "TDS",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-14",
+        "park": "TDS",
+        "score": 63.0,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-15",
+        "park": "TDS",
+        "score": 63.0,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-16",
+        "park": "TDS",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-17",
+        "park": "TDS",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-18",
+        "park": "TDS",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-19",
+        "park": "TDS",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-20",
+        "park": "TDS",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-21",
+        "park": "TDS",
+        "score": 63.0,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-22",
+        "park": "TDS",
+        "score": 63.0,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-23",
+        "park": "TDS",
+        "score": 58.5,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_national_holiday": 15.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -6.5
+          }
+        }
+      },
+      {
+        "date": "2026-11-24",
+        "park": "TDS",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-25",
+        "park": "TDS",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-26",
+        "park": "TDS",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-27",
+        "park": "TDS",
+        "score": 54.0,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_shortened_hours": 10.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -6.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-28",
+        "park": "TDS",
+        "score": 63.0,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-29",
+        "park": "TDS",
+        "score": 63.0,
+        "grade": "D",
+        "label": "やや混雑",
+        "breakdown": {
+          "base": 50.0,
+          "is_weekend": 20.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -7.0
+          }
+        }
+      },
+      {
+        "date": "2026-11-30",
+        "park": "TDS",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-12-01",
+        "park": "TDS",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      },
+      {
+        "date": "2026-12-02",
+        "park": "TDS",
+        "score": 45.0,
+        "grade": "C",
+        "label": "普通",
+        "breakdown": {
+          "base": 50.0,
+          "weather_multiplier": {
+            "class": "cloudy",
+            "multiplier": 0.9,
+            "delta": -5.0
+          }
+        }
+      }
+    ]
+  }
+}
