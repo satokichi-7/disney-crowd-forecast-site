@@ -5,39 +5,48 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>お問い合わせ | ディズニー混雑予想カレンダー</title>
 <meta name="description" content="このサイトへのお問い合わせ方法。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root {
     color-scheme: light;
     --surface-1: #ffffff;
-    --surface-2: #f3f1ea;
-    --page: #faf8f2;
-    --text-primary: #241f14;
-    --text-secondary: #5c5646;
-    --text-muted: #8a8474;
-    --gridline: #e7e2d3;
-    --border: rgba(36,31,20,0.10);
-    --shadow: 0 1px 2px rgba(36,31,20,0.06), 0 8px 24px rgba(36,31,20,0.06);
-    --accent: #1c5cab;
-    --accent-2: #eda100;
-    --ad-bg: #eeece3;
-    --ad-border: #d8d4c4;
+    --surface-2: #f7f0fb;
+    --page: #fdf8ff;
+    --text-primary: #2c1b3d;
+    --text-secondary: #6b5a7a;
+    --text-muted: #9a8ba8;
+    --gridline: #ecdff5;
+    --border: rgba(124,58,237,0.14);
+    --shadow: 0 1px 2px rgba(124,58,237,0.08), 0 10px 26px rgba(124,58,237,0.10);
+    --accent: #8b2fd6;
+    --accent-soft: #b565f0;
+    --accent-pink: #ec4899;
+    --accent-gold: #f5a300;
+    --ad-bg: #f3ecf9;
+    --ad-border: #ddc9ee;
+    --display-font: "Fredoka", "Hiragino Maru Gothic ProN", system-ui, sans-serif;
+    --body-font: "Nunito", "Hiragino Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
   }
   @media (prefers-color-scheme: dark) {
     :root {
       color-scheme: dark;
-      --surface-1: #201c14;
-      --surface-2: #262119;
-      --page: #14120c;
-      --text-primary: #fbf7ee;
-      --text-secondary: #cfc7b2;
-      --text-muted: #948d78;
-      --gridline: #35301f;
-      --border: rgba(255,255,255,0.10);
-      --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 12px 28px rgba(0,0,0,0.35);
-      --accent: #3987e5;
-      --accent-2: #eda100;
-      --ad-bg: #201c14;
-      --ad-border: #35301f;
+      --surface-1: #241934;
+      --surface-2: #2c1f40;
+      --page: #180f26;
+      --text-primary: #f6eefe;
+      --text-secondary: #cbb9de;
+      --text-muted: #94829f;
+      --gridline: #3a2a52;
+      --border: rgba(255,255,255,0.12);
+      --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 14px 30px rgba(0,0,0,0.4);
+      --accent: #b565f0;
+      --accent-soft: #d19aff;
+      --accent-pink: #f472b6;
+      --accent-gold: #f5a300;
+      --ad-bg: #241934;
+      --ad-border: #3a2a52;
     }
   }
   * { box-sizing: border-box; }
@@ -45,50 +54,63 @@
     margin: 0;
     background: var(--page);
     color: var(--text-primary);
-    font-family: system-ui, -apple-system, "Hiragino Sans", "Segoe UI", sans-serif;
+    font-family: var(--body-font);
     line-height: 1.6;
   }
+  h1, h2, .brand { font-family: var(--display-font); }
   a { color: var(--accent); }
   .wrap { max-width: 980px; margin: 0 auto; padding: 0 16px 48px; }
 
   .site-header {
-    background: linear-gradient(135deg, var(--accent) 0%, #123a6e 100%);
+    background: linear-gradient(120deg, var(--accent) 0%, var(--accent-pink) 100%);
     color: #fff;
   }
   .site-header-inner {
     max-width: 980px; margin: 0 auto; padding: 16px 16px;
     display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;
   }
-  .brand { font-weight: 800; font-size: 1.05rem; text-decoration: none; color: #fff; display: flex; align-items: center; gap: 8px; }
-  .site-nav { display: flex; gap: 18px; font-size: 0.85rem; }
-  .site-nav a { color: rgba(255,255,255,0.88); text-decoration: none; }
+  .brand { font-weight: 600; font-size: 1.15rem; text-decoration: none; color: #fff; display: flex; align-items: center; gap: 8px; }
+  .site-nav { display: flex; gap: 18px; font-size: 0.85rem; font-weight: 700; }
+  .site-nav a { color: rgba(255,255,255,0.92); text-decoration: none; }
   .site-nav a:hover { text-decoration: underline; }
 
   .hero {
-    padding: 22px 16px 26px;
-    background: linear-gradient(135deg, var(--accent) 0%, #123a6e 100%);
+    position: relative; overflow: hidden;
+    padding: 28px 16px 32px;
+    background:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 170'%3E%3Cg fill='white' fill-opacity='0.18'%3E%3Cpolygon points='350,19 358,27 350,35 342,27'/%3E%3Cpolygon points='30,18 36,24 30,30 24,24'/%3E%3Cpolygon points='250,15 254.5,20 250,25 245.5,20'/%3E%3Crect x='60' y='110' width='280' height='55'/%3E%3Crect x='68' y='98' width='14' height='13'/%3E%3Crect x='128' y='98' width='14' height='13'/%3E%3Crect x='160' y='98' width='14' height='13'/%3E%3Crect x='224' y='98' width='14' height='13'/%3E%3Crect x='256' y='98' width='14' height='13'/%3E%3Crect x='318' y='98' width='14' height='13'/%3E%3Cpolygon points='85,75 104,38 123,75'/%3E%3Crect x='90' y='75' width='28' height='35'/%3E%3Cpolygon points='181,55 200,15 219,55'/%3E%3Crect x='186' y='55' width='28' height='55'/%3E%3Cpolygon points='277,75 296,38 315,75'/%3E%3Crect x='282' y='75' width='28' height='35'/%3E%3Crect x='198' y='0' width='4' height='15'/%3E%3Cpolygon points='202,0 218,7 202,14'/%3E%3C/g%3E%3C/svg%3E") no-repeat bottom right / min(340px, 62%) auto,
+      radial-gradient(ellipse at 85% 100%, rgba(255,199,110,0.4), transparent 60%),
+      linear-gradient(120deg, var(--accent) 0%, var(--accent-pink) 100%);
     color: #fff;
   }
-  .hero-inner { max-width: 980px; margin: 0 auto; }
-  .hero h1 { font-size: 1.4rem; margin: 0 0 6px; letter-spacing: .01em; }
-  .hero p { margin: 0; color: rgba(255,255,255,0.85); font-size: 0.9rem; max-width: 62ch; }
+  .hero::before {
+    content: "✨"; position: absolute; font-size: 2.2rem; opacity: .35;
+    top: -6px; right: 8%; transform: rotate(12deg);
+  }
+  .hero::after {
+    content: "🎆"; position: absolute; font-size: 1.6rem; opacity: .4;
+    top: 10%; left: 6%; transform: rotate(-6deg);
+  }
+  .hero-inner { max-width: 980px; margin: 0 auto; position: relative; }
+  .hero h1 { font-size: 1.7rem; font-weight: 700; margin: 0 0 8px; letter-spacing: .01em; text-wrap: balance; }
+  .hero p { margin: 0; color: rgba(255,255,255,0.92); font-size: 0.92rem; max-width: 62ch; }
 
   .breadcrumb { font-size: 0.8rem; color: var(--text-muted); margin: 16px 0 0; }
   .breadcrumb a { color: var(--text-secondary); }
 
   .card {
-    background: var(--surface-1); border-radius: 16px; padding: 18px 18px 20px;
-    margin-bottom: 20px; box-shadow: var(--shadow);
+    background: var(--surface-1); border-radius: 22px; padding: 20px 20px 22px;
+    margin-bottom: 20px; box-shadow: var(--shadow); border: 1px solid var(--border);
   }
-  .card h2 { font-size: 1rem; margin: 0 0 12px; }
-  .prose { font-size: 0.92rem; color: var(--text-secondary); }
+  .card h2 { font-size: 1.1rem; margin: 0 0 12px; font-weight: 600; }
+  .prose { font-size: 0.94rem; color: var(--text-secondary); }
   .prose p { margin: 0 0 12px; }
-  .prose h3 { font-size: 0.95rem; color: var(--text-primary); margin: 18px 0 8px; }
+  .prose h3 { font-size: 1rem; font-family: var(--display-font); font-weight: 600; color: var(--text-primary); margin: 20px 0 8px; }
   .prose ul { margin: 0 0 12px; padding-left: 20px; }
   .prose li { margin-bottom: 6px; }
 
   .ad-slot {
-    background: var(--ad-bg); border: 1px dashed var(--ad-border); border-radius: 12px;
+    background: var(--ad-bg); border: 1px dashed var(--ad-border); border-radius: 16px;
     color: var(--text-muted); font-size: 0.72rem; text-align: center;
     padding: 10px; margin: 20px 0; letter-spacing: .04em;
   }
@@ -101,6 +123,39 @@
 </style>
 </head>
 <body>
+<svg style="display:none" aria-hidden="true">
+  <symbol id="mood-good" viewBox="0 0 40 40">
+    <circle cx="20" cy="20" r="17" fill="#FFF8EF" stroke="rgba(0,0,0,0.08)"/>
+    <circle cx="8" cy="23" r="2.3" fill="#ff9db5" opacity="0.6"/>
+    <circle cx="32" cy="23" r="2.3" fill="#ff9db5" opacity="0.6"/>
+    <path d="M9,17 Q13,12 17,17" stroke="#3a2a4a" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+    <path d="M23,17 Q27,12 31,17" stroke="#3a2a4a" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+    <path d="M12,24 Q20,33 28,24" stroke="#3a2a4a" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="mood-warning" viewBox="0 0 40 40">
+    <circle cx="20" cy="20" r="17" fill="#FFF8EF" stroke="rgba(0,0,0,0.08)"/>
+    <circle cx="13" cy="18" r="2.1" fill="#3a2a4a"/>
+    <circle cx="27" cy="18" r="2.1" fill="#3a2a4a"/>
+    <path d="M14,26 Q20,30 26,26" stroke="#3a2a4a" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="mood-serious" viewBox="0 0 40 40">
+    <circle cx="20" cy="20" r="17" fill="#FFF8EF" stroke="rgba(0,0,0,0.08)"/>
+    <path d="M8,16 Q11.5,13 15,15" stroke="#3a2a4a" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    <path d="M25,15 Q28.5,13 32,16" stroke="#3a2a4a" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    <circle cx="13" cy="19" r="1.8" fill="#3a2a4a"/>
+    <circle cx="27" cy="19" r="1.8" fill="#3a2a4a"/>
+    <path d="M14,28 Q17,26 20,28 Q23,30 26,28" stroke="#3a2a4a" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+    <path d="M33,11 Q36.5,15.5 33,19 Q29.5,15.5 33,11 Z" fill="#7ec8ff" opacity="0.8"/>
+  </symbol>
+  <symbol id="mood-critical" viewBox="0 0 40 40">
+    <circle cx="20" cy="20" r="17" fill="#FFF8EF" stroke="rgba(0,0,0,0.08)"/>
+    <path d="M9,15 L17,21 M17,15 L9,21" stroke="#3a2a4a" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+    <path d="M23,15 L31,21 M31,15 L23,21" stroke="#3a2a4a" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+    <path d="M12,27 L16,24 L20,28 L24,24 L28,27" stroke="#3a2a4a" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M6,11 Q9.5,15.5 6,19 Q2.5,15.5 6,11 Z" fill="#7ec8ff" opacity="0.8"/>
+    <path d="M35,9 Q37.8,12.5 35,15.5 Q32.2,12.5 35,9 Z" fill="#7ec8ff" opacity="0.8"/>
+  </symbol>
+</svg>
 <header class="site-header">
   <div class="site-header-inner">
     <a class="brand" href="/index.html">🏰 ディズニー混雑予想カレンダー</a>

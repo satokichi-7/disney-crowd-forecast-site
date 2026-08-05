@@ -5,39 +5,48 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>東京ディズニーランド 2026年10月の混雑予想 | ディズニー混雑予想カレンダー</title>
 <meta name="description" content="東京ディズニーランドの2026年10月の日別混雑予想。曜日・祝日・学校休み・天気・公式イベント情報から自動算出しています。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root {
     color-scheme: light;
     --surface-1: #ffffff;
-    --surface-2: #f3f1ea;
-    --page: #faf8f2;
-    --text-primary: #241f14;
-    --text-secondary: #5c5646;
-    --text-muted: #8a8474;
-    --gridline: #e7e2d3;
-    --border: rgba(36,31,20,0.10);
-    --shadow: 0 1px 2px rgba(36,31,20,0.06), 0 8px 24px rgba(36,31,20,0.06);
-    --accent: #1c5cab;
-    --accent-2: #eda100;
-    --ad-bg: #eeece3;
-    --ad-border: #d8d4c4;
+    --surface-2: #f7f0fb;
+    --page: #fdf8ff;
+    --text-primary: #2c1b3d;
+    --text-secondary: #6b5a7a;
+    --text-muted: #9a8ba8;
+    --gridline: #ecdff5;
+    --border: rgba(124,58,237,0.14);
+    --shadow: 0 1px 2px rgba(124,58,237,0.08), 0 10px 26px rgba(124,58,237,0.10);
+    --accent: #8b2fd6;
+    --accent-soft: #b565f0;
+    --accent-pink: #ec4899;
+    --accent-gold: #f5a300;
+    --ad-bg: #f3ecf9;
+    --ad-border: #ddc9ee;
+    --display-font: "Fredoka", "Hiragino Maru Gothic ProN", system-ui, sans-serif;
+    --body-font: "Nunito", "Hiragino Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
   }
   @media (prefers-color-scheme: dark) {
     :root {
       color-scheme: dark;
-      --surface-1: #201c14;
-      --surface-2: #262119;
-      --page: #14120c;
-      --text-primary: #fbf7ee;
-      --text-secondary: #cfc7b2;
-      --text-muted: #948d78;
-      --gridline: #35301f;
-      --border: rgba(255,255,255,0.10);
-      --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 12px 28px rgba(0,0,0,0.35);
-      --accent: #3987e5;
-      --accent-2: #eda100;
-      --ad-bg: #201c14;
-      --ad-border: #35301f;
+      --surface-1: #241934;
+      --surface-2: #2c1f40;
+      --page: #180f26;
+      --text-primary: #f6eefe;
+      --text-secondary: #cbb9de;
+      --text-muted: #94829f;
+      --gridline: #3a2a52;
+      --border: rgba(255,255,255,0.12);
+      --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 14px 30px rgba(0,0,0,0.4);
+      --accent: #b565f0;
+      --accent-soft: #d19aff;
+      --accent-pink: #f472b6;
+      --accent-gold: #f5a300;
+      --ad-bg: #241934;
+      --ad-border: #3a2a52;
     }
   }
   * { box-sizing: border-box; }
@@ -45,50 +54,63 @@
     margin: 0;
     background: var(--page);
     color: var(--text-primary);
-    font-family: system-ui, -apple-system, "Hiragino Sans", "Segoe UI", sans-serif;
+    font-family: var(--body-font);
     line-height: 1.6;
   }
+  h1, h2, .brand { font-family: var(--display-font); }
   a { color: var(--accent); }
   .wrap { max-width: 980px; margin: 0 auto; padding: 0 16px 48px; }
 
   .site-header {
-    background: linear-gradient(135deg, var(--accent) 0%, #123a6e 100%);
+    background: linear-gradient(120deg, var(--accent) 0%, var(--accent-pink) 100%);
     color: #fff;
   }
   .site-header-inner {
     max-width: 980px; margin: 0 auto; padding: 16px 16px;
     display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;
   }
-  .brand { font-weight: 800; font-size: 1.05rem; text-decoration: none; color: #fff; display: flex; align-items: center; gap: 8px; }
-  .site-nav { display: flex; gap: 18px; font-size: 0.85rem; }
-  .site-nav a { color: rgba(255,255,255,0.88); text-decoration: none; }
+  .brand { font-weight: 600; font-size: 1.15rem; text-decoration: none; color: #fff; display: flex; align-items: center; gap: 8px; }
+  .site-nav { display: flex; gap: 18px; font-size: 0.85rem; font-weight: 700; }
+  .site-nav a { color: rgba(255,255,255,0.92); text-decoration: none; }
   .site-nav a:hover { text-decoration: underline; }
 
   .hero {
-    padding: 22px 16px 26px;
-    background: linear-gradient(135deg, var(--accent) 0%, #123a6e 100%);
+    position: relative; overflow: hidden;
+    padding: 28px 16px 32px;
+    background:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 170'%3E%3Cg fill='white' fill-opacity='0.18'%3E%3Cpolygon points='350,19 358,27 350,35 342,27'/%3E%3Cpolygon points='30,18 36,24 30,30 24,24'/%3E%3Cpolygon points='250,15 254.5,20 250,25 245.5,20'/%3E%3Crect x='60' y='110' width='280' height='55'/%3E%3Crect x='68' y='98' width='14' height='13'/%3E%3Crect x='128' y='98' width='14' height='13'/%3E%3Crect x='160' y='98' width='14' height='13'/%3E%3Crect x='224' y='98' width='14' height='13'/%3E%3Crect x='256' y='98' width='14' height='13'/%3E%3Crect x='318' y='98' width='14' height='13'/%3E%3Cpolygon points='85,75 104,38 123,75'/%3E%3Crect x='90' y='75' width='28' height='35'/%3E%3Cpolygon points='181,55 200,15 219,55'/%3E%3Crect x='186' y='55' width='28' height='55'/%3E%3Cpolygon points='277,75 296,38 315,75'/%3E%3Crect x='282' y='75' width='28' height='35'/%3E%3Crect x='198' y='0' width='4' height='15'/%3E%3Cpolygon points='202,0 218,7 202,14'/%3E%3C/g%3E%3C/svg%3E") no-repeat bottom right / min(340px, 62%) auto,
+      radial-gradient(ellipse at 85% 100%, rgba(255,199,110,0.4), transparent 60%),
+      linear-gradient(120deg, var(--accent) 0%, var(--accent-pink) 100%);
     color: #fff;
   }
-  .hero-inner { max-width: 980px; margin: 0 auto; }
-  .hero h1 { font-size: 1.4rem; margin: 0 0 6px; letter-spacing: .01em; }
-  .hero p { margin: 0; color: rgba(255,255,255,0.85); font-size: 0.9rem; max-width: 62ch; }
+  .hero::before {
+    content: "✨"; position: absolute; font-size: 2.2rem; opacity: .35;
+    top: -6px; right: 8%; transform: rotate(12deg);
+  }
+  .hero::after {
+    content: "🎆"; position: absolute; font-size: 1.6rem; opacity: .4;
+    top: 10%; left: 6%; transform: rotate(-6deg);
+  }
+  .hero-inner { max-width: 980px; margin: 0 auto; position: relative; }
+  .hero h1 { font-size: 1.7rem; font-weight: 700; margin: 0 0 8px; letter-spacing: .01em; text-wrap: balance; }
+  .hero p { margin: 0; color: rgba(255,255,255,0.92); font-size: 0.92rem; max-width: 62ch; }
 
   .breadcrumb { font-size: 0.8rem; color: var(--text-muted); margin: 16px 0 0; }
   .breadcrumb a { color: var(--text-secondary); }
 
   .card {
-    background: var(--surface-1); border-radius: 16px; padding: 18px 18px 20px;
-    margin-bottom: 20px; box-shadow: var(--shadow);
+    background: var(--surface-1); border-radius: 22px; padding: 20px 20px 22px;
+    margin-bottom: 20px; box-shadow: var(--shadow); border: 1px solid var(--border);
   }
-  .card h2 { font-size: 1rem; margin: 0 0 12px; }
-  .prose { font-size: 0.92rem; color: var(--text-secondary); }
+  .card h2 { font-size: 1.1rem; margin: 0 0 12px; font-weight: 600; }
+  .prose { font-size: 0.94rem; color: var(--text-secondary); }
   .prose p { margin: 0 0 12px; }
-  .prose h3 { font-size: 0.95rem; color: var(--text-primary); margin: 18px 0 8px; }
+  .prose h3 { font-size: 1rem; font-family: var(--display-font); font-weight: 600; color: var(--text-primary); margin: 20px 0 8px; }
   .prose ul { margin: 0 0 12px; padding-left: 20px; }
   .prose li { margin-bottom: 6px; }
 
   .ad-slot {
-    background: var(--ad-bg); border: 1px dashed var(--ad-border); border-radius: 12px;
+    background: var(--ad-bg); border: 1px dashed var(--ad-border); border-radius: 16px;
     color: var(--text-muted); font-size: 0.72rem; text-align: center;
     padding: 10px; margin: 20px 0; letter-spacing: .04em;
   }
@@ -112,17 +134,32 @@
   table.cal { width: 100%; border-collapse: collapse; table-layout: fixed; }
   table.cal th { font-size: 0.72rem; font-weight: 600; color: var(--text-muted); padding: 4px 0 8px; border-bottom: 1px solid var(--gridline); }
   table.cal td { padding: 3px; vertical-align: top; }
-  .day-cell { width: 100%; aspect-ratio: 1 / 0.92; border-radius: 10px; border: none; font: inherit; cursor: default; padding: 6px 6px 6px; text-align: left; display: flex; flex-direction: column; justify-content: space-between; transition: transform .1s, filter .1s; }
+  .day-cell { width: 100%; aspect-ratio: 1 / 1; border-radius: 14px; border: none; font: inherit; cursor: pointer; padding: 6px 7px; text-align: left; display: flex; flex-direction: column; justify-content: space-between; transition: transform .12s, filter .12s; }
   .day-cell.empty { visibility: hidden; }
-  .day-cell.no-data { background: var(--surface-2); border: 1px dashed var(--gridline); color: var(--text-muted); }
+  .day-cell.no-data { background: var(--surface-2); border: 1px dashed var(--gridline); color: var(--text-muted); cursor: default; }
   .day-top { display: flex; justify-content: space-between; align-items: flex-start; }
-  .day-num { font-size: 0.82rem; font-weight: 700; }
-  .day-weather { font-size: 0.75rem; }
-  .day-dots { font-size: 0.6rem; letter-spacing: 1px; align-self: flex-end; opacity: 0.9; }
-  .day-cell:focus-visible { outline: 3px solid var(--accent-2); outline-offset: 1px; }
-  .day-cell:hover { transform: translateY(-1px); filter: brightness(1.05); }
-  #tooltip { position: fixed; z-index: 50; max-width: 270px; padding: 10px 12px; background: var(--surface-1); color: var(--text-primary); border: 1px solid var(--border); border-radius: 10px; font-size: 0.82rem; box-shadow: var(--shadow); pointer-events: none; display: none; }
-  #tooltip .tt-value { font-weight: 700; font-size: 0.95rem; }
+  .day-num { font-size: 0.76rem; font-weight: 700; opacity: .85; }
+  .day-weather { font-size: 0.72rem; }
+  .day-bottom { display: flex; align-items: baseline; gap: 4px; }
+  .day-mood { width: 1.1rem; height: 1.1rem; flex-shrink: 0; }
+  .day-score { font-family: var(--display-font); font-weight: 600; font-size: 1rem; line-height: 1; }
+  .day-tag { font-size: 0.58rem; font-weight: 800; opacity: .9; }
+  @media (max-width: 480px) {
+    .day-num { font-size: 0.6rem; }
+    .day-weather { font-size: 0.58rem; }
+    .day-mood { width: 0.85rem; height: 0.85rem; }
+    .day-score { font-size: 0.68rem; }
+    .day-tag { font-size: 0.42rem; }
+    .day-bottom { gap: 2px; }
+    .day-cell { padding: 3px 3px; border-radius: 10px; }
+  }
+  .day-cell:focus-visible { outline: 3px solid var(--accent-gold); outline-offset: 1px; }
+  .day-cell:hover { transform: translateY(-2px) scale(1.03); filter: brightness(1.06); }
+  .day-cell.pinned { outline: 3px solid var(--accent-gold); outline-offset: 1px; }
+  #tooltip { position: fixed; z-index: 50; max-width: 270px; padding: 12px 14px; background: var(--surface-1); color: var(--text-primary); border: 1px solid var(--border); border-radius: 14px; font-size: 0.84rem; box-shadow: var(--shadow); display: none; }
+  #tooltip .tt-close { position: absolute; top: 6px; right: 8px; background: none; border: none; font-size: 1rem; cursor: pointer; color: var(--text-muted); display: none; }
+  #tooltip.pinned .tt-close { display: block; }
+  #tooltip .tt-value { font-weight: 700; font-size: 1rem; }
   #tooltip .tt-factors { margin-top: 6px; color: var(--text-secondary); }
   #tooltip .tt-factors div { margin-top: 2px; }
   table.data-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; margin-top: 12px; display: none; background: var(--surface-1); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow); }
@@ -136,6 +173,39 @@
 </style>
 </head>
 <body>
+<svg style="display:none" aria-hidden="true">
+  <symbol id="mood-good" viewBox="0 0 40 40">
+    <circle cx="20" cy="20" r="17" fill="#FFF8EF" stroke="rgba(0,0,0,0.08)"/>
+    <circle cx="8" cy="23" r="2.3" fill="#ff9db5" opacity="0.6"/>
+    <circle cx="32" cy="23" r="2.3" fill="#ff9db5" opacity="0.6"/>
+    <path d="M9,17 Q13,12 17,17" stroke="#3a2a4a" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+    <path d="M23,17 Q27,12 31,17" stroke="#3a2a4a" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+    <path d="M12,24 Q20,33 28,24" stroke="#3a2a4a" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="mood-warning" viewBox="0 0 40 40">
+    <circle cx="20" cy="20" r="17" fill="#FFF8EF" stroke="rgba(0,0,0,0.08)"/>
+    <circle cx="13" cy="18" r="2.1" fill="#3a2a4a"/>
+    <circle cx="27" cy="18" r="2.1" fill="#3a2a4a"/>
+    <path d="M14,26 Q20,30 26,26" stroke="#3a2a4a" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="mood-serious" viewBox="0 0 40 40">
+    <circle cx="20" cy="20" r="17" fill="#FFF8EF" stroke="rgba(0,0,0,0.08)"/>
+    <path d="M8,16 Q11.5,13 15,15" stroke="#3a2a4a" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    <path d="M25,15 Q28.5,13 32,16" stroke="#3a2a4a" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    <circle cx="13" cy="19" r="1.8" fill="#3a2a4a"/>
+    <circle cx="27" cy="19" r="1.8" fill="#3a2a4a"/>
+    <path d="M14,28 Q17,26 20,28 Q23,30 26,28" stroke="#3a2a4a" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+    <path d="M33,11 Q36.5,15.5 33,19 Q29.5,15.5 33,11 Z" fill="#7ec8ff" opacity="0.8"/>
+  </symbol>
+  <symbol id="mood-critical" viewBox="0 0 40 40">
+    <circle cx="20" cy="20" r="17" fill="#FFF8EF" stroke="rgba(0,0,0,0.08)"/>
+    <path d="M9,15 L17,21 M17,15 L9,21" stroke="#3a2a4a" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+    <path d="M23,15 L31,21 M31,15 L23,21" stroke="#3a2a4a" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+    <path d="M12,27 L16,24 L20,28 L24,24 L28,27" stroke="#3a2a4a" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M6,11 Q9.5,15.5 6,19 Q2.5,15.5 6,11 Z" fill="#7ec8ff" opacity="0.8"/>
+    <path d="M35,9 Q37.8,12.5 35,15.5 Q32.2,12.5 35,9 Z" fill="#7ec8ff" opacity="0.8"/>
+  </symbol>
+</svg>
 <header class="site-header">
   <div class="site-header-inner">
     <a class="brand" href="/index.html">🏰 ディズニー混雑予想カレンダー</a>
@@ -170,22 +240,22 @@
   
   <span class="legend-item">
     <span class="legend-swatch" style="background:#0ca30c; color:#241f14;">●</span>
-    空いている
+    すいてる
   </span>
   
   <span class="legend-item">
     <span class="legend-swatch" style="background:#fab219; color:#241f14;">●●</span>
-    普通
+    ふつう
   </span>
   
   <span class="legend-item">
     <span class="legend-swatch" style="background:#ec835a; color:#241f14;">●●●</span>
-    やや混雑
+    やや混み
   </span>
   
   <span class="legend-item">
     <span class="legend-swatch" style="background:#d03b3b; color:#ffffff;">●●●●</span>
-    混雑
+    激混み
   </span>
   
 </div>
@@ -241,12 +311,13 @@
               style="background:#fab219; color:#241f14;"
               data-date="2026-10-01"
               data-score="52.2"
-              data-label="普通"
+              data-label="ふつう"
               data-factors="[{&#34;label&#34;: &#34;海外の連休(インバウンド需要)&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 8.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -5.8}]"
-              aria-label="2026-10-01 混雑度 普通 スコア52.2"
+              aria-label="2026-10-01 混雑度 ふつう スコア52.2"
             >
               <span class="day-top"><span class="day-num">1</span><span class="day-weather">☁️</span></span>
-              <span class="day-dots">●●○○</span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-warning"></use></svg><span class="day-score">52</span></span>
+              <span class="day-tag">普通</span>
             </button>
             
           </td>
@@ -259,12 +330,13 @@
               style="background:#ec835a; color:#241f14;"
               data-date="2026-10-02"
               data-score="61.2"
-              data-label="やや混雑"
+              data-label="やや混み"
               data-factors="[{&#34;label&#34;: &#34;貸切等による短縮営業&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 10.0}, {&#34;label&#34;: &#34;海外の連休(インバウンド需要)&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 8.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -6.8}]"
-              aria-label="2026-10-02 混雑度 やや混雑 スコア61.2"
+              aria-label="2026-10-02 混雑度 やや混み スコア61.2"
             >
               <span class="day-top"><span class="day-num">2</span><span class="day-weather">☁️</span></span>
-              <span class="day-dots">●●●○</span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">61</span></span>
+              <span class="day-tag">混み</span>
             </button>
             
           </td>
@@ -277,12 +349,13 @@
               style="background:#ec835a; color:#241f14;"
               data-date="2026-10-03"
               data-score="70.2"
-              data-label="やや混雑"
+              data-label="やや混み"
               data-factors="[{&#34;label&#34;: &#34;週末&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 20.0}, {&#34;label&#34;: &#34;海外の連休(インバウンド需要)&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 8.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -7.8}]"
-              aria-label="2026-10-03 混雑度 やや混雑 スコア70.2"
+              aria-label="2026-10-03 混雑度 やや混み スコア70.2"
             >
               <span class="day-top"><span class="day-num">3</span><span class="day-weather">☁️</span></span>
-              <span class="day-dots">●●●○</span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">70</span></span>
+              <span class="day-tag">混み</span>
             </button>
             
           </td>
@@ -299,12 +372,13 @@
               style="background:#ec835a; color:#241f14;"
               data-date="2026-10-04"
               data-score="70.2"
-              data-label="やや混雑"
+              data-label="やや混み"
               data-factors="[{&#34;label&#34;: &#34;週末&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 20.0}, {&#34;label&#34;: &#34;海外の連休(インバウンド需要)&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 8.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -7.8}]"
-              aria-label="2026-10-04 混雑度 やや混雑 スコア70.2"
+              aria-label="2026-10-04 混雑度 やや混み スコア70.2"
             >
               <span class="day-top"><span class="day-num">4</span><span class="day-weather">☁️</span></span>
-              <span class="day-dots">●●●○</span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">70</span></span>
+              <span class="day-tag">混み</span>
             </button>
             
           </td>
@@ -317,12 +391,13 @@
               style="background:#fab219; color:#241f14;"
               data-date="2026-10-05"
               data-score="52.2"
-              data-label="普通"
+              data-label="ふつう"
               data-factors="[{&#34;label&#34;: &#34;海外の連休(インバウンド需要)&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 8.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -5.8}]"
-              aria-label="2026-10-05 混雑度 普通 スコア52.2"
+              aria-label="2026-10-05 混雑度 ふつう スコア52.2"
             >
               <span class="day-top"><span class="day-num">5</span><span class="day-weather">☁️</span></span>
-              <span class="day-dots">●●○○</span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-warning"></use></svg><span class="day-score">52</span></span>
+              <span class="day-tag">普通</span>
             </button>
             
           </td>
@@ -335,12 +410,13 @@
               style="background:#fab219; color:#241f14;"
               data-date="2026-10-06"
               data-score="52.2"
-              data-label="普通"
+              data-label="ふつう"
               data-factors="[{&#34;label&#34;: &#34;海外の連休(インバウンド需要)&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 8.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -5.8}]"
-              aria-label="2026-10-06 混雑度 普通 スコア52.2"
+              aria-label="2026-10-06 混雑度 ふつう スコア52.2"
             >
               <span class="day-top"><span class="day-num">6</span><span class="day-weather">☁️</span></span>
-              <span class="day-dots">●●○○</span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-warning"></use></svg><span class="day-score">52</span></span>
+              <span class="day-tag">普通</span>
             </button>
             
           </td>
@@ -353,12 +429,13 @@
               style="background:#fab219; color:#241f14;"
               data-date="2026-10-07"
               data-score="52.2"
-              data-label="普通"
+              data-label="ふつう"
               data-factors="[{&#34;label&#34;: &#34;海外の連休(インバウンド需要)&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 8.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -5.8}]"
-              aria-label="2026-10-07 混雑度 普通 スコア52.2"
+              aria-label="2026-10-07 混雑度 ふつう スコア52.2"
             >
               <span class="day-top"><span class="day-num">7</span><span class="day-weather">☁️</span></span>
-              <span class="day-dots">●●○○</span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-warning"></use></svg><span class="day-score">52</span></span>
+              <span class="day-tag">普通</span>
             </button>
             
           </td>
@@ -371,12 +448,13 @@
               style="background:#fab219; color:#241f14;"
               data-date="2026-10-08"
               data-score="45.0"
-              data-label="普通"
+              data-label="ふつう"
               data-factors="[{&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -5.0}]"
-              aria-label="2026-10-08 混雑度 普通 スコア45.0"
+              aria-label="2026-10-08 混雑度 ふつう スコア45.0"
             >
               <span class="day-top"><span class="day-num">8</span><span class="day-weather">☁️</span></span>
-              <span class="day-dots">●●○○</span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-warning"></use></svg><span class="day-score">45</span></span>
+              <span class="day-tag">普通</span>
             </button>
             
           </td>
@@ -389,12 +467,13 @@
               style="background:#fab219; color:#241f14;"
               data-date="2026-10-09"
               data-score="45.0"
-              data-label="普通"
+              data-label="ふつう"
               data-factors="[{&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -5.0}]"
-              aria-label="2026-10-09 混雑度 普通 スコア45.0"
+              aria-label="2026-10-09 混雑度 ふつう スコア45.0"
             >
               <span class="day-top"><span class="day-num">9</span><span class="day-weather">☁️</span></span>
-              <span class="day-dots">●●○○</span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-warning"></use></svg><span class="day-score">45</span></span>
+              <span class="day-tag">普通</span>
             </button>
             
           </td>
@@ -407,12 +486,13 @@
               style="background:#ec835a; color:#241f14;"
               data-date="2026-10-10"
               data-score="63.0"
-              data-label="やや混雑"
+              data-label="やや混み"
               data-factors="[{&#34;label&#34;: &#34;週末&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 20.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -7.0}]"
-              aria-label="2026-10-10 混雑度 やや混雑 スコア63.0"
+              aria-label="2026-10-10 混雑度 やや混み スコア63.0"
             >
               <span class="day-top"><span class="day-num">10</span><span class="day-weather">☁️</span></span>
-              <span class="day-dots">●●●○</span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">63</span></span>
+              <span class="day-tag">混み</span>
             </button>
             
           </td>
@@ -429,12 +509,13 @@
               style="background:#ec835a; color:#241f14;"
               data-date="2026-10-11"
               data-score="63.0"
-              data-label="やや混雑"
+              data-label="やや混み"
               data-factors="[{&#34;label&#34;: &#34;週末&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 20.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -7.0}]"
-              aria-label="2026-10-11 混雑度 やや混雑 スコア63.0"
+              aria-label="2026-10-11 混雑度 やや混み スコア63.0"
             >
               <span class="day-top"><span class="day-num">11</span><span class="day-weather">☁️</span></span>
-              <span class="day-dots">●●●○</span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">63</span></span>
+              <span class="day-tag">混み</span>
             </button>
             
           </td>
@@ -447,12 +528,13 @@
               style="background:#ec835a; color:#241f14;"
               data-date="2026-10-12"
               data-score="58.5"
-              data-label="やや混雑"
+              data-label="やや混み"
               data-factors="[{&#34;label&#34;: &#34;祝日&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 15.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -6.5}]"
-              aria-label="2026-10-12 混雑度 やや混雑 スコア58.5"
+              aria-label="2026-10-12 混雑度 やや混み スコア58.5"
             >
               <span class="day-top"><span class="day-num">12</span><span class="day-weather">☁️</span></span>
-              <span class="day-dots">●●●○</span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">58</span></span>
+              <span class="day-tag">混み</span>
             </button>
             
           </td>
@@ -465,12 +547,13 @@
               style="background:#fab219; color:#241f14;"
               data-date="2026-10-13"
               data-score="45.0"
-              data-label="普通"
+              data-label="ふつう"
               data-factors="[{&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -5.0}]"
-              aria-label="2026-10-13 混雑度 普通 スコア45.0"
+              aria-label="2026-10-13 混雑度 ふつう スコア45.0"
             >
               <span class="day-top"><span class="day-num">13</span><span class="day-weather">☁️</span></span>
-              <span class="day-dots">●●○○</span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-warning"></use></svg><span class="day-score">45</span></span>
+              <span class="day-tag">普通</span>
             </button>
             
           </td>
@@ -483,12 +566,13 @@
               style="background:#fab219; color:#241f14;"
               data-date="2026-10-14"
               data-score="45.0"
-              data-label="普通"
+              data-label="ふつう"
               data-factors="[{&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -5.0}]"
-              aria-label="2026-10-14 混雑度 普通 スコア45.0"
+              aria-label="2026-10-14 混雑度 ふつう スコア45.0"
             >
               <span class="day-top"><span class="day-num">14</span><span class="day-weather">☁️</span></span>
-              <span class="day-dots">●●○○</span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-warning"></use></svg><span class="day-score">45</span></span>
+              <span class="day-tag">普通</span>
             </button>
             
           </td>
@@ -501,12 +585,13 @@
               style="background:#fab219; color:#241f14;"
               data-date="2026-10-15"
               data-score="45.0"
-              data-label="普通"
+              data-label="ふつう"
               data-factors="[{&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -5.0}]"
-              aria-label="2026-10-15 混雑度 普通 スコア45.0"
+              aria-label="2026-10-15 混雑度 ふつう スコア45.0"
             >
               <span class="day-top"><span class="day-num">15</span><span class="day-weather">☁️</span></span>
-              <span class="day-dots">●●○○</span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-warning"></use></svg><span class="day-score">45</span></span>
+              <span class="day-tag">普通</span>
             </button>
             
           </td>
@@ -519,12 +604,13 @@
               style="background:#fab219; color:#241f14;"
               data-date="2026-10-16"
               data-score="45.0"
-              data-label="普通"
+              data-label="ふつう"
               data-factors="[{&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -5.0}]"
-              aria-label="2026-10-16 混雑度 普通 スコア45.0"
+              aria-label="2026-10-16 混雑度 ふつう スコア45.0"
             >
               <span class="day-top"><span class="day-num">16</span><span class="day-weather">☁️</span></span>
-              <span class="day-dots">●●○○</span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-warning"></use></svg><span class="day-score">45</span></span>
+              <span class="day-tag">普通</span>
             </button>
             
           </td>
@@ -537,12 +623,13 @@
               style="background:#ec835a; color:#241f14;"
               data-date="2026-10-17"
               data-score="63.0"
-              data-label="やや混雑"
+              data-label="やや混み"
               data-factors="[{&#34;label&#34;: &#34;週末&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 20.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -7.0}]"
-              aria-label="2026-10-17 混雑度 やや混雑 スコア63.0"
+              aria-label="2026-10-17 混雑度 やや混み スコア63.0"
             >
               <span class="day-top"><span class="day-num">17</span><span class="day-weather">☁️</span></span>
-              <span class="day-dots">●●●○</span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">63</span></span>
+              <span class="day-tag">混み</span>
             </button>
             
           </td>
@@ -559,12 +646,13 @@
               style="background:#ec835a; color:#241f14;"
               data-date="2026-10-18"
               data-score="63.0"
-              data-label="やや混雑"
+              data-label="やや混み"
               data-factors="[{&#34;label&#34;: &#34;週末&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 20.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -7.0}]"
-              aria-label="2026-10-18 混雑度 やや混雑 スコア63.0"
+              aria-label="2026-10-18 混雑度 やや混み スコア63.0"
             >
               <span class="day-top"><span class="day-num">18</span><span class="day-weather">☁️</span></span>
-              <span class="day-dots">●●●○</span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">63</span></span>
+              <span class="day-tag">混み</span>
             </button>
             
           </td>
@@ -577,12 +665,13 @@
               style="background:#fab219; color:#241f14;"
               data-date="2026-10-19"
               data-score="45.0"
-              data-label="普通"
+              data-label="ふつう"
               data-factors="[{&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -5.0}]"
-              aria-label="2026-10-19 混雑度 普通 スコア45.0"
+              aria-label="2026-10-19 混雑度 ふつう スコア45.0"
             >
               <span class="day-top"><span class="day-num">19</span><span class="day-weather">☁️</span></span>
-              <span class="day-dots">●●○○</span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-warning"></use></svg><span class="day-score">45</span></span>
+              <span class="day-tag">普通</span>
             </button>
             
           </td>
@@ -595,12 +684,13 @@
               style="background:#fab219; color:#241f14;"
               data-date="2026-10-20"
               data-score="45.0"
-              data-label="普通"
+              data-label="ふつう"
               data-factors="[{&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -5.0}]"
-              aria-label="2026-10-20 混雑度 普通 スコア45.0"
+              aria-label="2026-10-20 混雑度 ふつう スコア45.0"
             >
               <span class="day-top"><span class="day-num">20</span><span class="day-weather">☁️</span></span>
-              <span class="day-dots">●●○○</span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-warning"></use></svg><span class="day-score">45</span></span>
+              <span class="day-tag">普通</span>
             </button>
             
           </td>
@@ -613,12 +703,13 @@
               style="background:#fab219; color:#241f14;"
               data-date="2026-10-21"
               data-score="45.0"
-              data-label="普通"
+              data-label="ふつう"
               data-factors="[{&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -5.0}]"
-              aria-label="2026-10-21 混雑度 普通 スコア45.0"
+              aria-label="2026-10-21 混雑度 ふつう スコア45.0"
             >
               <span class="day-top"><span class="day-num">21</span><span class="day-weather">☁️</span></span>
-              <span class="day-dots">●●○○</span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-warning"></use></svg><span class="day-score">45</span></span>
+              <span class="day-tag">普通</span>
             </button>
             
           </td>
@@ -631,12 +722,13 @@
               style="background:#fab219; color:#241f14;"
               data-date="2026-10-22"
               data-score="45.0"
-              data-label="普通"
+              data-label="ふつう"
               data-factors="[{&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -5.0}]"
-              aria-label="2026-10-22 混雑度 普通 スコア45.0"
+              aria-label="2026-10-22 混雑度 ふつう スコア45.0"
             >
               <span class="day-top"><span class="day-num">22</span><span class="day-weather">☁️</span></span>
-              <span class="day-dots">●●○○</span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-warning"></use></svg><span class="day-score">45</span></span>
+              <span class="day-tag">普通</span>
             </button>
             
           </td>
@@ -649,12 +741,13 @@
               style="background:#fab219; color:#241f14;"
               data-date="2026-10-23"
               data-score="45.0"
-              data-label="普通"
+              data-label="ふつう"
               data-factors="[{&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -5.0}]"
-              aria-label="2026-10-23 混雑度 普通 スコア45.0"
+              aria-label="2026-10-23 混雑度 ふつう スコア45.0"
             >
               <span class="day-top"><span class="day-num">23</span><span class="day-weather">☁️</span></span>
-              <span class="day-dots">●●○○</span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-warning"></use></svg><span class="day-score">45</span></span>
+              <span class="day-tag">普通</span>
             </button>
             
           </td>
@@ -667,12 +760,13 @@
               style="background:#ec835a; color:#241f14;"
               data-date="2026-10-24"
               data-score="63.0"
-              data-label="やや混雑"
+              data-label="やや混み"
               data-factors="[{&#34;label&#34;: &#34;週末&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 20.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -7.0}]"
-              aria-label="2026-10-24 混雑度 やや混雑 スコア63.0"
+              aria-label="2026-10-24 混雑度 やや混み スコア63.0"
             >
               <span class="day-top"><span class="day-num">24</span><span class="day-weather">☁️</span></span>
-              <span class="day-dots">●●●○</span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">63</span></span>
+              <span class="day-tag">混み</span>
             </button>
             
           </td>
@@ -689,12 +783,13 @@
               style="background:#ec835a; color:#241f14;"
               data-date="2026-10-25"
               data-score="63.0"
-              data-label="やや混雑"
+              data-label="やや混み"
               data-factors="[{&#34;label&#34;: &#34;週末&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 20.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -7.0}]"
-              aria-label="2026-10-25 混雑度 やや混雑 スコア63.0"
+              aria-label="2026-10-25 混雑度 やや混み スコア63.0"
             >
               <span class="day-top"><span class="day-num">25</span><span class="day-weather">☁️</span></span>
-              <span class="day-dots">●●●○</span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">63</span></span>
+              <span class="day-tag">混み</span>
             </button>
             
           </td>
@@ -707,12 +802,13 @@
               style="background:#fab219; color:#241f14;"
               data-date="2026-10-26"
               data-score="45.0"
-              data-label="普通"
+              data-label="ふつう"
               data-factors="[{&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -5.0}]"
-              aria-label="2026-10-26 混雑度 普通 スコア45.0"
+              aria-label="2026-10-26 混雑度 ふつう スコア45.0"
             >
               <span class="day-top"><span class="day-num">26</span><span class="day-weather">☁️</span></span>
-              <span class="day-dots">●●○○</span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-warning"></use></svg><span class="day-score">45</span></span>
+              <span class="day-tag">普通</span>
             </button>
             
           </td>
@@ -725,12 +821,13 @@
               style="background:#fab219; color:#241f14;"
               data-date="2026-10-27"
               data-score="45.0"
-              data-label="普通"
+              data-label="ふつう"
               data-factors="[{&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -5.0}]"
-              aria-label="2026-10-27 混雑度 普通 スコア45.0"
+              aria-label="2026-10-27 混雑度 ふつう スコア45.0"
             >
               <span class="day-top"><span class="day-num">27</span><span class="day-weather">☁️</span></span>
-              <span class="day-dots">●●○○</span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-warning"></use></svg><span class="day-score">45</span></span>
+              <span class="day-tag">普通</span>
             </button>
             
           </td>
@@ -743,12 +840,13 @@
               style="background:#fab219; color:#241f14;"
               data-date="2026-10-28"
               data-score="45.0"
-              data-label="普通"
+              data-label="ふつう"
               data-factors="[{&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -5.0}]"
-              aria-label="2026-10-28 混雑度 普通 スコア45.0"
+              aria-label="2026-10-28 混雑度 ふつう スコア45.0"
             >
               <span class="day-top"><span class="day-num">28</span><span class="day-weather">☁️</span></span>
-              <span class="day-dots">●●○○</span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-warning"></use></svg><span class="day-score">45</span></span>
+              <span class="day-tag">普通</span>
             </button>
             
           </td>
@@ -761,12 +859,13 @@
               style="background:#fab219; color:#241f14;"
               data-date="2026-10-29"
               data-score="45.0"
-              data-label="普通"
+              data-label="ふつう"
               data-factors="[{&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -5.0}]"
-              aria-label="2026-10-29 混雑度 普通 スコア45.0"
+              aria-label="2026-10-29 混雑度 ふつう スコア45.0"
             >
               <span class="day-top"><span class="day-num">29</span><span class="day-weather">☁️</span></span>
-              <span class="day-dots">●●○○</span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-warning"></use></svg><span class="day-score">45</span></span>
+              <span class="day-tag">普通</span>
             </button>
             
           </td>
@@ -779,12 +878,13 @@
               style="background:#fab219; color:#241f14;"
               data-date="2026-10-30"
               data-score="45.0"
-              data-label="普通"
+              data-label="ふつう"
               data-factors="[{&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -5.0}]"
-              aria-label="2026-10-30 混雑度 普通 スコア45.0"
+              aria-label="2026-10-30 混雑度 ふつう スコア45.0"
             >
               <span class="day-top"><span class="day-num">30</span><span class="day-weather">☁️</span></span>
-              <span class="day-dots">●●○○</span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-warning"></use></svg><span class="day-score">45</span></span>
+              <span class="day-tag">普通</span>
             </button>
             
           </td>
@@ -797,12 +897,13 @@
               style="background:#ec835a; color:#241f14;"
               data-date="2026-10-31"
               data-score="63.0"
-              data-label="やや混雑"
+              data-label="やや混み"
               data-factors="[{&#34;label&#34;: &#34;週末&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 20.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -7.0}]"
-              aria-label="2026-10-31 混雑度 やや混雑 スコア63.0"
+              aria-label="2026-10-31 混雑度 やや混み スコア63.0"
             >
               <span class="day-top"><span class="day-num">31</span><span class="day-weather">☁️</span></span>
-              <span class="day-dots">●●●○</span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">63</span></span>
+              <span class="day-tag">混み</span>
             </button>
             
           </td>
@@ -818,67 +919,67 @@
   <thead><tr><th>日付</th><th>天気</th><th>混雑度</th><th>スコア</th><th>主な要因</th></tr></thead>
   <tbody>
     
-    <tr><td>2026-10-01</td><td>☁️</td><td>普通</td><td>52.2</td><td>海外の連休(インバウンド需要)、天気(くもり)</td></tr>
+    <tr><td>2026-10-01</td><td>☁️</td><td>ふつう</td><td>52.2</td><td>海外の連休(インバウンド需要)、天気(くもり)</td></tr>
     
-    <tr><td>2026-10-02</td><td>☁️</td><td>やや混雑</td><td>61.2</td><td>貸切等による短縮営業、海外の連休(インバウンド需要)、天気(くもり)</td></tr>
+    <tr><td>2026-10-02</td><td>☁️</td><td>やや混み</td><td>61.2</td><td>貸切等による短縮営業、海外の連休(インバウンド需要)、天気(くもり)</td></tr>
     
-    <tr><td>2026-10-03</td><td>☁️</td><td>やや混雑</td><td>70.2</td><td>週末、海外の連休(インバウンド需要)、天気(くもり)</td></tr>
+    <tr><td>2026-10-03</td><td>☁️</td><td>やや混み</td><td>70.2</td><td>週末、海外の連休(インバウンド需要)、天気(くもり)</td></tr>
     
-    <tr><td>2026-10-04</td><td>☁️</td><td>やや混雑</td><td>70.2</td><td>週末、海外の連休(インバウンド需要)、天気(くもり)</td></tr>
+    <tr><td>2026-10-04</td><td>☁️</td><td>やや混み</td><td>70.2</td><td>週末、海外の連休(インバウンド需要)、天気(くもり)</td></tr>
     
-    <tr><td>2026-10-05</td><td>☁️</td><td>普通</td><td>52.2</td><td>海外の連休(インバウンド需要)、天気(くもり)</td></tr>
+    <tr><td>2026-10-05</td><td>☁️</td><td>ふつう</td><td>52.2</td><td>海外の連休(インバウンド需要)、天気(くもり)</td></tr>
     
-    <tr><td>2026-10-06</td><td>☁️</td><td>普通</td><td>52.2</td><td>海外の連休(インバウンド需要)、天気(くもり)</td></tr>
+    <tr><td>2026-10-06</td><td>☁️</td><td>ふつう</td><td>52.2</td><td>海外の連休(インバウンド需要)、天気(くもり)</td></tr>
     
-    <tr><td>2026-10-07</td><td>☁️</td><td>普通</td><td>52.2</td><td>海外の連休(インバウンド需要)、天気(くもり)</td></tr>
+    <tr><td>2026-10-07</td><td>☁️</td><td>ふつう</td><td>52.2</td><td>海外の連休(インバウンド需要)、天気(くもり)</td></tr>
     
-    <tr><td>2026-10-08</td><td>☁️</td><td>普通</td><td>45.0</td><td>天気(くもり)</td></tr>
+    <tr><td>2026-10-08</td><td>☁️</td><td>ふつう</td><td>45.0</td><td>天気(くもり)</td></tr>
     
-    <tr><td>2026-10-09</td><td>☁️</td><td>普通</td><td>45.0</td><td>天気(くもり)</td></tr>
+    <tr><td>2026-10-09</td><td>☁️</td><td>ふつう</td><td>45.0</td><td>天気(くもり)</td></tr>
     
-    <tr><td>2026-10-10</td><td>☁️</td><td>やや混雑</td><td>63.0</td><td>週末、天気(くもり)</td></tr>
+    <tr><td>2026-10-10</td><td>☁️</td><td>やや混み</td><td>63.0</td><td>週末、天気(くもり)</td></tr>
     
-    <tr><td>2026-10-11</td><td>☁️</td><td>やや混雑</td><td>63.0</td><td>週末、天気(くもり)</td></tr>
+    <tr><td>2026-10-11</td><td>☁️</td><td>やや混み</td><td>63.0</td><td>週末、天気(くもり)</td></tr>
     
-    <tr><td>2026-10-12</td><td>☁️</td><td>やや混雑</td><td>58.5</td><td>祝日、天気(くもり)</td></tr>
+    <tr><td>2026-10-12</td><td>☁️</td><td>やや混み</td><td>58.5</td><td>祝日、天気(くもり)</td></tr>
     
-    <tr><td>2026-10-13</td><td>☁️</td><td>普通</td><td>45.0</td><td>天気(くもり)</td></tr>
+    <tr><td>2026-10-13</td><td>☁️</td><td>ふつう</td><td>45.0</td><td>天気(くもり)</td></tr>
     
-    <tr><td>2026-10-14</td><td>☁️</td><td>普通</td><td>45.0</td><td>天気(くもり)</td></tr>
+    <tr><td>2026-10-14</td><td>☁️</td><td>ふつう</td><td>45.0</td><td>天気(くもり)</td></tr>
     
-    <tr><td>2026-10-15</td><td>☁️</td><td>普通</td><td>45.0</td><td>天気(くもり)</td></tr>
+    <tr><td>2026-10-15</td><td>☁️</td><td>ふつう</td><td>45.0</td><td>天気(くもり)</td></tr>
     
-    <tr><td>2026-10-16</td><td>☁️</td><td>普通</td><td>45.0</td><td>天気(くもり)</td></tr>
+    <tr><td>2026-10-16</td><td>☁️</td><td>ふつう</td><td>45.0</td><td>天気(くもり)</td></tr>
     
-    <tr><td>2026-10-17</td><td>☁️</td><td>やや混雑</td><td>63.0</td><td>週末、天気(くもり)</td></tr>
+    <tr><td>2026-10-17</td><td>☁️</td><td>やや混み</td><td>63.0</td><td>週末、天気(くもり)</td></tr>
     
-    <tr><td>2026-10-18</td><td>☁️</td><td>やや混雑</td><td>63.0</td><td>週末、天気(くもり)</td></tr>
+    <tr><td>2026-10-18</td><td>☁️</td><td>やや混み</td><td>63.0</td><td>週末、天気(くもり)</td></tr>
     
-    <tr><td>2026-10-19</td><td>☁️</td><td>普通</td><td>45.0</td><td>天気(くもり)</td></tr>
+    <tr><td>2026-10-19</td><td>☁️</td><td>ふつう</td><td>45.0</td><td>天気(くもり)</td></tr>
     
-    <tr><td>2026-10-20</td><td>☁️</td><td>普通</td><td>45.0</td><td>天気(くもり)</td></tr>
+    <tr><td>2026-10-20</td><td>☁️</td><td>ふつう</td><td>45.0</td><td>天気(くもり)</td></tr>
     
-    <tr><td>2026-10-21</td><td>☁️</td><td>普通</td><td>45.0</td><td>天気(くもり)</td></tr>
+    <tr><td>2026-10-21</td><td>☁️</td><td>ふつう</td><td>45.0</td><td>天気(くもり)</td></tr>
     
-    <tr><td>2026-10-22</td><td>☁️</td><td>普通</td><td>45.0</td><td>天気(くもり)</td></tr>
+    <tr><td>2026-10-22</td><td>☁️</td><td>ふつう</td><td>45.0</td><td>天気(くもり)</td></tr>
     
-    <tr><td>2026-10-23</td><td>☁️</td><td>普通</td><td>45.0</td><td>天気(くもり)</td></tr>
+    <tr><td>2026-10-23</td><td>☁️</td><td>ふつう</td><td>45.0</td><td>天気(くもり)</td></tr>
     
-    <tr><td>2026-10-24</td><td>☁️</td><td>やや混雑</td><td>63.0</td><td>週末、天気(くもり)</td></tr>
+    <tr><td>2026-10-24</td><td>☁️</td><td>やや混み</td><td>63.0</td><td>週末、天気(くもり)</td></tr>
     
-    <tr><td>2026-10-25</td><td>☁️</td><td>やや混雑</td><td>63.0</td><td>週末、天気(くもり)</td></tr>
+    <tr><td>2026-10-25</td><td>☁️</td><td>やや混み</td><td>63.0</td><td>週末、天気(くもり)</td></tr>
     
-    <tr><td>2026-10-26</td><td>☁️</td><td>普通</td><td>45.0</td><td>天気(くもり)</td></tr>
+    <tr><td>2026-10-26</td><td>☁️</td><td>ふつう</td><td>45.0</td><td>天気(くもり)</td></tr>
     
-    <tr><td>2026-10-27</td><td>☁️</td><td>普通</td><td>45.0</td><td>天気(くもり)</td></tr>
+    <tr><td>2026-10-27</td><td>☁️</td><td>ふつう</td><td>45.0</td><td>天気(くもり)</td></tr>
     
-    <tr><td>2026-10-28</td><td>☁️</td><td>普通</td><td>45.0</td><td>天気(くもり)</td></tr>
+    <tr><td>2026-10-28</td><td>☁️</td><td>ふつう</td><td>45.0</td><td>天気(くもり)</td></tr>
     
-    <tr><td>2026-10-29</td><td>☁️</td><td>普通</td><td>45.0</td><td>天気(くもり)</td></tr>
+    <tr><td>2026-10-29</td><td>☁️</td><td>ふつう</td><td>45.0</td><td>天気(くもり)</td></tr>
     
-    <tr><td>2026-10-30</td><td>☁️</td><td>普通</td><td>45.0</td><td>天気(くもり)</td></tr>
+    <tr><td>2026-10-30</td><td>☁️</td><td>ふつう</td><td>45.0</td><td>天気(くもり)</td></tr>
     
-    <tr><td>2026-10-31</td><td>☁️</td><td>やや混雑</td><td>63.0</td><td>週末、天気(くもり)</td></tr>
+    <tr><td>2026-10-31</td><td>☁️</td><td>やや混み</td><td>63.0</td><td>週末、天気(くもり)</td></tr>
     
   </tbody>
 </table>
@@ -914,11 +1015,15 @@
 </div>
 
 
-<div id="tooltip" role="status"></div>
+<div id="tooltip" role="status"><button class="tt-close" aria-label="閉じる">✕</button><div class="tt-body"></div></div>
 <script>
 (function () {
   var tooltip = document.getElementById('tooltip');
-  function showTooltip(cell, x, y) {
+  var tooltipBody = tooltip.querySelector('.tt-body');
+  var closeBtn = tooltip.querySelector('.tt-close');
+  var pinnedCell = null;
+
+  function renderTooltip(cell) {
     var label = cell.dataset.label;
     var score = cell.dataset.score;
     var date = cell.dataset.date;
@@ -927,28 +1032,57 @@
     var factorsHtml = factors.map(function (f) {
       return '<div>' + (f.direction === 'up' ? '▲' : '▽') + ' ' + f.label + '</div>';
     }).join('');
-    tooltip.innerHTML =
+    tooltipBody.innerHTML =
       '<div class="tt-value">' + label + '</div>' +
       '<div>' + date + ' ・ スコア' + score + '</div>' +
       '<div class="tt-factors">' + factorsHtml + '</div>';
+  }
+  function position(x, y) {
     tooltip.style.display = 'block';
     var left = x + 14, top = y + 14;
     var rect = tooltip.getBoundingClientRect();
     if (left + rect.width > window.innerWidth) left = x - rect.width - 14;
     if (top + rect.height > window.innerHeight) top = y - rect.height - 14;
-    tooltip.style.left = left + 'px';
-    tooltip.style.top = top + 'px';
+    tooltip.style.left = Math.max(8, left) + 'px';
+    tooltip.style.top = Math.max(8, top) + 'px';
   }
-  function hideTooltip() { tooltip.style.display = 'none'; }
+  function hideTooltip() {
+    if (pinnedCell) return;
+    tooltip.style.display = 'none';
+  }
+  function closePinned() {
+    if (pinnedCell) pinnedCell.classList.remove('pinned');
+    pinnedCell = null;
+    tooltip.classList.remove('pinned');
+    tooltip.style.display = 'none';
+  }
+  closeBtn.addEventListener('click', closePinned);
+
   document.querySelectorAll('.day-cell[data-date]').forEach(function (cell) {
-    cell.addEventListener('pointermove', function (e) { showTooltip(cell, e.clientX, e.clientY); });
-    cell.addEventListener('pointerleave', hideTooltip);
-    cell.addEventListener('focus', function () {
-      var rect = cell.getBoundingClientRect();
-      showTooltip(cell, rect.left, rect.bottom);
+    cell.addEventListener('pointermove', function (e) {
+      if (pinnedCell) return;
+      renderTooltip(cell);
+      position(e.clientX, e.clientY);
     });
-    cell.addEventListener('blur', hideTooltip);
+    cell.addEventListener('pointerleave', hideTooltip);
+    cell.addEventListener('click', function (e) {
+      if (pinnedCell === cell) { closePinned(); return; }
+      if (pinnedCell) pinnedCell.classList.remove('pinned');
+      pinnedCell = cell;
+      cell.classList.add('pinned');
+      tooltip.classList.add('pinned');
+      renderTooltip(cell);
+      var rect = cell.getBoundingClientRect();
+      position(rect.left, rect.bottom);
+    });
   });
+  document.addEventListener('click', function (e) {
+    if (pinnedCell && !e.target.closest('.day-cell') && !e.target.closest('#tooltip')) closePinned();
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closePinned();
+  });
+
   var toggleBtn = document.querySelector('.toggle-view-btn');
   if (toggleBtn) {
     toggleBtn.addEventListener('click', function () {

@@ -5,39 +5,48 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ディズニー混雑予想カレンダー | 東京ディズニーランド・シー</title>
 <meta name="description" content="東京ディズニーランド・ディズニーシーの混雑予想を、曜日・祝日・天気・公式イベント情報などから自動算出。訪問日を決める前日〜数週間前の方向けです。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root {
     color-scheme: light;
     --surface-1: #ffffff;
-    --surface-2: #f3f1ea;
-    --page: #faf8f2;
-    --text-primary: #241f14;
-    --text-secondary: #5c5646;
-    --text-muted: #8a8474;
-    --gridline: #e7e2d3;
-    --border: rgba(36,31,20,0.10);
-    --shadow: 0 1px 2px rgba(36,31,20,0.06), 0 8px 24px rgba(36,31,20,0.06);
-    --accent: #1c5cab;
-    --accent-2: #eda100;
-    --ad-bg: #eeece3;
-    --ad-border: #d8d4c4;
+    --surface-2: #f7f0fb;
+    --page: #fdf8ff;
+    --text-primary: #2c1b3d;
+    --text-secondary: #6b5a7a;
+    --text-muted: #9a8ba8;
+    --gridline: #ecdff5;
+    --border: rgba(124,58,237,0.14);
+    --shadow: 0 1px 2px rgba(124,58,237,0.08), 0 10px 26px rgba(124,58,237,0.10);
+    --accent: #8b2fd6;
+    --accent-soft: #b565f0;
+    --accent-pink: #ec4899;
+    --accent-gold: #f5a300;
+    --ad-bg: #f3ecf9;
+    --ad-border: #ddc9ee;
+    --display-font: "Fredoka", "Hiragino Maru Gothic ProN", system-ui, sans-serif;
+    --body-font: "Nunito", "Hiragino Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
   }
   @media (prefers-color-scheme: dark) {
     :root {
       color-scheme: dark;
-      --surface-1: #201c14;
-      --surface-2: #262119;
-      --page: #14120c;
-      --text-primary: #fbf7ee;
-      --text-secondary: #cfc7b2;
-      --text-muted: #948d78;
-      --gridline: #35301f;
-      --border: rgba(255,255,255,0.10);
-      --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 12px 28px rgba(0,0,0,0.35);
-      --accent: #3987e5;
-      --accent-2: #eda100;
-      --ad-bg: #201c14;
-      --ad-border: #35301f;
+      --surface-1: #241934;
+      --surface-2: #2c1f40;
+      --page: #180f26;
+      --text-primary: #f6eefe;
+      --text-secondary: #cbb9de;
+      --text-muted: #94829f;
+      --gridline: #3a2a52;
+      --border: rgba(255,255,255,0.12);
+      --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 14px 30px rgba(0,0,0,0.4);
+      --accent: #b565f0;
+      --accent-soft: #d19aff;
+      --accent-pink: #f472b6;
+      --accent-gold: #f5a300;
+      --ad-bg: #241934;
+      --ad-border: #3a2a52;
     }
   }
   * { box-sizing: border-box; }
@@ -45,50 +54,63 @@
     margin: 0;
     background: var(--page);
     color: var(--text-primary);
-    font-family: system-ui, -apple-system, "Hiragino Sans", "Segoe UI", sans-serif;
+    font-family: var(--body-font);
     line-height: 1.6;
   }
+  h1, h2, .brand { font-family: var(--display-font); }
   a { color: var(--accent); }
   .wrap { max-width: 980px; margin: 0 auto; padding: 0 16px 48px; }
 
   .site-header {
-    background: linear-gradient(135deg, var(--accent) 0%, #123a6e 100%);
+    background: linear-gradient(120deg, var(--accent) 0%, var(--accent-pink) 100%);
     color: #fff;
   }
   .site-header-inner {
     max-width: 980px; margin: 0 auto; padding: 16px 16px;
     display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;
   }
-  .brand { font-weight: 800; font-size: 1.05rem; text-decoration: none; color: #fff; display: flex; align-items: center; gap: 8px; }
-  .site-nav { display: flex; gap: 18px; font-size: 0.85rem; }
-  .site-nav a { color: rgba(255,255,255,0.88); text-decoration: none; }
+  .brand { font-weight: 600; font-size: 1.15rem; text-decoration: none; color: #fff; display: flex; align-items: center; gap: 8px; }
+  .site-nav { display: flex; gap: 18px; font-size: 0.85rem; font-weight: 700; }
+  .site-nav a { color: rgba(255,255,255,0.92); text-decoration: none; }
   .site-nav a:hover { text-decoration: underline; }
 
   .hero {
-    padding: 22px 16px 26px;
-    background: linear-gradient(135deg, var(--accent) 0%, #123a6e 100%);
+    position: relative; overflow: hidden;
+    padding: 28px 16px 32px;
+    background:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 170'%3E%3Cg fill='white' fill-opacity='0.18'%3E%3Cpolygon points='350,19 358,27 350,35 342,27'/%3E%3Cpolygon points='30,18 36,24 30,30 24,24'/%3E%3Cpolygon points='250,15 254.5,20 250,25 245.5,20'/%3E%3Crect x='60' y='110' width='280' height='55'/%3E%3Crect x='68' y='98' width='14' height='13'/%3E%3Crect x='128' y='98' width='14' height='13'/%3E%3Crect x='160' y='98' width='14' height='13'/%3E%3Crect x='224' y='98' width='14' height='13'/%3E%3Crect x='256' y='98' width='14' height='13'/%3E%3Crect x='318' y='98' width='14' height='13'/%3E%3Cpolygon points='85,75 104,38 123,75'/%3E%3Crect x='90' y='75' width='28' height='35'/%3E%3Cpolygon points='181,55 200,15 219,55'/%3E%3Crect x='186' y='55' width='28' height='55'/%3E%3Cpolygon points='277,75 296,38 315,75'/%3E%3Crect x='282' y='75' width='28' height='35'/%3E%3Crect x='198' y='0' width='4' height='15'/%3E%3Cpolygon points='202,0 218,7 202,14'/%3E%3C/g%3E%3C/svg%3E") no-repeat bottom right / min(340px, 62%) auto,
+      radial-gradient(ellipse at 85% 100%, rgba(255,199,110,0.4), transparent 60%),
+      linear-gradient(120deg, var(--accent) 0%, var(--accent-pink) 100%);
     color: #fff;
   }
-  .hero-inner { max-width: 980px; margin: 0 auto; }
-  .hero h1 { font-size: 1.4rem; margin: 0 0 6px; letter-spacing: .01em; }
-  .hero p { margin: 0; color: rgba(255,255,255,0.85); font-size: 0.9rem; max-width: 62ch; }
+  .hero::before {
+    content: "✨"; position: absolute; font-size: 2.2rem; opacity: .35;
+    top: -6px; right: 8%; transform: rotate(12deg);
+  }
+  .hero::after {
+    content: "🎆"; position: absolute; font-size: 1.6rem; opacity: .4;
+    top: 10%; left: 6%; transform: rotate(-6deg);
+  }
+  .hero-inner { max-width: 980px; margin: 0 auto; position: relative; }
+  .hero h1 { font-size: 1.7rem; font-weight: 700; margin: 0 0 8px; letter-spacing: .01em; text-wrap: balance; }
+  .hero p { margin: 0; color: rgba(255,255,255,0.92); font-size: 0.92rem; max-width: 62ch; }
 
   .breadcrumb { font-size: 0.8rem; color: var(--text-muted); margin: 16px 0 0; }
   .breadcrumb a { color: var(--text-secondary); }
 
   .card {
-    background: var(--surface-1); border-radius: 16px; padding: 18px 18px 20px;
-    margin-bottom: 20px; box-shadow: var(--shadow);
+    background: var(--surface-1); border-radius: 22px; padding: 20px 20px 22px;
+    margin-bottom: 20px; box-shadow: var(--shadow); border: 1px solid var(--border);
   }
-  .card h2 { font-size: 1rem; margin: 0 0 12px; }
-  .prose { font-size: 0.92rem; color: var(--text-secondary); }
+  .card h2 { font-size: 1.1rem; margin: 0 0 12px; font-weight: 600; }
+  .prose { font-size: 0.94rem; color: var(--text-secondary); }
   .prose p { margin: 0 0 12px; }
-  .prose h3 { font-size: 0.95rem; color: var(--text-primary); margin: 18px 0 8px; }
+  .prose h3 { font-size: 1rem; font-family: var(--display-font); font-weight: 600; color: var(--text-primary); margin: 20px 0 8px; }
   .prose ul { margin: 0 0 12px; padding-left: 20px; }
   .prose li { margin-bottom: 6px; }
 
   .ad-slot {
-    background: var(--ad-bg); border: 1px dashed var(--ad-border); border-radius: 12px;
+    background: var(--ad-bg); border: 1px dashed var(--ad-border); border-radius: 16px;
     color: var(--text-muted); font-size: 0.72rem; text-align: center;
     padding: 10px; margin: 20px 0; letter-spacing: .04em;
   }
@@ -100,7 +122,7 @@
   
   .tabs { display: flex; gap: 8px; margin: 20px 0; }
   .tab-btn {
-    font: inherit; font-weight: 600; cursor: pointer; padding: 9px 18px; border-radius: 999px;
+    font: inherit; font-weight: 700; cursor: pointer; padding: 9px 18px; border-radius: 999px;
     border: 1px solid var(--border); background: var(--surface-1); color: var(--text-secondary);
     flex: 1 1 auto; white-space: nowrap; text-align: center;
   }
@@ -110,30 +132,131 @@
   .tab-btn[aria-selected="true"] { background: var(--accent); color: #fff; border-color: var(--accent); }
   .park-panel { display: none; }
   .park-panel.active { display: block; }
-  .highlights { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; margin: 0 0 8px; }
-  .highlight-tile { border-radius: 14px; padding: 14px 16px; box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 6px; }
-  .highlight-tile .h-label { font-size: 0.78rem; font-weight: 600; opacity: 0.9; }
-  .highlight-tile .h-grade { font-size: 1.05rem; font-weight: 700; }
-  .highlight-tile .h-dots { font-size: 0.75rem; letter-spacing: 2px; opacity: 0.85; }
+
+  /* ハイライト: 円形ゲージ */
+  .highlights { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin: 0 0 20px; }
+  .highlight-tile {
+    border-radius: 20px; padding: 16px; box-shadow: var(--shadow); border: 1px solid var(--border);
+    background: var(--surface-1); display: flex; flex-direction: column; align-items: center; gap: 6px; text-align: center;
+  }
+  .h-label { font-size: 0.8rem; font-weight: 700; color: var(--text-secondary); }
+  .gauge-wrap { position: relative; width: 84px; height: 84px; }
+  .gauge-wrap svg { width: 100%; height: 100%; transform: rotate(-90deg); }
+  .gauge-track { fill: none; stroke: var(--gridline); stroke-width: 10; }
+  .gauge-value { fill: none; stroke-width: 10; stroke-linecap: round; transition: stroke-dasharray .6s ease; }
+  .gauge-center { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .gauge-score { font-family: var(--display-font); font-weight: 600; font-size: 1.5rem; line-height: 1; }
+  .gauge-weather { font-size: 0.85rem; margin-top: 2px; }
+  .h-tag { font-size: 0.82rem; font-weight: 700; padding: 3px 12px; border-radius: 999px; }
+
   .rank-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
-  .rank-row { display: flex; align-items: center; gap: 12px; padding: 10px 12px; border-radius: 10px; background: var(--surface-2); }
-  .rank-medal { font-weight: 800; width: 1.6em; color: var(--text-muted); }
-  .rank-date { flex: 1; font-weight: 600; }
+  .rank-row { display: flex; align-items: center; gap: 12px; padding: 10px 12px; border-radius: 14px; background: var(--surface-2); }
+  .rank-medal {
+    font-family: var(--display-font); font-weight: 600; width: 28px; height: 28px; border-radius: 50%;
+    background: var(--accent); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 0.85rem; flex-shrink: 0;
+  }
+  .rank-row:nth-child(1) .rank-medal { background: linear-gradient(135deg, #ffd76a, #f5a300); }
+  .rank-row:nth-child(2) .rank-medal { background: linear-gradient(135deg, #d9d9e0, #a8a8b3); }
+  .rank-row:nth-child(3) .rank-medal { background: linear-gradient(135deg, #e3b083, #b97a4a); }
+  .rank-date { flex: 1; font-weight: 700; }
   .rank-badge { border-radius: 999px; padding: 3px 10px; font-size: 0.78rem; font-weight: 700; }
+
   .month-links { display: flex; flex-wrap: wrap; gap: 8px; }
-  .month-links a { display: inline-block; padding: 8px 14px; border-radius: 10px; background: var(--surface-2); text-decoration: none; color: var(--text-primary); font-size: 0.85rem; font-weight: 600; }
+  .month-links a { display: inline-block; padding: 8px 14px; border-radius: 10px; background: var(--surface-2); text-decoration: none; color: var(--text-primary); font-size: 0.85rem; font-weight: 700; }
   .month-links a:hover { background: var(--accent); color: #fff; }
   .event-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
   .event-row { display: flex; gap: 10px; align-items: baseline; font-size: 0.88rem; }
   .event-date { color: var(--text-muted); white-space: nowrap; font-variant-numeric: tabular-nums; }
   .event-title { color: var(--text-primary); }
+
+  .tips-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+  .tip-card { background: var(--surface-2); border-radius: 16px; padding: 14px 16px; }
+  .tip-card .tip-emoji { font-size: 1.3rem; }
+  .tip-card h3 { margin: 6px 0 4px; font-size: 0.92rem; font-family: var(--display-font); font-weight: 600; }
+  .tip-card p { margin: 0; font-size: 0.84rem; color: var(--text-secondary); }
+
   .legend { display: flex; flex-wrap: wrap; gap: 14px; margin: 0 0 4px; font-size: 0.82rem; color: var(--text-secondary); }
   .legend-item { display: flex; align-items: center; gap: 7px; }
   .legend-swatch { width: 20px; height: 20px; border-radius: 6px; display: inline-flex; align-items: center; justify-content: center; font-size: 0.5rem; color: #fff; }
 
+  table.cal { width: 100%; border-collapse: collapse; table-layout: fixed; }
+  table.cal th { font-size: 0.72rem; font-weight: 700; color: var(--text-muted); padding: 4px 0 8px; border-bottom: 1px solid var(--gridline); }
+  table.cal td { padding: 3px; vertical-align: top; }
+  .day-cell {
+    width: 100%; aspect-ratio: 1 / 1; border-radius: 14px; border: none; font: inherit; cursor: pointer;
+    padding: 6px 7px; text-align: left; display: flex; flex-direction: column; justify-content: space-between;
+    transition: transform .12s, filter .12s;
+  }
+  .day-cell.empty { visibility: hidden; }
+  .day-cell.no-data { background: var(--surface-2); border: 1px dashed var(--gridline); color: var(--text-muted); cursor: default; }
+  .day-top { display: flex; justify-content: space-between; align-items: flex-start; }
+  .day-num { font-size: 0.76rem; font-weight: 700; opacity: .85; }
+  .day-weather { font-size: 0.72rem; }
+  .day-bottom { display: flex; align-items: baseline; gap: 4px; }
+  .day-mood { width: 1.1rem; height: 1.1rem; flex-shrink: 0; }
+  .day-score { font-family: var(--display-font); font-weight: 600; font-size: 1rem; line-height: 1; }
+  .day-tag { font-size: 0.58rem; font-weight: 800; opacity: .9; }
+  @media (max-width: 480px) {
+    .day-num { font-size: 0.6rem; }
+    .day-weather { font-size: 0.58rem; }
+    .day-mood { width: 0.85rem; height: 0.85rem; }
+    .day-score { font-size: 0.68rem; }
+    .day-tag { font-size: 0.42rem; }
+    .day-bottom { gap: 2px; }
+    .day-cell { padding: 3px 3px; border-radius: 10px; }
+  }
+  .day-cell:focus-visible { outline: 3px solid var(--accent-gold); outline-offset: 1px; }
+  .day-cell:hover { transform: translateY(-2px) scale(1.03); filter: brightness(1.06); }
+  .day-cell.pinned { outline: 3px solid var(--accent-gold); outline-offset: 1px; }
+  .more-months-link { display: inline-block; margin-top: 14px; font-weight: 700; }
+
+  #tooltip {
+    position: fixed; z-index: 50; max-width: 270px; padding: 12px 14px;
+    background: var(--surface-1); color: var(--text-primary); border: 1px solid var(--border);
+    border-radius: 14px; font-size: 0.84rem; box-shadow: var(--shadow); display: none;
+  }
+  #tooltip .tt-close { position: absolute; top: 6px; right: 8px; background: none; border: none; font-size: 1rem; cursor: pointer; color: var(--text-muted); display: none; }
+  #tooltip.pinned .tt-close { display: block; }
+  #tooltip .tt-value { font-weight: 700; font-size: 1rem; }
+  #tooltip .tt-factors { margin-top: 6px; color: var(--text-secondary); }
+  #tooltip .tt-factors div { margin-top: 2px; }
+
 </style>
 </head>
 <body>
+<svg style="display:none" aria-hidden="true">
+  <symbol id="mood-good" viewBox="0 0 40 40">
+    <circle cx="20" cy="20" r="17" fill="#FFF8EF" stroke="rgba(0,0,0,0.08)"/>
+    <circle cx="8" cy="23" r="2.3" fill="#ff9db5" opacity="0.6"/>
+    <circle cx="32" cy="23" r="2.3" fill="#ff9db5" opacity="0.6"/>
+    <path d="M9,17 Q13,12 17,17" stroke="#3a2a4a" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+    <path d="M23,17 Q27,12 31,17" stroke="#3a2a4a" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+    <path d="M12,24 Q20,33 28,24" stroke="#3a2a4a" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="mood-warning" viewBox="0 0 40 40">
+    <circle cx="20" cy="20" r="17" fill="#FFF8EF" stroke="rgba(0,0,0,0.08)"/>
+    <circle cx="13" cy="18" r="2.1" fill="#3a2a4a"/>
+    <circle cx="27" cy="18" r="2.1" fill="#3a2a4a"/>
+    <path d="M14,26 Q20,30 26,26" stroke="#3a2a4a" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="mood-serious" viewBox="0 0 40 40">
+    <circle cx="20" cy="20" r="17" fill="#FFF8EF" stroke="rgba(0,0,0,0.08)"/>
+    <path d="M8,16 Q11.5,13 15,15" stroke="#3a2a4a" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    <path d="M25,15 Q28.5,13 32,16" stroke="#3a2a4a" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    <circle cx="13" cy="19" r="1.8" fill="#3a2a4a"/>
+    <circle cx="27" cy="19" r="1.8" fill="#3a2a4a"/>
+    <path d="M14,28 Q17,26 20,28 Q23,30 26,28" stroke="#3a2a4a" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+    <path d="M33,11 Q36.5,15.5 33,19 Q29.5,15.5 33,11 Z" fill="#7ec8ff" opacity="0.8"/>
+  </symbol>
+  <symbol id="mood-critical" viewBox="0 0 40 40">
+    <circle cx="20" cy="20" r="17" fill="#FFF8EF" stroke="rgba(0,0,0,0.08)"/>
+    <path d="M9,15 L17,21 M17,15 L9,21" stroke="#3a2a4a" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+    <path d="M23,15 L31,21 M31,15 L23,21" stroke="#3a2a4a" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+    <path d="M12,27 L16,24 L20,28 L24,24 L28,27" stroke="#3a2a4a" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M6,11 Q9.5,15.5 6,19 Q2.5,15.5 6,11 Z" fill="#7ec8ff" opacity="0.8"/>
+    <path d="M35,9 Q37.8,12.5 35,15.5 Q32.2,12.5 35,9 Z" fill="#7ec8ff" opacity="0.8"/>
+  </symbol>
+</svg>
 <header class="site-header">
   <div class="site-header-inner">
     <a class="brand" href="/index.html">🏰 ディズニー混雑予想カレンダー</a>
@@ -174,22 +297,22 @@
   
   <span class="legend-item">
     <span class="legend-swatch" style="background:#0ca30c; color:#241f14;">●</span>
-    空いている
+    すいてる
   </span>
   
   <span class="legend-item">
     <span class="legend-swatch" style="background:#fab219; color:#241f14;">●●</span>
-    普通
+    ふつう
   </span>
   
   <span class="legend-item">
     <span class="legend-swatch" style="background:#ec835a; color:#241f14;">●●●</span>
-    やや混雑
+    やや混み
   </span>
   
   <span class="legend-item">
     <span class="legend-swatch" style="background:#d03b3b; color:#ffffff;">●●●●</span>
-    混雑
+    激混み
   </span>
   
 </div>
@@ -199,30 +322,515 @@
 
   <div class="highlights">
     
-    <div class="highlight-tile" style="background:#ec835a; color:#241f14;">
+    <div class="highlight-tile">
       <span class="h-label">今日</span>
-      <span class="h-grade">☁️ やや混雑</span>
-      <span class="h-dots">●●●</span>
+      <div class="gauge-wrap">
+        <svg viewBox="0 0 100 100">
+          <circle class="gauge-track" cx="50" cy="50" r="42"></circle>
+          <circle class="gauge-value" cx="50" cy="50" r="42" stroke="#ec835a" stroke-dasharray="156.8 263.9"></circle>
+        </svg>
+        <div class="gauge-center">
+          <span class="gauge-score" style="color:#ec835a">59</span>
+          <span class="gauge-weather">☁️</span>
+        </div>
+      </div>
+      <span class="h-tag" style="background:#ec835a; color:#241f14;">やや混み</span>
     </div>
     
-    <div class="highlight-tile" style="background:#ec835a; color:#241f14;">
+    <div class="highlight-tile">
       <span class="h-label">明日</span>
-      <span class="h-grade">☁️ やや混雑</span>
-      <span class="h-dots">●●●</span>
+      <div class="gauge-wrap">
+        <svg viewBox="0 0 100 100">
+          <circle class="gauge-track" cx="50" cy="50" r="42"></circle>
+          <circle class="gauge-value" cx="50" cy="50" r="42" stroke="#ec835a" stroke-dasharray="156.0 263.9"></circle>
+        </svg>
+        <div class="gauge-center">
+          <span class="gauge-score" style="color:#ec835a">59</span>
+          <span class="gauge-weather">☁️</span>
+        </div>
+      </div>
+      <span class="h-tag" style="background:#ec835a; color:#241f14;">やや混み</span>
     </div>
     
-    <div class="highlight-tile" style="background:#ec835a; color:#241f14;">
+    <div class="highlight-tile">
       <span class="h-label">今週末(土)</span>
-      <span class="h-grade">☁️ やや混雑</span>
-      <span class="h-dots">●●●</span>
+      <div class="gauge-wrap">
+        <svg viewBox="0 0 100 100">
+          <circle class="gauge-track" cx="50" cy="50" r="42"></circle>
+          <circle class="gauge-value" cx="50" cy="50" r="42" stroke="#d03b3b" stroke-dasharray="258.4 263.9"></circle>
+        </svg>
+        <div class="gauge-center">
+          <span class="gauge-score" style="color:#d03b3b">98</span>
+          <span class="gauge-weather">☀️</span>
+        </div>
+      </div>
+      <span class="h-tag" style="background:#d03b3b; color:#ffffff;">激混み</span>
     </div>
     
-    <div class="highlight-tile" style="background:#ec835a; color:#241f14;">
+    <div class="highlight-tile">
       <span class="h-label">今週末(日)</span>
-      <span class="h-grade">☁️ やや混雑</span>
-      <span class="h-dots">●●●</span>
+      <div class="gauge-wrap">
+        <svg viewBox="0 0 100 100">
+          <circle class="gauge-track" cx="50" cy="50" r="42"></circle>
+          <circle class="gauge-value" cx="50" cy="50" r="42" stroke="#d03b3b" stroke-dasharray="201.6 263.9"></circle>
+        </svg>
+        <div class="gauge-center">
+          <span class="gauge-score" style="color:#d03b3b">76</span>
+          <span class="gauge-weather">☁️</span>
+        </div>
+      </div>
+      <span class="h-tag" style="background:#d03b3b; color:#ffffff;">激混み</span>
     </div>
     
+  </div>
+
+  <div class="card">
+    <h2>📅 2026年8月のカレンダー</h2>
+    <table class="cal">
+      <thead><tr><th>日</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th>土</th></tr></thead>
+      <tbody>
+        
+        <tr>
+          
+          <td>
+            
+            <div class="day-cell empty"></div>
+            
+          </td>
+          
+          <td>
+            
+            <div class="day-cell empty"></div>
+            
+          </td>
+          
+          <td>
+            
+            <div class="day-cell empty"></div>
+            
+          </td>
+          
+          <td>
+            
+            <div class="day-cell empty"></div>
+            
+          </td>
+          
+          <td>
+            
+            <div class="day-cell empty"></div>
+            
+          </td>
+          
+          <td>
+            
+            <div class="day-cell empty"></div>
+            
+          </td>
+          
+          <td>
+            
+            <div class="day-cell no-data"><span class="day-num">1</span></div>
+            
+          </td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td>
+            
+            <div class="day-cell no-data"><span class="day-num">2</span></div>
+            
+          </td>
+          
+          <td>
+            
+            <div class="day-cell no-data"><span class="day-num">3</span></div>
+            
+          </td>
+          
+          <td>
+            
+            <div class="day-cell no-data"><span class="day-num">4</span></div>
+            
+          </td>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#ec835a; color:#241f14;"
+              data-date="2026-08-05" data-score="59.4" data-label="やや混み" data-factors="[{&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -6.6}, {&#34;label&#34;: &#34;話題のイベント・グッズ告知&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 4.0}]"
+              aria-label="2026-08-05 混雑度 やや混み スコア59.4">
+              <span class="day-top"><span class="day-num">5</span><span class="day-weather">☁️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">59</span></span>
+              <span class="day-tag">混み</span>
+            </button>
+            
+          </td>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#ec835a; color:#241f14;"
+              data-date="2026-08-06" data-score="59.1" data-label="やや混み" data-factors="[{&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -6.57}, {&#34;label&#34;: &#34;話題のイベント・グッズ告知&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 3.72}]"
+              aria-label="2026-08-06 混雑度 やや混み スコア59.1">
+              <span class="day-top"><span class="day-num">6</span><span class="day-weather">☁️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">59</span></span>
+              <span class="day-tag">混み</span>
+            </button>
+            
+          </td>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#d03b3b; color:#ffffff;"
+              data-date="2026-08-07" data-score="86.8" data-label="激混み" data-factors="[{&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;天気(晴れ)&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 11.32}, {&#34;label&#34;: &#34;貸切等による短縮営業&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 10.0}, {&#34;label&#34;: &#34;話題のイベント・グッズ告知&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 3.44}]"
+              aria-label="2026-08-07 混雑度 激混み スコア86.8">
+              <span class="day-top"><span class="day-num">7</span><span class="day-weather">☀️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-critical"></use></svg><span class="day-score">87</span></span>
+              <span class="day-tag">激混</span>
+            </button>
+            
+          </td>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#d03b3b; color:#ffffff;"
+              data-date="2026-08-08" data-score="97.9" data-label="激混み" data-factors="[{&#34;label&#34;: &#34;週末&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 20.0}, {&#34;label&#34;: &#34;天気(晴れ)&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.77}, {&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;話題のイベント・グッズ告知&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 3.16}]"
+              aria-label="2026-08-08 混雑度 激混み スコア97.9">
+              <span class="day-top"><span class="day-num">8</span><span class="day-weather">☀️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-critical"></use></svg><span class="day-score">98</span></span>
+              <span class="day-tag">激混</span>
+            </button>
+            
+          </td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#d03b3b; color:#ffffff;"
+              data-date="2026-08-09" data-score="76.4" data-label="激混み" data-factors="[{&#34;label&#34;: &#34;週末&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 20.0}, {&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -8.48}, {&#34;label&#34;: &#34;話題のイベント・グッズ告知&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 2.84}]"
+              aria-label="2026-08-09 混雑度 激混み スコア76.4">
+              <span class="day-top"><span class="day-num">9</span><span class="day-weather">☁️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-critical"></use></svg><span class="day-score">76</span></span>
+              <span class="day-tag">激混</span>
+            </button>
+            
+          </td>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#fab219; color:#241f14;"
+              data-date="2026-08-10" data-score="47.3" data-label="ふつう" data-factors="[{&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;飛び石連休の谷間&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -12.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -5.26}, {&#34;label&#34;: &#34;話題のイベント・グッズ告知&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 2.56}]"
+              aria-label="2026-08-10 混雑度 ふつう スコア47.3">
+              <span class="day-top"><span class="day-num">10</span><span class="day-weather">☁️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-warning"></use></svg><span class="day-score">47</span></span>
+              <span class="day-tag">普通</span>
+            </button>
+            
+          </td>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#ec835a; color:#241f14;"
+              data-date="2026-08-11" data-score="71.4" data-label="やや混み" data-factors="[{&#34;label&#34;: &#34;祝日&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 15.0}, {&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -7.93}, {&#34;label&#34;: &#34;話題のイベント・グッズ告知&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 2.28}]"
+              aria-label="2026-08-11 混雑度 やや混み スコア71.4">
+              <span class="day-top"><span class="day-num">11</span><span class="day-weather">☁️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">71</span></span>
+              <span class="day-tag">混み</span>
+            </button>
+            
+          </td>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#ec835a; color:#241f14;"
+              data-date="2026-08-12" data-score="57.6" data-label="やや混み" data-factors="[{&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -6.4}, {&#34;label&#34;: &#34;話題のイベント・グッズ告知&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 2.0}]"
+              aria-label="2026-08-12 混雑度 やや混み スコア57.6">
+              <span class="day-top"><span class="day-num">12</span><span class="day-weather">☁️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">58</span></span>
+              <span class="day-tag">混み</span>
+            </button>
+            
+          </td>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#ec835a; color:#241f14;"
+              data-date="2026-08-13" data-score="70.8" data-label="やや混み" data-factors="[{&#34;label&#34;: &#34;お盆&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 15.0}, {&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -7.87}, {&#34;label&#34;: &#34;話題のイベント・グッズ告知&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 1.72}]"
+              aria-label="2026-08-13 混雑度 やや混み スコア70.8">
+              <span class="day-top"><span class="day-num">13</span><span class="day-weather">☁️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">71</span></span>
+              <span class="day-tag">混み</span>
+            </button>
+            
+          </td>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#ec835a; color:#241f14;"
+              data-date="2026-08-14" data-score="70.6" data-label="やや混み" data-factors="[{&#34;label&#34;: &#34;お盆&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 15.0}, {&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -7.84}, {&#34;label&#34;: &#34;話題のイベント・グッズ告知&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 1.44}]"
+              aria-label="2026-08-14 混雑度 やや混み スコア70.6">
+              <span class="day-top"><span class="day-num">14</span><span class="day-weather">☁️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">71</span></span>
+              <span class="day-tag">混み</span>
+            </button>
+            
+          </td>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#d03b3b; color:#ffffff;"
+              data-date="2026-08-15" data-score="88.3" data-label="激混み" data-factors="[{&#34;label&#34;: &#34;週末&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 20.0}, {&#34;label&#34;: &#34;お盆&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 15.0}, {&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -9.82}]"
+              aria-label="2026-08-15 混雑度 激混み スコア88.3">
+              <span class="day-top"><span class="day-num">15</span><span class="day-weather">☁️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-critical"></use></svg><span class="day-score">88</span></span>
+              <span class="day-tag">激混</span>
+            </button>
+            
+          </td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#d03b3b; color:#ffffff;"
+              data-date="2026-08-16" data-score="88.1" data-label="激混み" data-factors="[{&#34;label&#34;: &#34;週末&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 20.0}, {&#34;label&#34;: &#34;お盆&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 15.0}, {&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -9.78}]"
+              aria-label="2026-08-16 混雑度 激混み スコア88.1">
+              <span class="day-top"><span class="day-num">16</span><span class="day-weather">☁️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-critical"></use></svg><span class="day-score">88</span></span>
+              <span class="day-tag">激混</span>
+            </button>
+            
+          </td>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#ec835a; color:#241f14;"
+              data-date="2026-08-17" data-score="56.3" data-label="やや混み" data-factors="[{&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -6.26}, {&#34;label&#34;: &#34;話題のイベント・グッズ告知&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 0.56}]"
+              aria-label="2026-08-17 混雑度 やや混み スコア56.3">
+              <span class="day-top"><span class="day-num">17</span><span class="day-weather">☁️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">56</span></span>
+              <span class="day-tag">混み</span>
+            </button>
+            
+          </td>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#ec835a; color:#241f14;"
+              data-date="2026-08-18" data-score="56.1" data-label="やや混み" data-factors="[{&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -6.23}, {&#34;label&#34;: &#34;話題のイベント・グッズ告知&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 0.28}]"
+              aria-label="2026-08-18 混雑度 やや混み スコア56.1">
+              <span class="day-top"><span class="day-num">18</span><span class="day-weather">☁️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">56</span></span>
+              <span class="day-tag">混み</span>
+            </button>
+            
+          </td>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#ec835a; color:#241f14;"
+              data-date="2026-08-19" data-score="55.8" data-label="やや混み" data-factors="[{&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -6.2}]"
+              aria-label="2026-08-19 混雑度 やや混み スコア55.8">
+              <span class="day-top"><span class="day-num">19</span><span class="day-weather">☁️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">56</span></span>
+              <span class="day-tag">混み</span>
+            </button>
+            
+          </td>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#ec835a; color:#241f14;"
+              data-date="2026-08-20" data-score="55.8" data-label="やや混み" data-factors="[{&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -6.2}]"
+              aria-label="2026-08-20 混雑度 やや混み スコア55.8">
+              <span class="day-top"><span class="day-num">20</span><span class="day-weather">☁️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">56</span></span>
+              <span class="day-tag">混み</span>
+            </button>
+            
+          </td>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#ec835a; color:#241f14;"
+              data-date="2026-08-21" data-score="55.8" data-label="やや混み" data-factors="[{&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -6.2}]"
+              aria-label="2026-08-21 混雑度 やや混み スコア55.8">
+              <span class="day-top"><span class="day-num">21</span><span class="day-weather">☁️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">56</span></span>
+              <span class="day-tag">混み</span>
+            </button>
+            
+          </td>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#ec835a; color:#241f14;"
+              data-date="2026-08-22" data-score="73.8" data-label="やや混み" data-factors="[{&#34;label&#34;: &#34;週末&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 20.0}, {&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -8.2}]"
+              aria-label="2026-08-22 混雑度 やや混み スコア73.8">
+              <span class="day-top"><span class="day-num">22</span><span class="day-weather">☁️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">74</span></span>
+              <span class="day-tag">混み</span>
+            </button>
+            
+          </td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#ec835a; color:#241f14;"
+              data-date="2026-08-23" data-score="73.8" data-label="やや混み" data-factors="[{&#34;label&#34;: &#34;週末&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 20.0}, {&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -8.2}]"
+              aria-label="2026-08-23 混雑度 やや混み スコア73.8">
+              <span class="day-top"><span class="day-num">23</span><span class="day-weather">☁️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">74</span></span>
+              <span class="day-tag">混み</span>
+            </button>
+            
+          </td>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#ec835a; color:#241f14;"
+              data-date="2026-08-24" data-score="55.8" data-label="やや混み" data-factors="[{&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -6.2}]"
+              aria-label="2026-08-24 混雑度 やや混み スコア55.8">
+              <span class="day-top"><span class="day-num">24</span><span class="day-weather">☁️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">56</span></span>
+              <span class="day-tag">混み</span>
+            </button>
+            
+          </td>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#ec835a; color:#241f14;"
+              data-date="2026-08-25" data-score="55.8" data-label="やや混み" data-factors="[{&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -6.2}]"
+              aria-label="2026-08-25 混雑度 やや混み スコア55.8">
+              <span class="day-top"><span class="day-num">25</span><span class="day-weather">☁️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">56</span></span>
+              <span class="day-tag">混み</span>
+            </button>
+            
+          </td>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#ec835a; color:#241f14;"
+              data-date="2026-08-26" data-score="55.8" data-label="やや混み" data-factors="[{&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -6.2}]"
+              aria-label="2026-08-26 混雑度 やや混み スコア55.8">
+              <span class="day-top"><span class="day-num">26</span><span class="day-weather">☁️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">56</span></span>
+              <span class="day-tag">混み</span>
+            </button>
+            
+          </td>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#ec835a; color:#241f14;"
+              data-date="2026-08-27" data-score="55.8" data-label="やや混み" data-factors="[{&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -6.2}]"
+              aria-label="2026-08-27 混雑度 やや混み スコア55.8">
+              <span class="day-top"><span class="day-num">27</span><span class="day-weather">☁️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">56</span></span>
+              <span class="day-tag">混み</span>
+            </button>
+            
+          </td>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#ec835a; color:#241f14;"
+              data-date="2026-08-28" data-score="64.8" data-label="やや混み" data-factors="[{&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;貸切等による短縮営業&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 10.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -7.2}]"
+              aria-label="2026-08-28 混雑度 やや混み スコア64.8">
+              <span class="day-top"><span class="day-num">28</span><span class="day-weather">☁️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">65</span></span>
+              <span class="day-tag">混み</span>
+            </button>
+            
+          </td>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#ec835a; color:#241f14;"
+              data-date="2026-08-29" data-score="73.8" data-label="やや混み" data-factors="[{&#34;label&#34;: &#34;週末&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 20.0}, {&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -8.2}]"
+              aria-label="2026-08-29 混雑度 やや混み スコア73.8">
+              <span class="day-top"><span class="day-num">29</span><span class="day-weather">☁️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">74</span></span>
+              <span class="day-tag">混み</span>
+            </button>
+            
+          </td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#ec835a; color:#241f14;"
+              data-date="2026-08-30" data-score="73.8" data-label="やや混み" data-factors="[{&#34;label&#34;: &#34;週末&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 20.0}, {&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -8.2}]"
+              aria-label="2026-08-30 混雑度 やや混み スコア73.8">
+              <span class="day-top"><span class="day-num">30</span><span class="day-weather">☁️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">74</span></span>
+              <span class="day-tag">混み</span>
+            </button>
+            
+          </td>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#ec835a; color:#241f14;"
+              data-date="2026-08-31" data-score="55.8" data-label="やや混み" data-factors="[{&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -6.2}]"
+              aria-label="2026-08-31 混雑度 やや混み スコア55.8">
+              <span class="day-top"><span class="day-num">31</span><span class="day-weather">☁️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">56</span></span>
+              <span class="day-tag">混み</span>
+            </button>
+            
+          </td>
+          
+          <td>
+            
+            <div class="day-cell empty"></div>
+            
+          </td>
+          
+          <td>
+            
+            <div class="day-cell empty"></div>
+            
+          </td>
+          
+          <td>
+            
+            <div class="day-cell empty"></div>
+            
+          </td>
+          
+          <td>
+            
+            <div class="day-cell empty"></div>
+            
+          </td>
+          
+          <td>
+            
+            <div class="day-cell empty"></div>
+            
+          </td>
+          
+        </tr>
+        
+      </tbody>
+    </table>
+    <a class="more-months-link" href="/tdl/2026-08.html">この月をもっと詳しく見る →</a>
   </div>
 
   <div class="ad-slot">広告枠</div>
@@ -234,38 +842,38 @@
       <li class="rank-row">
         <span class="rank-medal">1</span>
         <span class="rank-date">2026-11-02(月) ☁️</span>
-        <span class="rank-badge" style="background:#0ca30c; color:#241f14;">空いている</span>
+        <span class="rank-badge" style="background:#0ca30c; color:#241f14;">すいてる</span>
       </li>
       
       <li class="rank-row">
         <span class="rank-medal">2</span>
-        <span class="rank-date">2026-08-10(月) ☁️</span>
-        <span class="rank-badge" style="background:#fab219; color:#241f14;">普通</span>
+        <span class="rank-date">2026-09-01(火) ☁️</span>
+        <span class="rank-badge" style="background:#fab219; color:#241f14;">ふつう</span>
       </li>
       
       <li class="rank-row">
         <span class="rank-medal">3</span>
-        <span class="rank-date">2026-09-01(火) ☁️</span>
-        <span class="rank-badge" style="background:#fab219; color:#241f14;">普通</span>
+        <span class="rank-date">2026-09-02(水) ☁️</span>
+        <span class="rank-badge" style="background:#fab219; color:#241f14;">ふつう</span>
       </li>
       
       <li class="rank-row">
         <span class="rank-medal">4</span>
-        <span class="rank-date">2026-09-02(水) ☁️</span>
-        <span class="rank-badge" style="background:#fab219; color:#241f14;">普通</span>
+        <span class="rank-date">2026-09-03(木) ☁️</span>
+        <span class="rank-badge" style="background:#fab219; color:#241f14;">ふつう</span>
       </li>
       
       <li class="rank-row">
         <span class="rank-medal">5</span>
-        <span class="rank-date">2026-09-03(木) ☁️</span>
-        <span class="rank-badge" style="background:#fab219; color:#241f14;">普通</span>
+        <span class="rank-date">2026-09-04(金) ☁️</span>
+        <span class="rank-badge" style="background:#fab219; color:#241f14;">ふつう</span>
       </li>
       
     </ol>
   </div>
 
   <div class="card">
-    <h2>📅 月別カレンダー</h2>
+    <h2>🗓️ 他の月も見る</h2>
     <div class="month-links">
       
       <a href="/tdl/2026-08.html">2026年8月</a>
@@ -286,6 +894,8 @@
     <h2>📣 最近の公式発表</h2>
     <ul class="event-list">
       
+      <li class="event-row"><span class="event-date">2026-08-05</span><span class="event-title"><a href="https://prtimes.jp/main/html/rd/p/000000168.000119340.html" target="_blank" rel="noopener noreferrer">東京ディズニーシー(R)のアトラクション「インディ・ジョーンズ・アドベンチャー：クリスタルスカルの魔宮」改装を経て11月30日（月）より運営再開</a></span></li>
+      
       <li class="event-row"><span class="event-date">2026-07-21</span><span class="event-title"><a href="https://prtimes.jp/main/html/rd/p/000000166.000119340.html" target="_blank" rel="noopener noreferrer">東京ディズニーリゾート・フォトグラフィープロジェクト「イマジニング・ザ・マジック」</a></span></li>
       
       <li class="event-row"><span class="event-date">2026-07-13</span><span class="event-title"><a href="https://prtimes.jp/main/html/rd/p/000000165.000119340.html" target="_blank" rel="noopener noreferrer">秋の東京ディズニーリゾート(R)</a></span></li>
@@ -295,8 +905,6 @@
       <li class="event-row"><span class="event-date">2026-06-03</span><span class="event-title"><a href="https://prtimes.jp/main/html/rd/p/000000155.000119340.html" target="_blank" rel="noopener noreferrer">東京ディズニーシー（R）25周年記念特別塗装機「JAL Jubilee Express」のお披露目セレモニーを本日開催！</a></span></li>
       
       <li class="event-row"><span class="event-date">2026-06-01</span><span class="event-title"><a href="https://prtimes.jp/main/html/rd/p/000000154.000119340.html" target="_blank" rel="noopener noreferrer">「東京ディズニーランド（R）・エレクトリカルパレード・ドリームライツ」が本日6月1日、スタートから25年の時を重ねました</a></span></li>
-      
-      <li class="event-row"><span class="event-date">2026-05-26</span><span class="event-title"><a href="https://prtimes.jp/main/html/rd/p/000000153.000119340.html" target="_blank" rel="noopener noreferrer">夏を楽しく！おいしく！快適に！過ごせる東京ディズニーリゾート(R)のおすすめのグッズ・メニューをご紹介！</a></span></li>
       
     </ul>
   </div>
@@ -308,30 +916,515 @@
 
   <div class="highlights">
     
-    <div class="highlight-tile" style="background:#ec835a; color:#241f14;">
+    <div class="highlight-tile">
       <span class="h-label">今日</span>
-      <span class="h-grade">☁️ やや混雑</span>
-      <span class="h-dots">●●●</span>
+      <div class="gauge-wrap">
+        <svg viewBox="0 0 100 100">
+          <circle class="gauge-track" cx="50" cy="50" r="42"></circle>
+          <circle class="gauge-value" cx="50" cy="50" r="42" stroke="#ec835a" stroke-dasharray="156.8 263.9"></circle>
+        </svg>
+        <div class="gauge-center">
+          <span class="gauge-score" style="color:#ec835a">59</span>
+          <span class="gauge-weather">☁️</span>
+        </div>
+      </div>
+      <span class="h-tag" style="background:#ec835a; color:#241f14;">やや混み</span>
     </div>
     
-    <div class="highlight-tile" style="background:#ec835a; color:#241f14;">
+    <div class="highlight-tile">
       <span class="h-label">明日</span>
-      <span class="h-grade">☁️ やや混雑</span>
-      <span class="h-dots">●●●</span>
+      <div class="gauge-wrap">
+        <svg viewBox="0 0 100 100">
+          <circle class="gauge-track" cx="50" cy="50" r="42"></circle>
+          <circle class="gauge-value" cx="50" cy="50" r="42" stroke="#ec835a" stroke-dasharray="156.0 263.9"></circle>
+        </svg>
+        <div class="gauge-center">
+          <span class="gauge-score" style="color:#ec835a">59</span>
+          <span class="gauge-weather">☁️</span>
+        </div>
+      </div>
+      <span class="h-tag" style="background:#ec835a; color:#241f14;">やや混み</span>
     </div>
     
-    <div class="highlight-tile" style="background:#ec835a; color:#241f14;">
+    <div class="highlight-tile">
       <span class="h-label">今週末(土)</span>
-      <span class="h-grade">☁️ やや混雑</span>
-      <span class="h-dots">●●●</span>
+      <div class="gauge-wrap">
+        <svg viewBox="0 0 100 100">
+          <circle class="gauge-track" cx="50" cy="50" r="42"></circle>
+          <circle class="gauge-value" cx="50" cy="50" r="42" stroke="#d03b3b" stroke-dasharray="258.4 263.9"></circle>
+        </svg>
+        <div class="gauge-center">
+          <span class="gauge-score" style="color:#d03b3b">98</span>
+          <span class="gauge-weather">☀️</span>
+        </div>
+      </div>
+      <span class="h-tag" style="background:#d03b3b; color:#ffffff;">激混み</span>
     </div>
     
-    <div class="highlight-tile" style="background:#ec835a; color:#241f14;">
+    <div class="highlight-tile">
       <span class="h-label">今週末(日)</span>
-      <span class="h-grade">☁️ やや混雑</span>
-      <span class="h-dots">●●●</span>
+      <div class="gauge-wrap">
+        <svg viewBox="0 0 100 100">
+          <circle class="gauge-track" cx="50" cy="50" r="42"></circle>
+          <circle class="gauge-value" cx="50" cy="50" r="42" stroke="#d03b3b" stroke-dasharray="201.6 263.9"></circle>
+        </svg>
+        <div class="gauge-center">
+          <span class="gauge-score" style="color:#d03b3b">76</span>
+          <span class="gauge-weather">☁️</span>
+        </div>
+      </div>
+      <span class="h-tag" style="background:#d03b3b; color:#ffffff;">激混み</span>
     </div>
     
+  </div>
+
+  <div class="card">
+    <h2>📅 2026年8月のカレンダー</h2>
+    <table class="cal">
+      <thead><tr><th>日</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th>土</th></tr></thead>
+      <tbody>
+        
+        <tr>
+          
+          <td>
+            
+            <div class="day-cell empty"></div>
+            
+          </td>
+          
+          <td>
+            
+            <div class="day-cell empty"></div>
+            
+          </td>
+          
+          <td>
+            
+            <div class="day-cell empty"></div>
+            
+          </td>
+          
+          <td>
+            
+            <div class="day-cell empty"></div>
+            
+          </td>
+          
+          <td>
+            
+            <div class="day-cell empty"></div>
+            
+          </td>
+          
+          <td>
+            
+            <div class="day-cell empty"></div>
+            
+          </td>
+          
+          <td>
+            
+            <div class="day-cell no-data"><span class="day-num">1</span></div>
+            
+          </td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td>
+            
+            <div class="day-cell no-data"><span class="day-num">2</span></div>
+            
+          </td>
+          
+          <td>
+            
+            <div class="day-cell no-data"><span class="day-num">3</span></div>
+            
+          </td>
+          
+          <td>
+            
+            <div class="day-cell no-data"><span class="day-num">4</span></div>
+            
+          </td>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#ec835a; color:#241f14;"
+              data-date="2026-08-05" data-score="59.4" data-label="やや混み" data-factors="[{&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -6.6}, {&#34;label&#34;: &#34;話題のイベント・グッズ告知&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 4.0}]"
+              aria-label="2026-08-05 混雑度 やや混み スコア59.4">
+              <span class="day-top"><span class="day-num">5</span><span class="day-weather">☁️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">59</span></span>
+              <span class="day-tag">混み</span>
+            </button>
+            
+          </td>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#ec835a; color:#241f14;"
+              data-date="2026-08-06" data-score="59.1" data-label="やや混み" data-factors="[{&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -6.57}, {&#34;label&#34;: &#34;話題のイベント・グッズ告知&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 3.72}]"
+              aria-label="2026-08-06 混雑度 やや混み スコア59.1">
+              <span class="day-top"><span class="day-num">6</span><span class="day-weather">☁️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">59</span></span>
+              <span class="day-tag">混み</span>
+            </button>
+            
+          </td>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#d03b3b; color:#ffffff;"
+              data-date="2026-08-07" data-score="75.3" data-label="激混み" data-factors="[{&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;天気(晴れ)&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 9.82}, {&#34;label&#34;: &#34;話題のイベント・グッズ告知&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 3.44}]"
+              aria-label="2026-08-07 混雑度 激混み スコア75.3">
+              <span class="day-top"><span class="day-num">7</span><span class="day-weather">☀️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-critical"></use></svg><span class="day-score">75</span></span>
+              <span class="day-tag">激混</span>
+            </button>
+            
+          </td>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#d03b3b; color:#ffffff;"
+              data-date="2026-08-08" data-score="97.9" data-label="激混み" data-factors="[{&#34;label&#34;: &#34;週末&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 20.0}, {&#34;label&#34;: &#34;天気(晴れ)&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.77}, {&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;話題のイベント・グッズ告知&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 3.16}]"
+              aria-label="2026-08-08 混雑度 激混み スコア97.9">
+              <span class="day-top"><span class="day-num">8</span><span class="day-weather">☀️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-critical"></use></svg><span class="day-score">98</span></span>
+              <span class="day-tag">激混</span>
+            </button>
+            
+          </td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#d03b3b; color:#ffffff;"
+              data-date="2026-08-09" data-score="76.4" data-label="激混み" data-factors="[{&#34;label&#34;: &#34;週末&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 20.0}, {&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -8.48}, {&#34;label&#34;: &#34;話題のイベント・グッズ告知&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 2.84}]"
+              aria-label="2026-08-09 混雑度 激混み スコア76.4">
+              <span class="day-top"><span class="day-num">9</span><span class="day-weather">☁️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-critical"></use></svg><span class="day-score">76</span></span>
+              <span class="day-tag">激混</span>
+            </button>
+            
+          </td>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#fab219; color:#241f14;"
+              data-date="2026-08-10" data-score="47.3" data-label="ふつう" data-factors="[{&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;飛び石連休の谷間&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -12.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -5.26}, {&#34;label&#34;: &#34;話題のイベント・グッズ告知&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 2.56}]"
+              aria-label="2026-08-10 混雑度 ふつう スコア47.3">
+              <span class="day-top"><span class="day-num">10</span><span class="day-weather">☁️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-warning"></use></svg><span class="day-score">47</span></span>
+              <span class="day-tag">普通</span>
+            </button>
+            
+          </td>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#ec835a; color:#241f14;"
+              data-date="2026-08-11" data-score="71.4" data-label="やや混み" data-factors="[{&#34;label&#34;: &#34;祝日&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 15.0}, {&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -7.93}, {&#34;label&#34;: &#34;話題のイベント・グッズ告知&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 2.28}]"
+              aria-label="2026-08-11 混雑度 やや混み スコア71.4">
+              <span class="day-top"><span class="day-num">11</span><span class="day-weather">☁️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">71</span></span>
+              <span class="day-tag">混み</span>
+            </button>
+            
+          </td>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#ec835a; color:#241f14;"
+              data-date="2026-08-12" data-score="57.6" data-label="やや混み" data-factors="[{&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -6.4}, {&#34;label&#34;: &#34;話題のイベント・グッズ告知&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 2.0}]"
+              aria-label="2026-08-12 混雑度 やや混み スコア57.6">
+              <span class="day-top"><span class="day-num">12</span><span class="day-weather">☁️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">58</span></span>
+              <span class="day-tag">混み</span>
+            </button>
+            
+          </td>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#ec835a; color:#241f14;"
+              data-date="2026-08-13" data-score="70.8" data-label="やや混み" data-factors="[{&#34;label&#34;: &#34;お盆&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 15.0}, {&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -7.87}, {&#34;label&#34;: &#34;話題のイベント・グッズ告知&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 1.72}]"
+              aria-label="2026-08-13 混雑度 やや混み スコア70.8">
+              <span class="day-top"><span class="day-num">13</span><span class="day-weather">☁️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">71</span></span>
+              <span class="day-tag">混み</span>
+            </button>
+            
+          </td>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#ec835a; color:#241f14;"
+              data-date="2026-08-14" data-score="70.6" data-label="やや混み" data-factors="[{&#34;label&#34;: &#34;お盆&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 15.0}, {&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -7.84}, {&#34;label&#34;: &#34;話題のイベント・グッズ告知&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 1.44}]"
+              aria-label="2026-08-14 混雑度 やや混み スコア70.6">
+              <span class="day-top"><span class="day-num">14</span><span class="day-weather">☁️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">71</span></span>
+              <span class="day-tag">混み</span>
+            </button>
+            
+          </td>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#d03b3b; color:#ffffff;"
+              data-date="2026-08-15" data-score="88.3" data-label="激混み" data-factors="[{&#34;label&#34;: &#34;週末&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 20.0}, {&#34;label&#34;: &#34;お盆&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 15.0}, {&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -9.82}]"
+              aria-label="2026-08-15 混雑度 激混み スコア88.3">
+              <span class="day-top"><span class="day-num">15</span><span class="day-weather">☁️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-critical"></use></svg><span class="day-score">88</span></span>
+              <span class="day-tag">激混</span>
+            </button>
+            
+          </td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#d03b3b; color:#ffffff;"
+              data-date="2026-08-16" data-score="88.1" data-label="激混み" data-factors="[{&#34;label&#34;: &#34;週末&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 20.0}, {&#34;label&#34;: &#34;お盆&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 15.0}, {&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -9.78}]"
+              aria-label="2026-08-16 混雑度 激混み スコア88.1">
+              <span class="day-top"><span class="day-num">16</span><span class="day-weather">☁️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-critical"></use></svg><span class="day-score">88</span></span>
+              <span class="day-tag">激混</span>
+            </button>
+            
+          </td>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#ec835a; color:#241f14;"
+              data-date="2026-08-17" data-score="56.3" data-label="やや混み" data-factors="[{&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -6.26}, {&#34;label&#34;: &#34;話題のイベント・グッズ告知&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 0.56}]"
+              aria-label="2026-08-17 混雑度 やや混み スコア56.3">
+              <span class="day-top"><span class="day-num">17</span><span class="day-weather">☁️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">56</span></span>
+              <span class="day-tag">混み</span>
+            </button>
+            
+          </td>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#ec835a; color:#241f14;"
+              data-date="2026-08-18" data-score="56.1" data-label="やや混み" data-factors="[{&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -6.23}, {&#34;label&#34;: &#34;話題のイベント・グッズ告知&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 0.28}]"
+              aria-label="2026-08-18 混雑度 やや混み スコア56.1">
+              <span class="day-top"><span class="day-num">18</span><span class="day-weather">☁️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">56</span></span>
+              <span class="day-tag">混み</span>
+            </button>
+            
+          </td>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#ec835a; color:#241f14;"
+              data-date="2026-08-19" data-score="55.8" data-label="やや混み" data-factors="[{&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -6.2}]"
+              aria-label="2026-08-19 混雑度 やや混み スコア55.8">
+              <span class="day-top"><span class="day-num">19</span><span class="day-weather">☁️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">56</span></span>
+              <span class="day-tag">混み</span>
+            </button>
+            
+          </td>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#ec835a; color:#241f14;"
+              data-date="2026-08-20" data-score="55.8" data-label="やや混み" data-factors="[{&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -6.2}]"
+              aria-label="2026-08-20 混雑度 やや混み スコア55.8">
+              <span class="day-top"><span class="day-num">20</span><span class="day-weather">☁️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">56</span></span>
+              <span class="day-tag">混み</span>
+            </button>
+            
+          </td>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#ec835a; color:#241f14;"
+              data-date="2026-08-21" data-score="64.8" data-label="やや混み" data-factors="[{&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;貸切等による短縮営業&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 10.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -7.2}]"
+              aria-label="2026-08-21 混雑度 やや混み スコア64.8">
+              <span class="day-top"><span class="day-num">21</span><span class="day-weather">☁️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">65</span></span>
+              <span class="day-tag">混み</span>
+            </button>
+            
+          </td>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#ec835a; color:#241f14;"
+              data-date="2026-08-22" data-score="73.8" data-label="やや混み" data-factors="[{&#34;label&#34;: &#34;週末&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 20.0}, {&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -8.2}]"
+              aria-label="2026-08-22 混雑度 やや混み スコア73.8">
+              <span class="day-top"><span class="day-num">22</span><span class="day-weather">☁️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">74</span></span>
+              <span class="day-tag">混み</span>
+            </button>
+            
+          </td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#ec835a; color:#241f14;"
+              data-date="2026-08-23" data-score="73.8" data-label="やや混み" data-factors="[{&#34;label&#34;: &#34;週末&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 20.0}, {&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -8.2}]"
+              aria-label="2026-08-23 混雑度 やや混み スコア73.8">
+              <span class="day-top"><span class="day-num">23</span><span class="day-weather">☁️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">74</span></span>
+              <span class="day-tag">混み</span>
+            </button>
+            
+          </td>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#ec835a; color:#241f14;"
+              data-date="2026-08-24" data-score="55.8" data-label="やや混み" data-factors="[{&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -6.2}]"
+              aria-label="2026-08-24 混雑度 やや混み スコア55.8">
+              <span class="day-top"><span class="day-num">24</span><span class="day-weather">☁️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">56</span></span>
+              <span class="day-tag">混み</span>
+            </button>
+            
+          </td>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#ec835a; color:#241f14;"
+              data-date="2026-08-25" data-score="55.8" data-label="やや混み" data-factors="[{&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -6.2}]"
+              aria-label="2026-08-25 混雑度 やや混み スコア55.8">
+              <span class="day-top"><span class="day-num">25</span><span class="day-weather">☁️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">56</span></span>
+              <span class="day-tag">混み</span>
+            </button>
+            
+          </td>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#ec835a; color:#241f14;"
+              data-date="2026-08-26" data-score="55.8" data-label="やや混み" data-factors="[{&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -6.2}]"
+              aria-label="2026-08-26 混雑度 やや混み スコア55.8">
+              <span class="day-top"><span class="day-num">26</span><span class="day-weather">☁️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">56</span></span>
+              <span class="day-tag">混み</span>
+            </button>
+            
+          </td>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#ec835a; color:#241f14;"
+              data-date="2026-08-27" data-score="55.8" data-label="やや混み" data-factors="[{&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -6.2}]"
+              aria-label="2026-08-27 混雑度 やや混み スコア55.8">
+              <span class="day-top"><span class="day-num">27</span><span class="day-weather">☁️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">56</span></span>
+              <span class="day-tag">混み</span>
+            </button>
+            
+          </td>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#ec835a; color:#241f14;"
+              data-date="2026-08-28" data-score="55.8" data-label="やや混み" data-factors="[{&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -6.2}]"
+              aria-label="2026-08-28 混雑度 やや混み スコア55.8">
+              <span class="day-top"><span class="day-num">28</span><span class="day-weather">☁️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">56</span></span>
+              <span class="day-tag">混み</span>
+            </button>
+            
+          </td>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#ec835a; color:#241f14;"
+              data-date="2026-08-29" data-score="73.8" data-label="やや混み" data-factors="[{&#34;label&#34;: &#34;週末&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 20.0}, {&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -8.2}]"
+              aria-label="2026-08-29 混雑度 やや混み スコア73.8">
+              <span class="day-top"><span class="day-num">29</span><span class="day-weather">☁️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">74</span></span>
+              <span class="day-tag">混み</span>
+            </button>
+            
+          </td>
+          
+        </tr>
+        
+        <tr>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#ec835a; color:#241f14;"
+              data-date="2026-08-30" data-score="73.8" data-label="やや混み" data-factors="[{&#34;label&#34;: &#34;週末&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 20.0}, {&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -8.2}]"
+              aria-label="2026-08-30 混雑度 やや混み スコア73.8">
+              <span class="day-top"><span class="day-num">30</span><span class="day-weather">☁️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">74</span></span>
+              <span class="day-tag">混み</span>
+            </button>
+            
+          </td>
+          
+          <td>
+            
+            <button type="button" class="day-cell" style="background:#ec835a; color:#241f14;"
+              data-date="2026-08-31" data-score="55.8" data-label="やや混み" data-factors="[{&#34;label&#34;: &#34;夏休み&#34;, &#34;direction&#34;: &#34;up&#34;, &#34;weight&#34;: 12.0}, {&#34;label&#34;: &#34;天気(くもり)&#34;, &#34;direction&#34;: &#34;down&#34;, &#34;weight&#34;: -6.2}]"
+              aria-label="2026-08-31 混雑度 やや混み スコア55.8">
+              <span class="day-top"><span class="day-num">31</span><span class="day-weather">☁️</span></span>
+              <span class="day-bottom"><svg class="day-mood"><use href="#mood-serious"></use></svg><span class="day-score">56</span></span>
+              <span class="day-tag">混み</span>
+            </button>
+            
+          </td>
+          
+          <td>
+            
+            <div class="day-cell empty"></div>
+            
+          </td>
+          
+          <td>
+            
+            <div class="day-cell empty"></div>
+            
+          </td>
+          
+          <td>
+            
+            <div class="day-cell empty"></div>
+            
+          </td>
+          
+          <td>
+            
+            <div class="day-cell empty"></div>
+            
+          </td>
+          
+          <td>
+            
+            <div class="day-cell empty"></div>
+            
+          </td>
+          
+        </tr>
+        
+      </tbody>
+    </table>
+    <a class="more-months-link" href="/tds/2026-08.html">この月をもっと詳しく見る →</a>
   </div>
 
   <div class="ad-slot">広告枠</div>
@@ -343,38 +1436,38 @@
       <li class="rank-row">
         <span class="rank-medal">1</span>
         <span class="rank-date">2026-11-02(月) ☁️</span>
-        <span class="rank-badge" style="background:#0ca30c; color:#241f14;">空いている</span>
+        <span class="rank-badge" style="background:#0ca30c; color:#241f14;">すいてる</span>
       </li>
       
       <li class="rank-row">
         <span class="rank-medal">2</span>
-        <span class="rank-date">2026-08-10(月) ☁️</span>
-        <span class="rank-badge" style="background:#fab219; color:#241f14;">普通</span>
+        <span class="rank-date">2026-09-01(火) ☁️</span>
+        <span class="rank-badge" style="background:#fab219; color:#241f14;">ふつう</span>
       </li>
       
       <li class="rank-row">
         <span class="rank-medal">3</span>
-        <span class="rank-date">2026-09-01(火) ☁️</span>
-        <span class="rank-badge" style="background:#fab219; color:#241f14;">普通</span>
+        <span class="rank-date">2026-09-02(水) ☁️</span>
+        <span class="rank-badge" style="background:#fab219; color:#241f14;">ふつう</span>
       </li>
       
       <li class="rank-row">
         <span class="rank-medal">4</span>
-        <span class="rank-date">2026-09-02(水) ☁️</span>
-        <span class="rank-badge" style="background:#fab219; color:#241f14;">普通</span>
+        <span class="rank-date">2026-09-03(木) ☁️</span>
+        <span class="rank-badge" style="background:#fab219; color:#241f14;">ふつう</span>
       </li>
       
       <li class="rank-row">
         <span class="rank-medal">5</span>
-        <span class="rank-date">2026-09-03(木) ☁️</span>
-        <span class="rank-badge" style="background:#fab219; color:#241f14;">普通</span>
+        <span class="rank-date">2026-09-04(金) ☁️</span>
+        <span class="rank-badge" style="background:#fab219; color:#241f14;">ふつう</span>
       </li>
       
     </ol>
   </div>
 
   <div class="card">
-    <h2>📅 月別カレンダー</h2>
+    <h2>🗓️ 他の月も見る</h2>
     <div class="month-links">
       
       <a href="/tds/2026-08.html">2026年8月</a>
@@ -395,6 +1488,32 @@
 </section>
 
 
+<div class="card">
+  <h2>💡 混雑を避けるコツ</h2>
+  <div class="tips-grid">
+    <div class="tip-card">
+      <span class="tip-emoji">🌉</span>
+      <h3>飛び石連休の谷間を狙う</h3>
+      <p>祝日や週末に挟まれた単独の平日は、まとまった休みを取りにくく、実は空きやすい傾向があります。</p>
+    </div>
+    <div class="tip-card">
+      <span class="tip-emoji">🌏</span>
+      <h3>海外の連休シーズンは要注意</h3>
+      <p>春節(旧正月)や国慶節など、海外の大型連休の時期はインバウンド需要で混みやすくなります。</p>
+    </div>
+    <div class="tip-card">
+      <span class="tip-emoji">☂️</span>
+      <h3>天気が崩れそうな日は狙い目</h3>
+      <p>雨予報の日は来園者が減る傾向があり、逆にチャンスになることがあります。</p>
+    </div>
+    <div class="tip-card">
+      <span class="tip-emoji">⏰</span>
+      <h3>短縮営業日は混雑しやすい</h3>
+      <p>貸切イベント等で閉園時間が早い日は、限られた時間に人が集中しやすい傾向があります。</p>
+    </div>
+  </div>
+</div>
+
 <div class="ad-slot">広告枠</div>
 
 
@@ -411,7 +1530,74 @@
 </div>
 
 
+<div id="tooltip" role="status"><button class="tt-close" aria-label="閉じる">✕</button><div class="tt-body"></div></div>
 <script>
+(function () {
+  var tooltip = document.getElementById('tooltip');
+  var tooltipBody = tooltip.querySelector('.tt-body');
+  var closeBtn = tooltip.querySelector('.tt-close');
+  var pinnedCell = null;
+
+  function renderTooltip(cell) {
+    var label = cell.dataset.label;
+    var score = cell.dataset.score;
+    var date = cell.dataset.date;
+    var factors = [];
+    try { factors = JSON.parse(cell.dataset.factors || '[]'); } catch (e) {}
+    var factorsHtml = factors.map(function (f) {
+      return '<div>' + (f.direction === 'up' ? '▲' : '▽') + ' ' + f.label + '</div>';
+    }).join('');
+    tooltipBody.innerHTML =
+      '<div class="tt-value">' + label + '</div>' +
+      '<div>' + date + ' ・ スコア' + score + '</div>' +
+      '<div class="tt-factors">' + factorsHtml + '</div>';
+  }
+  function position(x, y) {
+    tooltip.style.display = 'block';
+    var left = x + 14, top = y + 14;
+    var rect = tooltip.getBoundingClientRect();
+    if (left + rect.width > window.innerWidth) left = x - rect.width - 14;
+    if (top + rect.height > window.innerHeight) top = y - rect.height - 14;
+    tooltip.style.left = Math.max(8, left) + 'px';
+    tooltip.style.top = Math.max(8, top) + 'px';
+  }
+  function hideTooltip() {
+    if (pinnedCell) return;
+    tooltip.style.display = 'none';
+  }
+  function closePinned() {
+    if (pinnedCell) pinnedCell.classList.remove('pinned');
+    pinnedCell = null;
+    tooltip.classList.remove('pinned');
+    tooltip.style.display = 'none';
+  }
+  closeBtn.addEventListener('click', closePinned);
+
+  document.querySelectorAll('.day-cell[data-date]').forEach(function (cell) {
+    cell.addEventListener('pointermove', function (e) {
+      if (pinnedCell) return;
+      renderTooltip(cell);
+      position(e.clientX, e.clientY);
+    });
+    cell.addEventListener('pointerleave', hideTooltip);
+    cell.addEventListener('click', function (e) {
+      if (pinnedCell === cell) { closePinned(); return; }
+      if (pinnedCell) pinnedCell.classList.remove('pinned');
+      pinnedCell = cell;
+      cell.classList.add('pinned');
+      tooltip.classList.add('pinned');
+      renderTooltip(cell);
+      var rect = cell.getBoundingClientRect();
+      position(rect.left, rect.bottom);
+    });
+  });
+  document.addEventListener('click', function (e) {
+    if (pinnedCell && !e.target.closest('.day-cell') && !e.target.closest('#tooltip')) closePinned();
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closePinned();
+  });
+
   document.querySelectorAll('.tab-btn').forEach(function (btn) {
     btn.addEventListener('click', function () {
       var park = btn.dataset.park;
@@ -419,6 +1605,7 @@
       document.querySelectorAll('.park-panel').forEach(function (p) { p.classList.toggle('active', p.dataset.park === park); });
     });
   });
+})();
 </script>
 
 </body>
