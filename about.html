@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>このサイトについて | ディズニー混雑予想カレンダー</title>
+<meta name="description" content="このサイトの混雑予想の仕組み、対象にしている方、データソースについて説明しています。">
+<style>
+  :root {
+    color-scheme: light;
+    --surface-1: #ffffff;
+    --surface-2: #f3f1ea;
+    --page: #faf8f2;
+    --text-primary: #241f14;
+    --text-secondary: #5c5646;
+    --text-muted: #8a8474;
+    --gridline: #e7e2d3;
+    --border: rgba(36,31,20,0.10);
+    --shadow: 0 1px 2px rgba(36,31,20,0.06), 0 8px 24px rgba(36,31,20,0.06);
+    --accent: #1c5cab;
+    --accent-2: #eda100;
+    --ad-bg: #eeece3;
+    --ad-border: #d8d4c4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: dark;
+      --surface-1: #201c14;
+      --surface-2: #262119;
+      --page: #14120c;
+      --text-primary: #fbf7ee;
+      --text-secondary: #cfc7b2;
+      --text-muted: #948d78;
+      --gridline: #35301f;
+      --border: rgba(255,255,255,0.10);
+      --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 12px 28px rgba(0,0,0,0.35);
+      --accent: #3987e5;
+      --accent-2: #eda100;
+      --ad-bg: #201c14;
+      --ad-border: #35301f;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--page);
+    color: var(--text-primary);
+    font-family: system-ui, -apple-system, "Hiragino Sans", "Segoe UI", sans-serif;
+    line-height: 1.6;
+  }
+  a { color: var(--accent); }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 0 16px 48px; }
+
+  .site-header {
+    background: linear-gradient(135deg, var(--accent) 0%, #123a6e 100%);
+    color: #fff;
+  }
+  .site-header-inner {
+    max-width: 980px; margin: 0 auto; padding: 16px 16px;
+    display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;
+  }
+  .brand { font-weight: 800; font-size: 1.05rem; text-decoration: none; color: #fff; display: flex; align-items: center; gap: 8px; }
+  .site-nav { display: flex; gap: 18px; font-size: 0.85rem; }
+  .site-nav a { color: rgba(255,255,255,0.88); text-decoration: none; }
+  .site-nav a:hover { text-decoration: underline; }
+
+  .hero {
+    padding: 22px 16px 26px;
+    background: linear-gradient(135deg, var(--accent) 0%, #123a6e 100%);
+    color: #fff;
+  }
+  .hero-inner { max-width: 980px; margin: 0 auto; }
+  .hero h1 { font-size: 1.4rem; margin: 0 0 6px; letter-spacing: .01em; }
+  .hero p { margin: 0; color: rgba(255,255,255,0.85); font-size: 0.9rem; max-width: 62ch; }
+
+  .breadcrumb { font-size: 0.8rem; color: var(--text-muted); margin: 16px 0 0; }
+  .breadcrumb a { color: var(--text-secondary); }
+
+  .card {
+    background: var(--surface-1); border-radius: 16px; padding: 18px 18px 20px;
+    margin-bottom: 20px; box-shadow: var(--shadow);
+  }
+  .card h2 { font-size: 1rem; margin: 0 0 12px; }
+  .prose { font-size: 0.92rem; color: var(--text-secondary); }
+  .prose p { margin: 0 0 12px; }
+  .prose h3 { font-size: 0.95rem; color: var(--text-primary); margin: 18px 0 8px; }
+  .prose ul { margin: 0 0 12px; padding-left: 20px; }
+  .prose li { margin-bottom: 6px; }
+
+  .ad-slot {
+    background: var(--ad-bg); border: 1px dashed var(--ad-border); border-radius: 12px;
+    color: var(--text-muted); font-size: 0.72rem; text-align: center;
+    padding: 10px; margin: 20px 0; letter-spacing: .04em;
+  }
+
+  footer.site-footer { margin-top: 24px; color: var(--text-muted); font-size: 0.78rem; border-top: 1px solid var(--gridline); padding-top: 16px; }
+  footer.site-footer nav { display: flex; gap: 14px; margin-bottom: 10px; flex-wrap: wrap; }
+  footer.site-footer nav a { color: var(--text-secondary); }
+
+  
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="brand" href="/index.html">🏰 ディズニー混雑予想カレンダー</a>
+    <nav class="site-nav">
+      <a href="/index.html">ホーム</a>
+      <a href="/about.html">このサイトについて</a>
+      <a href="/contact.html">お問い合わせ</a>
+    </nav>
+  </div>
+</header>
+
+
+<div class="hero">
+  <div class="hero-inner">
+    <h1>このサイトについて</h1>
+    <p>混雑予想の仕組みと、想定している使い方を説明します。</p>
+  </div>
+</div>
+
+
+<div class="wrap">
+  
+<p class="breadcrumb"><a href="/index.html">ホーム</a> ・ このサイトについて</p>
+
+  
+<div class="card prose">
+  <h2>どんな人のためのサイトか</h2>
+  <p>このサイトは、<strong>訪問日をこれから決める人・前日〜数週間前に予定を確認したい人</strong>を対象にしています。当日にパーク内で待ち時間をリアルタイムに確認したい方には、公式アプリや他のリアルタイム待ち時間サイトの方が適しています。このサイトが得意なのは「来月の平日、どのあたりが空いていそうか」「週末に行くなら土日どちらが良さそうか」を、事前に見比べて予定を立てる場面です。</p>
+
+  <h3>なぜ独自にサイトを作ったか</h3>
+  <p>既存の混雑予想サイトの多くは、曜日・祝日・学校の長期休み・天気予報といった基本的な要因を組み合わせて予想を出しています。このサイトも同じ基本要因を使いつつ、さらに次のような要因を加えて精度を高めることを試みています。</p>
+  <ul>
+    <li><strong>海外の祝日・連休</strong>: 春節(旧正月)や国慶節など、インバウンド需要に影響する海外の連休を計算に加えています</li>
+    <li><strong>飛び石連休の谷間</strong>: 前後を祝日・週末に挟まれた単独の平日は、まとまった休みを取りにくく、実は空きやすいという経験則を反映しています</li>
+    <li><strong>パークの運営時間</strong>: 貸切イベント等による短縮営業日は、限られた時間に人が集中しやすいため加点しています</li>
+    <li><strong>公式発表の話題性</strong>: 新グッズやイベントの公式発表があった直後は注目度が高まる傾向を、緩やかに反映しています</li>
+  </ul>
+
+  <h3>予想の仕組み(できるだけ透明に)</h3>
+  <p>基準となるスコアから、上記の各要因を足し引きし、最後に天気による補正をかけて0〜100のスコアを算出しています。使っている要因は隠さずすべて公開しており、各日付にカーソルを合わせる(またはタップする)と、その日の判定に効いた要因を確認できます。</p>
+  <p>この重み付けは現時点では試験的な初期値です。今後、実際の需要の強さ(ディズニーオフィシャルホテルの空室状況)と予想を照らし合わせ、統計的に重みを調整していく仕組みを組み込んでいます。データが十分に蓄積された段階で、リードタイム別(1ヶ月前時点・1週間前時点など)の的中率も公開していく予定です。</p>
+
+  <h3>データソース</h3>
+  <ul>
+    <li>曜日・祝日・学校休み・海外の祝日: ルールベースの計算(手動更新不要)</li>
+    <li>天気: 気象庁の公開データ(短期予報・週間予報・平年値)</li>
+    <li>パーク運営時間: 開園・閉園時刻という事実情報のみを情報サイトから収集</li>
+    <li>イベント・グッズ等の告知: オリエンタルランドの公式プレスリリース(PR TIMES)</li>
+    <li>為替レート: インバウンド需要の参考指標</li>
+  </ul>
+  <p>運営時間・チケットの変動価格については、公式サイトへの自動アクセスが技術的に制限されているため、現時点では取得できていません。今後代替手段が見つかり次第、精度向上に反映していきます。</p>
+
+  <h3>自動運用について</h3>
+  <p>このサイトはイベント情報などの手動登録を行わず、毎日決まった時刻に上記データを自動収集し、予想を再計算して公開しています。運営者が個別の日付を手で調整することはありません。</p>
+</div>
+
+
+  <footer class="site-footer">
+    <nav>
+      <a href="/index.html">ホーム</a>
+      <a href="/about.html">このサイトについて</a>
+      <a href="/privacy.html">プライバシーポリシー</a>
+      <a href="/contact.html">お問い合わせ</a>
+    </nav>
+    <p>この予想はルールベースの試験運用版です。曜日・祝日・学校休み・海外の祝日・気象庁の天気予報/平年値・パーク運営時間・公式プレスリリースなど、複数の公開情報を組み合わせて自動算出しています。実際の混雑と異なる場合があります。</p>
+  </footer>
+</div>
+
+
+</body>
+</html>
