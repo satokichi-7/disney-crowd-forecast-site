@@ -1,47 +1,7 @@
 {
-  "generated_at": "2026-08-10T23:20:40.729482",
+  "generated_at": "2026-08-11T23:26:06.966837",
   "parks": {
     "TDL": [
-      {
-        "date": "2026-08-10",
-        "day": 10,
-        "weekday": 0,
-        "weekday_label": "月",
-        "has_data": true,
-        "score": 53.2,
-        "grade": "warning",
-        "label": "ふつう",
-        "bg": "#fab219",
-        "text": "#241f14",
-        "dots": 2,
-        "weather_icon": "☁️",
-        "mood_icon": "mood-warning",
-        "short_label": "普通",
-        "factors": [
-          {
-            "label": "夏休み",
-            "direction": "up",
-            "weight": 12.0
-          },
-          {
-            "label": "飛び石連休の谷間",
-            "direction": "down",
-            "weight": -12.0
-          },
-          {
-            "label": "話題のイベント・グッズ告知",
-            "direction": "up",
-            "weight": 9.16
-          },
-          {
-            "label": "天気(くもり)",
-            "direction": "down",
-            "weight": -5.92
-          }
-        ],
-        "factors_json": "[{\"label\": \"夏休み\", \"direction\": \"up\", \"weight\": 12.0}, {\"label\": \"飛び石連休の谷間\", \"direction\": \"down\", \"weight\": -12.0}, {\"label\": \"話題のイベント・グッズ告知\", \"direction\": \"up\", \"weight\": 9.16}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -5.92}]",
-        "factors_text": "夏休み、飛び石連休の谷間、話題のイベント・グッズ告知、天気(くもり)"
-      },
       {
         "date": "2026-08-11",
         "day": 11,
@@ -3541,16 +3501,14 @@
         ],
         "factors_json": "[{\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -5.0}]",
         "factors_text": "天気(くもり)"
-      }
-    ],
-    "TDS": [
+      },
       {
-        "date": "2026-08-10",
-        "day": 10,
-        "weekday": 0,
-        "weekday_label": "月",
+        "date": "2026-12-09",
+        "day": 9,
+        "weekday": 2,
+        "weekday_label": "水",
         "has_data": true,
-        "score": 53.2,
+        "score": 45.0,
         "grade": "warning",
         "label": "ふつう",
         "bg": "#fab219",
@@ -3561,29 +3519,16 @@
         "short_label": "普通",
         "factors": [
           {
-            "label": "夏休み",
-            "direction": "up",
-            "weight": 12.0
-          },
-          {
-            "label": "飛び石連休の谷間",
-            "direction": "down",
-            "weight": -12.0
-          },
-          {
-            "label": "話題のイベント・グッズ告知",
-            "direction": "up",
-            "weight": 9.16
-          },
-          {
             "label": "天気(くもり)",
             "direction": "down",
-            "weight": -5.92
+            "weight": -5.0
           }
         ],
-        "factors_json": "[{\"label\": \"夏休み\", \"direction\": \"up\", \"weight\": 12.0}, {\"label\": \"飛び石連休の谷間\", \"direction\": \"down\", \"weight\": -12.0}, {\"label\": \"話題のイベント・グッズ告知\", \"direction\": \"up\", \"weight\": 9.16}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -5.92}]",
-        "factors_text": "夏休み、飛び石連休の谷間、話題のイベント・グッズ告知、天気(くもり)"
-      },
+        "factors_json": "[{\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -5.0}]",
+        "factors_text": "天気(くもり)"
+      }
+    ],
+    "TDS": [
       {
         "date": "2026-08-11",
         "day": 11,
@@ -7064,6 +7009,31 @@
         "day": 8,
         "weekday": 1,
         "weekday_label": "火",
+        "has_data": true,
+        "score": 45.0,
+        "grade": "warning",
+        "label": "ふつう",
+        "bg": "#fab219",
+        "text": "#241f14",
+        "dots": 2,
+        "weather_icon": "☁️",
+        "mood_icon": "mood-warning",
+        "short_label": "普通",
+        "factors": [
+          {
+            "label": "天気(くもり)",
+            "direction": "down",
+            "weight": -5.0
+          }
+        ],
+        "factors_json": "[{\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -5.0}]",
+        "factors_text": "天気(くもり)"
+      },
+      {
+        "date": "2026-12-09",
+        "day": 9,
+        "weekday": 2,
+        "weekday_label": "水",
         "has_data": true,
         "score": 45.0,
         "grade": "warning",
