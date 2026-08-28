@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T04:28:46.375868",
+  "generated_at": "2026-08-28T22:02:12.554431",
   "parks": {
     "TDL": [
       {
@@ -8,7 +8,7 @@
         "weekday": 4,
         "weekday_label": "金",
         "has_data": true,
-        "score": 64.8,
+        "score": 68.4,
         "grade": "serious",
         "label": "やや混み",
         "bg": "#ec835a",
@@ -31,11 +31,16 @@
           {
             "label": "天気(くもり)",
             "direction": "down",
-            "weight": -7.2
+            "weight": -7.6
+          },
+          {
+            "label": "話題のイベント・グッズ告知",
+            "direction": "up",
+            "weight": 4.0
           }
         ],
-        "factors_json": "[{\"label\": \"夏休み\", \"direction\": \"up\", \"weight\": 12.0}, {\"label\": \"貸切等による短縮営業\", \"direction\": \"up\", \"weight\": 10.0}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -7.2}]",
-        "factors_text": "夏休み、貸切等による短縮営業、天気(くもり)"
+        "factors_json": "[{\"label\": \"夏休み\", \"direction\": \"up\", \"weight\": 12.0}, {\"label\": \"貸切等による短縮営業\", \"direction\": \"up\", \"weight\": 10.0}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -7.6}, {\"label\": \"話題のイベント・グッズ告知\", \"direction\": \"up\", \"weight\": 4.0}]",
+        "factors_text": "夏休み、貸切等による短縮営業、天気(くもり)、話題のイベント・グッズ告知"
       },
       {
         "date": "2026-08-29",
@@ -43,15 +48,15 @@
         "weekday": 5,
         "weekday_label": "土",
         "has_data": true,
-        "score": 73.8,
-        "grade": "serious",
-        "label": "やや混み",
-        "bg": "#ec835a",
-        "text": "#241f14",
-        "dots": 3,
+        "score": 77.1,
+        "grade": "critical",
+        "label": "激混み",
+        "bg": "#d03b3b",
+        "text": "#ffffff",
+        "dots": 4,
         "weather_icon": "☁️",
-        "mood_icon": "mood-serious",
-        "short_label": "混み",
+        "mood_icon": "mood-critical",
+        "short_label": "激混",
         "factors": [
           {
             "label": "週末",
@@ -66,11 +71,16 @@
           {
             "label": "天気(くもり)",
             "direction": "down",
-            "weight": -8.2
+            "weight": -8.57
+          },
+          {
+            "label": "話題のイベント・グッズ告知",
+            "direction": "up",
+            "weight": 3.72
           }
         ],
-        "factors_json": "[{\"label\": \"週末\", \"direction\": \"up\", \"weight\": 20.0}, {\"label\": \"夏休み\", \"direction\": \"up\", \"weight\": 12.0}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -8.2}]",
-        "factors_text": "週末、夏休み、天気(くもり)"
+        "factors_json": "[{\"label\": \"週末\", \"direction\": \"up\", \"weight\": 20.0}, {\"label\": \"夏休み\", \"direction\": \"up\", \"weight\": 12.0}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -8.57}, {\"label\": \"話題のイベント・グッズ告知\", \"direction\": \"up\", \"weight\": 3.72}]",
+        "factors_text": "週末、夏休み、天気(くもり)、話題のイベント・グッズ告知"
       },
       {
         "date": "2026-08-30",
@@ -78,15 +88,15 @@
         "weekday": 6,
         "weekday_label": "日",
         "has_data": true,
-        "score": 73.8,
-        "grade": "serious",
-        "label": "やや混み",
-        "bg": "#ec835a",
-        "text": "#241f14",
-        "dots": 3,
+        "score": 76.9,
+        "grade": "critical",
+        "label": "激混み",
+        "bg": "#d03b3b",
+        "text": "#ffffff",
+        "dots": 4,
         "weather_icon": "☁️",
-        "mood_icon": "mood-serious",
-        "short_label": "混み",
+        "mood_icon": "mood-critical",
+        "short_label": "激混",
         "factors": [
           {
             "label": "週末",
@@ -101,11 +111,16 @@
           {
             "label": "天気(くもり)",
             "direction": "down",
-            "weight": -8.2
+            "weight": -8.54
+          },
+          {
+            "label": "話題のイベント・グッズ告知",
+            "direction": "up",
+            "weight": 3.44
           }
         ],
-        "factors_json": "[{\"label\": \"週末\", \"direction\": \"up\", \"weight\": 20.0}, {\"label\": \"夏休み\", \"direction\": \"up\", \"weight\": 12.0}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -8.2}]",
-        "factors_text": "週末、夏休み、天気(くもり)"
+        "factors_json": "[{\"label\": \"週末\", \"direction\": \"up\", \"weight\": 20.0}, {\"label\": \"夏休み\", \"direction\": \"up\", \"weight\": 12.0}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -8.54}, {\"label\": \"話題のイベント・グッズ告知\", \"direction\": \"up\", \"weight\": 3.44}]",
+        "factors_text": "週末、夏休み、天気(くもり)、話題のイベント・グッズ告知"
       },
       {
         "date": "2026-08-31",
@@ -113,7 +128,7 @@
         "weekday": 0,
         "weekday_label": "月",
         "has_data": true,
-        "score": 55.8,
+        "score": 58.6,
         "grade": "serious",
         "label": "やや混み",
         "bg": "#ec835a",
@@ -131,11 +146,16 @@
           {
             "label": "天気(くもり)",
             "direction": "down",
-            "weight": -6.2
+            "weight": -6.52
+          },
+          {
+            "label": "話題のイベント・グッズ告知",
+            "direction": "up",
+            "weight": 3.16
           }
         ],
-        "factors_json": "[{\"label\": \"夏休み\", \"direction\": \"up\", \"weight\": 12.0}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -6.2}]",
-        "factors_text": "夏休み、天気(くもり)"
+        "factors_json": "[{\"label\": \"夏休み\", \"direction\": \"up\", \"weight\": 12.0}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -6.52}, {\"label\": \"話題のイベント・グッズ告知\", \"direction\": \"up\", \"weight\": 3.16}]",
+        "factors_text": "夏休み、天気(くもり)、話題のイベント・グッズ告知"
       },
       {
         "date": "2026-09-01",
@@ -143,7 +163,7 @@
         "weekday": 1,
         "weekday_label": "火",
         "has_data": true,
-        "score": 45.0,
+        "score": 47.6,
         "grade": "warning",
         "label": "ふつう",
         "bg": "#fab219",
@@ -156,11 +176,16 @@
           {
             "label": "天気(くもり)",
             "direction": "down",
-            "weight": -5.0
+            "weight": -5.28
+          },
+          {
+            "label": "話題のイベント・グッズ告知",
+            "direction": "up",
+            "weight": 2.84
           }
         ],
-        "factors_json": "[{\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -5.0}]",
-        "factors_text": "天気(くもり)"
+        "factors_json": "[{\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -5.28}, {\"label\": \"話題のイベント・グッズ告知\", \"direction\": \"up\", \"weight\": 2.84}]",
+        "factors_text": "天気(くもり)、話題のイベント・グッズ告知"
       },
       {
         "date": "2026-09-02",
@@ -168,7 +193,7 @@
         "weekday": 2,
         "weekday_label": "水",
         "has_data": true,
-        "score": 45.0,
+        "score": 47.3,
         "grade": "warning",
         "label": "ふつう",
         "bg": "#fab219",
@@ -181,11 +206,16 @@
           {
             "label": "天気(くもり)",
             "direction": "down",
-            "weight": -5.0
+            "weight": -5.26
+          },
+          {
+            "label": "話題のイベント・グッズ告知",
+            "direction": "up",
+            "weight": 2.56
           }
         ],
-        "factors_json": "[{\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -5.0}]",
-        "factors_text": "天気(くもり)"
+        "factors_json": "[{\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -5.26}, {\"label\": \"話題のイベント・グッズ告知\", \"direction\": \"up\", \"weight\": 2.56}]",
+        "factors_text": "天気(くもり)、話題のイベント・グッズ告知"
       },
       {
         "date": "2026-09-03",
@@ -193,7 +223,7 @@
         "weekday": 3,
         "weekday_label": "木",
         "has_data": true,
-        "score": 37.5,
+        "score": 39.2,
         "grade": "good",
         "label": "すいてる",
         "bg": "#0ca30c",
@@ -206,11 +236,16 @@
           {
             "label": "天気(雨)",
             "direction": "down",
-            "weight": -12.5
+            "weight": -13.07
+          },
+          {
+            "label": "話題のイベント・グッズ告知",
+            "direction": "up",
+            "weight": 2.28
           }
         ],
-        "factors_json": "[{\"label\": \"天気(雨)\", \"direction\": \"down\", \"weight\": -12.5}]",
-        "factors_text": "天気(雨)"
+        "factors_json": "[{\"label\": \"天気(雨)\", \"direction\": \"down\", \"weight\": -13.07}, {\"label\": \"話題のイベント・グッズ告知\", \"direction\": \"up\", \"weight\": 2.28}]",
+        "factors_text": "天気(雨)、話題のイベント・グッズ告知"
       },
       {
         "date": "2026-09-04",
@@ -218,7 +253,7 @@
         "weekday": 4,
         "weekday_label": "金",
         "has_data": true,
-        "score": 37.5,
+        "score": 39.0,
         "grade": "good",
         "label": "すいてる",
         "bg": "#0ca30c",
@@ -231,11 +266,16 @@
           {
             "label": "天気(雨)",
             "direction": "down",
-            "weight": -12.5
+            "weight": -13.0
+          },
+          {
+            "label": "話題のイベント・グッズ告知",
+            "direction": "up",
+            "weight": 2.0
           }
         ],
-        "factors_json": "[{\"label\": \"天気(雨)\", \"direction\": \"down\", \"weight\": -12.5}]",
-        "factors_text": "天気(雨)"
+        "factors_json": "[{\"label\": \"天気(雨)\", \"direction\": \"down\", \"weight\": -13.0}, {\"label\": \"話題のイベント・グッズ告知\", \"direction\": \"up\", \"weight\": 2.0}]",
+        "factors_text": "天気(雨)、話題のイベント・グッズ告知"
       },
       {
         "date": "2026-09-05",
@@ -243,7 +283,7 @@
         "weekday": 5,
         "weekday_label": "土",
         "has_data": true,
-        "score": 63.0,
+        "score": 64.5,
         "grade": "serious",
         "label": "やや混み",
         "bg": "#ec835a",
@@ -261,11 +301,16 @@
           {
             "label": "天気(くもり)",
             "direction": "down",
-            "weight": -7.0
+            "weight": -7.17
+          },
+          {
+            "label": "話題のイベント・グッズ告知",
+            "direction": "up",
+            "weight": 1.72
           }
         ],
-        "factors_json": "[{\"label\": \"週末\", \"direction\": \"up\", \"weight\": 20.0}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -7.0}]",
-        "factors_text": "週末、天気(くもり)"
+        "factors_json": "[{\"label\": \"週末\", \"direction\": \"up\", \"weight\": 20.0}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -7.17}, {\"label\": \"話題のイベント・グッズ告知\", \"direction\": \"up\", \"weight\": 1.72}]",
+        "factors_text": "週末、天気(くもり)、話題のイベント・グッズ告知"
       },
       {
         "date": "2026-09-06",
@@ -273,7 +318,7 @@
         "weekday": 6,
         "weekday_label": "日",
         "has_data": true,
-        "score": 63.0,
+        "score": 64.3,
         "grade": "serious",
         "label": "やや混み",
         "bg": "#ec835a",
@@ -291,11 +336,16 @@
           {
             "label": "天気(くもり)",
             "direction": "down",
-            "weight": -7.0
+            "weight": -7.14
+          },
+          {
+            "label": "話題のイベント・グッズ告知",
+            "direction": "up",
+            "weight": 1.44
           }
         ],
-        "factors_json": "[{\"label\": \"週末\", \"direction\": \"up\", \"weight\": 20.0}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -7.0}]",
-        "factors_text": "週末、天気(くもり)"
+        "factors_json": "[{\"label\": \"週末\", \"direction\": \"up\", \"weight\": 20.0}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -7.14}, {\"label\": \"話題のイベント・グッズ告知\", \"direction\": \"up\", \"weight\": 1.44}]",
+        "factors_text": "週末、天気(くもり)、話題のイベント・グッズ告知"
       },
       {
         "date": "2026-09-07",
@@ -303,7 +353,7 @@
         "weekday": 0,
         "weekday_label": "月",
         "has_data": true,
-        "score": 45.0,
+        "score": 46.0,
         "grade": "warning",
         "label": "ふつう",
         "bg": "#fab219",
@@ -316,11 +366,16 @@
           {
             "label": "天気(くもり)",
             "direction": "down",
-            "weight": -5.0
+            "weight": -5.12
+          },
+          {
+            "label": "話題のイベント・グッズ告知",
+            "direction": "up",
+            "weight": 1.16
           }
         ],
-        "factors_json": "[{\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -5.0}]",
-        "factors_text": "天気(くもり)"
+        "factors_json": "[{\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -5.12}, {\"label\": \"話題のイベント・グッズ告知\", \"direction\": \"up\", \"weight\": 1.16}]",
+        "factors_text": "天気(くもり)、話題のイベント・グッズ告知"
       },
       {
         "date": "2026-09-08",
@@ -328,7 +383,7 @@
         "weekday": 1,
         "weekday_label": "火",
         "has_data": true,
-        "score": 45.0,
+        "score": 45.8,
         "grade": "warning",
         "label": "ふつう",
         "bg": "#fab219",
@@ -341,11 +396,16 @@
           {
             "label": "天気(くもり)",
             "direction": "down",
-            "weight": -5.0
+            "weight": -5.08
+          },
+          {
+            "label": "話題のイベント・グッズ告知",
+            "direction": "up",
+            "weight": 0.84
           }
         ],
-        "factors_json": "[{\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -5.0}]",
-        "factors_text": "天気(くもり)"
+        "factors_json": "[{\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -5.08}, {\"label\": \"話題のイベント・グッズ告知\", \"direction\": \"up\", \"weight\": 0.84}]",
+        "factors_text": "天気(くもり)、話題のイベント・グッズ告知"
       },
       {
         "date": "2026-09-09",
@@ -353,7 +413,7 @@
         "weekday": 2,
         "weekday_label": "水",
         "has_data": true,
-        "score": 45.0,
+        "score": 45.5,
         "grade": "warning",
         "label": "ふつう",
         "bg": "#fab219",
@@ -366,11 +426,16 @@
           {
             "label": "天気(くもり)",
             "direction": "down",
-            "weight": -5.0
+            "weight": -5.06
+          },
+          {
+            "label": "話題のイベント・グッズ告知",
+            "direction": "up",
+            "weight": 0.56
           }
         ],
-        "factors_json": "[{\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -5.0}]",
-        "factors_text": "天気(くもり)"
+        "factors_json": "[{\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -5.06}, {\"label\": \"話題のイベント・グッズ告知\", \"direction\": \"up\", \"weight\": 0.56}]",
+        "factors_text": "天気(くもり)、話題のイベント・グッズ告知"
       },
       {
         "date": "2026-09-10",
@@ -378,7 +443,7 @@
         "weekday": 3,
         "weekday_label": "木",
         "has_data": true,
-        "score": 45.0,
+        "score": 45.3,
         "grade": "warning",
         "label": "ふつう",
         "bg": "#fab219",
@@ -391,11 +456,16 @@
           {
             "label": "天気(くもり)",
             "direction": "down",
-            "weight": -5.0
+            "weight": -5.03
+          },
+          {
+            "label": "話題のイベント・グッズ告知",
+            "direction": "up",
+            "weight": 0.28
           }
         ],
-        "factors_json": "[{\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -5.0}]",
-        "factors_text": "天気(くもり)"
+        "factors_json": "[{\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -5.03}, {\"label\": \"話題のイベント・グッズ告知\", \"direction\": \"up\", \"weight\": 0.28}]",
+        "factors_text": "天気(くもり)、話題のイベント・グッズ告知"
       },
       {
         "date": "2026-09-11",
@@ -3385,7 +3455,7 @@
         "weekday": 4,
         "weekday_label": "金",
         "has_data": true,
-        "score": 55.8,
+        "score": 59.4,
         "grade": "serious",
         "label": "やや混み",
         "bg": "#ec835a",
@@ -3403,11 +3473,16 @@
           {
             "label": "天気(くもり)",
             "direction": "down",
-            "weight": -6.2
+            "weight": -6.6
+          },
+          {
+            "label": "話題のイベント・グッズ告知",
+            "direction": "up",
+            "weight": 4.0
           }
         ],
-        "factors_json": "[{\"label\": \"夏休み\", \"direction\": \"up\", \"weight\": 12.0}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -6.2}]",
-        "factors_text": "夏休み、天気(くもり)"
+        "factors_json": "[{\"label\": \"夏休み\", \"direction\": \"up\", \"weight\": 12.0}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -6.6}, {\"label\": \"話題のイベント・グッズ告知\", \"direction\": \"up\", \"weight\": 4.0}]",
+        "factors_text": "夏休み、天気(くもり)、話題のイベント・グッズ告知"
       },
       {
         "date": "2026-08-29",
@@ -3415,15 +3490,15 @@
         "weekday": 5,
         "weekday_label": "土",
         "has_data": true,
-        "score": 73.8,
-        "grade": "serious",
-        "label": "やや混み",
-        "bg": "#ec835a",
-        "text": "#241f14",
-        "dots": 3,
+        "score": 77.1,
+        "grade": "critical",
+        "label": "激混み",
+        "bg": "#d03b3b",
+        "text": "#ffffff",
+        "dots": 4,
         "weather_icon": "☁️",
-        "mood_icon": "mood-serious",
-        "short_label": "混み",
+        "mood_icon": "mood-critical",
+        "short_label": "激混",
         "factors": [
           {
             "label": "週末",
@@ -3438,11 +3513,16 @@
           {
             "label": "天気(くもり)",
             "direction": "down",
-            "weight": -8.2
+            "weight": -8.57
+          },
+          {
+            "label": "話題のイベント・グッズ告知",
+            "direction": "up",
+            "weight": 3.72
           }
         ],
-        "factors_json": "[{\"label\": \"週末\", \"direction\": \"up\", \"weight\": 20.0}, {\"label\": \"夏休み\", \"direction\": \"up\", \"weight\": 12.0}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -8.2}]",
-        "factors_text": "週末、夏休み、天気(くもり)"
+        "factors_json": "[{\"label\": \"週末\", \"direction\": \"up\", \"weight\": 20.0}, {\"label\": \"夏休み\", \"direction\": \"up\", \"weight\": 12.0}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -8.57}, {\"label\": \"話題のイベント・グッズ告知\", \"direction\": \"up\", \"weight\": 3.72}]",
+        "factors_text": "週末、夏休み、天気(くもり)、話題のイベント・グッズ告知"
       },
       {
         "date": "2026-08-30",
@@ -3450,15 +3530,15 @@
         "weekday": 6,
         "weekday_label": "日",
         "has_data": true,
-        "score": 73.8,
-        "grade": "serious",
-        "label": "やや混み",
-        "bg": "#ec835a",
-        "text": "#241f14",
-        "dots": 3,
+        "score": 76.9,
+        "grade": "critical",
+        "label": "激混み",
+        "bg": "#d03b3b",
+        "text": "#ffffff",
+        "dots": 4,
         "weather_icon": "☁️",
-        "mood_icon": "mood-serious",
-        "short_label": "混み",
+        "mood_icon": "mood-critical",
+        "short_label": "激混",
         "factors": [
           {
             "label": "週末",
@@ -3473,11 +3553,16 @@
           {
             "label": "天気(くもり)",
             "direction": "down",
-            "weight": -8.2
+            "weight": -8.54
+          },
+          {
+            "label": "話題のイベント・グッズ告知",
+            "direction": "up",
+            "weight": 3.44
           }
         ],
-        "factors_json": "[{\"label\": \"週末\", \"direction\": \"up\", \"weight\": 20.0}, {\"label\": \"夏休み\", \"direction\": \"up\", \"weight\": 12.0}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -8.2}]",
-        "factors_text": "週末、夏休み、天気(くもり)"
+        "factors_json": "[{\"label\": \"週末\", \"direction\": \"up\", \"weight\": 20.0}, {\"label\": \"夏休み\", \"direction\": \"up\", \"weight\": 12.0}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -8.54}, {\"label\": \"話題のイベント・グッズ告知\", \"direction\": \"up\", \"weight\": 3.44}]",
+        "factors_text": "週末、夏休み、天気(くもり)、話題のイベント・グッズ告知"
       },
       {
         "date": "2026-08-31",
@@ -3485,7 +3570,7 @@
         "weekday": 0,
         "weekday_label": "月",
         "has_data": true,
-        "score": 55.8,
+        "score": 58.6,
         "grade": "serious",
         "label": "やや混み",
         "bg": "#ec835a",
@@ -3503,11 +3588,16 @@
           {
             "label": "天気(くもり)",
             "direction": "down",
-            "weight": -6.2
+            "weight": -6.52
+          },
+          {
+            "label": "話題のイベント・グッズ告知",
+            "direction": "up",
+            "weight": 3.16
           }
         ],
-        "factors_json": "[{\"label\": \"夏休み\", \"direction\": \"up\", \"weight\": 12.0}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -6.2}]",
-        "factors_text": "夏休み、天気(くもり)"
+        "factors_json": "[{\"label\": \"夏休み\", \"direction\": \"up\", \"weight\": 12.0}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -6.52}, {\"label\": \"話題のイベント・グッズ告知\", \"direction\": \"up\", \"weight\": 3.16}]",
+        "factors_text": "夏休み、天気(くもり)、話題のイベント・グッズ告知"
       },
       {
         "date": "2026-09-01",
@@ -3515,7 +3605,7 @@
         "weekday": 1,
         "weekday_label": "火",
         "has_data": true,
-        "score": 45.0,
+        "score": 47.6,
         "grade": "warning",
         "label": "ふつう",
         "bg": "#fab219",
@@ -3528,11 +3618,16 @@
           {
             "label": "天気(くもり)",
             "direction": "down",
-            "weight": -5.0
+            "weight": -5.28
+          },
+          {
+            "label": "話題のイベント・グッズ告知",
+            "direction": "up",
+            "weight": 2.84
           }
         ],
-        "factors_json": "[{\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -5.0}]",
-        "factors_text": "天気(くもり)"
+        "factors_json": "[{\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -5.28}, {\"label\": \"話題のイベント・グッズ告知\", \"direction\": \"up\", \"weight\": 2.84}]",
+        "factors_text": "天気(くもり)、話題のイベント・グッズ告知"
       },
       {
         "date": "2026-09-02",
@@ -3540,7 +3635,7 @@
         "weekday": 2,
         "weekday_label": "水",
         "has_data": true,
-        "score": 45.0,
+        "score": 47.3,
         "grade": "warning",
         "label": "ふつう",
         "bg": "#fab219",
@@ -3553,11 +3648,16 @@
           {
             "label": "天気(くもり)",
             "direction": "down",
-            "weight": -5.0
+            "weight": -5.26
+          },
+          {
+            "label": "話題のイベント・グッズ告知",
+            "direction": "up",
+            "weight": 2.56
           }
         ],
-        "factors_json": "[{\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -5.0}]",
-        "factors_text": "天気(くもり)"
+        "factors_json": "[{\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -5.26}, {\"label\": \"話題のイベント・グッズ告知\", \"direction\": \"up\", \"weight\": 2.56}]",
+        "factors_text": "天気(くもり)、話題のイベント・グッズ告知"
       },
       {
         "date": "2026-09-03",
@@ -3565,7 +3665,7 @@
         "weekday": 3,
         "weekday_label": "木",
         "has_data": true,
-        "score": 37.5,
+        "score": 39.2,
         "grade": "good",
         "label": "すいてる",
         "bg": "#0ca30c",
@@ -3578,11 +3678,16 @@
           {
             "label": "天気(雨)",
             "direction": "down",
-            "weight": -12.5
+            "weight": -13.07
+          },
+          {
+            "label": "話題のイベント・グッズ告知",
+            "direction": "up",
+            "weight": 2.28
           }
         ],
-        "factors_json": "[{\"label\": \"天気(雨)\", \"direction\": \"down\", \"weight\": -12.5}]",
-        "factors_text": "天気(雨)"
+        "factors_json": "[{\"label\": \"天気(雨)\", \"direction\": \"down\", \"weight\": -13.07}, {\"label\": \"話題のイベント・グッズ告知\", \"direction\": \"up\", \"weight\": 2.28}]",
+        "factors_text": "天気(雨)、話題のイベント・グッズ告知"
       },
       {
         "date": "2026-09-04",
@@ -3590,7 +3695,7 @@
         "weekday": 4,
         "weekday_label": "金",
         "has_data": true,
-        "score": 37.5,
+        "score": 39.0,
         "grade": "good",
         "label": "すいてる",
         "bg": "#0ca30c",
@@ -3603,11 +3708,16 @@
           {
             "label": "天気(雨)",
             "direction": "down",
-            "weight": -12.5
+            "weight": -13.0
+          },
+          {
+            "label": "話題のイベント・グッズ告知",
+            "direction": "up",
+            "weight": 2.0
           }
         ],
-        "factors_json": "[{\"label\": \"天気(雨)\", \"direction\": \"down\", \"weight\": -12.5}]",
-        "factors_text": "天気(雨)"
+        "factors_json": "[{\"label\": \"天気(雨)\", \"direction\": \"down\", \"weight\": -13.0}, {\"label\": \"話題のイベント・グッズ告知\", \"direction\": \"up\", \"weight\": 2.0}]",
+        "factors_text": "天気(雨)、話題のイベント・グッズ告知"
       },
       {
         "date": "2026-09-05",
@@ -3615,7 +3725,7 @@
         "weekday": 5,
         "weekday_label": "土",
         "has_data": true,
-        "score": 63.0,
+        "score": 64.5,
         "grade": "serious",
         "label": "やや混み",
         "bg": "#ec835a",
@@ -3633,11 +3743,16 @@
           {
             "label": "天気(くもり)",
             "direction": "down",
-            "weight": -7.0
+            "weight": -7.17
+          },
+          {
+            "label": "話題のイベント・グッズ告知",
+            "direction": "up",
+            "weight": 1.72
           }
         ],
-        "factors_json": "[{\"label\": \"週末\", \"direction\": \"up\", \"weight\": 20.0}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -7.0}]",
-        "factors_text": "週末、天気(くもり)"
+        "factors_json": "[{\"label\": \"週末\", \"direction\": \"up\", \"weight\": 20.0}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -7.17}, {\"label\": \"話題のイベント・グッズ告知\", \"direction\": \"up\", \"weight\": 1.72}]",
+        "factors_text": "週末、天気(くもり)、話題のイベント・グッズ告知"
       },
       {
         "date": "2026-09-06",
@@ -3645,7 +3760,7 @@
         "weekday": 6,
         "weekday_label": "日",
         "has_data": true,
-        "score": 63.0,
+        "score": 64.3,
         "grade": "serious",
         "label": "やや混み",
         "bg": "#ec835a",
@@ -3663,11 +3778,16 @@
           {
             "label": "天気(くもり)",
             "direction": "down",
-            "weight": -7.0
+            "weight": -7.14
+          },
+          {
+            "label": "話題のイベント・グッズ告知",
+            "direction": "up",
+            "weight": 1.44
           }
         ],
-        "factors_json": "[{\"label\": \"週末\", \"direction\": \"up\", \"weight\": 20.0}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -7.0}]",
-        "factors_text": "週末、天気(くもり)"
+        "factors_json": "[{\"label\": \"週末\", \"direction\": \"up\", \"weight\": 20.0}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -7.14}, {\"label\": \"話題のイベント・グッズ告知\", \"direction\": \"up\", \"weight\": 1.44}]",
+        "factors_text": "週末、天気(くもり)、話題のイベント・グッズ告知"
       },
       {
         "date": "2026-09-07",
@@ -3675,7 +3795,7 @@
         "weekday": 0,
         "weekday_label": "月",
         "has_data": true,
-        "score": 45.0,
+        "score": 46.0,
         "grade": "warning",
         "label": "ふつう",
         "bg": "#fab219",
@@ -3688,11 +3808,16 @@
           {
             "label": "天気(くもり)",
             "direction": "down",
-            "weight": -5.0
+            "weight": -5.12
+          },
+          {
+            "label": "話題のイベント・グッズ告知",
+            "direction": "up",
+            "weight": 1.16
           }
         ],
-        "factors_json": "[{\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -5.0}]",
-        "factors_text": "天気(くもり)"
+        "factors_json": "[{\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -5.12}, {\"label\": \"話題のイベント・グッズ告知\", \"direction\": \"up\", \"weight\": 1.16}]",
+        "factors_text": "天気(くもり)、話題のイベント・グッズ告知"
       },
       {
         "date": "2026-09-08",
@@ -3700,7 +3825,7 @@
         "weekday": 1,
         "weekday_label": "火",
         "has_data": true,
-        "score": 45.0,
+        "score": 45.8,
         "grade": "warning",
         "label": "ふつう",
         "bg": "#fab219",
@@ -3713,11 +3838,16 @@
           {
             "label": "天気(くもり)",
             "direction": "down",
-            "weight": -5.0
+            "weight": -5.08
+          },
+          {
+            "label": "話題のイベント・グッズ告知",
+            "direction": "up",
+            "weight": 0.84
           }
         ],
-        "factors_json": "[{\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -5.0}]",
-        "factors_text": "天気(くもり)"
+        "factors_json": "[{\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -5.08}, {\"label\": \"話題のイベント・グッズ告知\", \"direction\": \"up\", \"weight\": 0.84}]",
+        "factors_text": "天気(くもり)、話題のイベント・グッズ告知"
       },
       {
         "date": "2026-09-09",
@@ -3725,7 +3855,7 @@
         "weekday": 2,
         "weekday_label": "水",
         "has_data": true,
-        "score": 45.0,
+        "score": 45.5,
         "grade": "warning",
         "label": "ふつう",
         "bg": "#fab219",
@@ -3738,11 +3868,16 @@
           {
             "label": "天気(くもり)",
             "direction": "down",
-            "weight": -5.0
+            "weight": -5.06
+          },
+          {
+            "label": "話題のイベント・グッズ告知",
+            "direction": "up",
+            "weight": 0.56
           }
         ],
-        "factors_json": "[{\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -5.0}]",
-        "factors_text": "天気(くもり)"
+        "factors_json": "[{\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -5.06}, {\"label\": \"話題のイベント・グッズ告知\", \"direction\": \"up\", \"weight\": 0.56}]",
+        "factors_text": "天気(くもり)、話題のイベント・グッズ告知"
       },
       {
         "date": "2026-09-10",
@@ -3750,7 +3885,7 @@
         "weekday": 3,
         "weekday_label": "木",
         "has_data": true,
-        "score": 45.0,
+        "score": 45.3,
         "grade": "warning",
         "label": "ふつう",
         "bg": "#fab219",
@@ -3763,11 +3898,16 @@
           {
             "label": "天気(くもり)",
             "direction": "down",
-            "weight": -5.0
+            "weight": -5.03
+          },
+          {
+            "label": "話題のイベント・グッズ告知",
+            "direction": "up",
+            "weight": 0.28
           }
         ],
-        "factors_json": "[{\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -5.0}]",
-        "factors_text": "天気(くもり)"
+        "factors_json": "[{\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -5.03}, {\"label\": \"話題のイベント・グッズ告知\", \"direction\": \"up\", \"weight\": 0.28}]",
+        "factors_text": "天気(くもり)、話題のイベント・グッズ告知"
       },
       {
         "date": "2026-09-11",
