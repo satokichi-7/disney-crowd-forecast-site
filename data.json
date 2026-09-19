@@ -1,42 +1,7 @@
 {
-  "generated_at": "2026-09-18T23:30:24.174932",
+  "generated_at": "2026-09-19T23:22:03.543462",
   "parks": {
     "TDL": [
-      {
-        "date": "2026-09-18",
-        "day": 18,
-        "weekday": 4,
-        "weekday_label": "金",
-        "has_data": true,
-        "score": 56.8,
-        "grade": "serious",
-        "label": "やや混み",
-        "bg": "#ec835a",
-        "text": "#241f14",
-        "dots": 3,
-        "weather_icon": "☁️",
-        "mood_icon": "mood-serious",
-        "short_label": "混み",
-        "factors": [
-          {
-            "label": "シルバーウィーク",
-            "direction": "up",
-            "weight": 8.0
-          },
-          {
-            "label": "天気(くもり)",
-            "direction": "down",
-            "weight": -6.32
-          },
-          {
-            "label": "話題のイベント・グッズ告知",
-            "direction": "up",
-            "weight": 5.16
-          }
-        ],
-        "factors_json": "[{\"label\": \"シルバーウィーク\", \"direction\": \"up\", \"weight\": 8.0}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -6.32}, {\"label\": \"話題のイベント・グッズ告知\", \"direction\": \"up\", \"weight\": 5.16}]",
-        "factors_text": "シルバーウィーク、天気(くもり)、話題のイベント・グッズ告知"
-      },
       {
         "date": "2026-09-19",
         "day": 19,
@@ -129,7 +94,7 @@
         "bg": "#ec835a",
         "text": "#241f14",
         "dots": 3,
-        "weather_icon": "☁️",
+        "weather_icon": "🌧️",
         "mood_icon": "mood-serious",
         "short_label": "混み",
         "factors": [
@@ -163,7 +128,7 @@
         "weekday": 1,
         "weekday_label": "火",
         "has_data": true,
-        "score": 68.3,
+        "score": 56.9,
         "grade": "serious",
         "label": "やや混み",
         "bg": "#ec835a",
@@ -173,6 +138,11 @@
         "mood_icon": "mood-serious",
         "short_label": "混み",
         "factors": [
+          {
+            "label": "天気(雨)",
+            "direction": "down",
+            "weight": -18.96
+          },
           {
             "label": "祝日",
             "direction": "up",
@@ -184,18 +154,13 @@
             "weight": 8.0
           },
           {
-            "label": "天気(くもり)",
-            "direction": "down",
-            "weight": -7.58
-          },
-          {
             "label": "話題のイベント・グッズ告知",
             "direction": "up",
             "weight": 2.84
           }
         ],
-        "factors_json": "[{\"label\": \"祝日\", \"direction\": \"up\", \"weight\": 15.0}, {\"label\": \"シルバーウィーク\", \"direction\": \"up\", \"weight\": 8.0}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -7.58}, {\"label\": \"話題のイベント・グッズ告知\", \"direction\": \"up\", \"weight\": 2.84}]",
-        "factors_text": "祝日、シルバーウィーク、天気(くもり)、話題のイベント・グッズ告知"
+        "factors_json": "[{\"label\": \"天気(雨)\", \"direction\": \"down\", \"weight\": -18.96}, {\"label\": \"祝日\", \"direction\": \"up\", \"weight\": 15.0}, {\"label\": \"シルバーウィーク\", \"direction\": \"up\", \"weight\": 8.0}, {\"label\": \"話題のイベント・グッズ告知\", \"direction\": \"up\", \"weight\": 2.84}]",
+        "factors_text": "天気(雨)、祝日、シルバーウィーク、話題のイベント・グッズ告知"
       },
       {
         "date": "2026-09-23",
@@ -3471,16 +3436,14 @@
         ],
         "factors_json": "[{\"label\": \"週末\", \"direction\": \"up\", \"weight\": 20.0}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -7.0}]",
         "factors_text": "週末、天気(くもり)"
-      }
-    ],
-    "TDS": [
+      },
       {
-        "date": "2026-09-18",
-        "day": 18,
-        "weekday": 4,
-        "weekday_label": "金",
+        "date": "2027-01-17",
+        "day": 17,
+        "weekday": 6,
+        "weekday_label": "日",
         "has_data": true,
-        "score": 56.8,
+        "score": 63.0,
         "grade": "serious",
         "label": "やや混み",
         "bg": "#ec835a",
@@ -3491,24 +3454,21 @@
         "short_label": "混み",
         "factors": [
           {
-            "label": "シルバーウィーク",
+            "label": "週末",
             "direction": "up",
-            "weight": 8.0
+            "weight": 20.0
           },
           {
             "label": "天気(くもり)",
             "direction": "down",
-            "weight": -6.32
-          },
-          {
-            "label": "話題のイベント・グッズ告知",
-            "direction": "up",
-            "weight": 5.16
+            "weight": -7.0
           }
         ],
-        "factors_json": "[{\"label\": \"シルバーウィーク\", \"direction\": \"up\", \"weight\": 8.0}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -6.32}, {\"label\": \"話題のイベント・グッズ告知\", \"direction\": \"up\", \"weight\": 5.16}]",
-        "factors_text": "シルバーウィーク、天気(くもり)、話題のイベント・グッズ告知"
-      },
+        "factors_json": "[{\"label\": \"週末\", \"direction\": \"up\", \"weight\": 20.0}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -7.0}]",
+        "factors_text": "週末、天気(くもり)"
+      }
+    ],
+    "TDS": [
       {
         "date": "2026-09-19",
         "day": 19,
@@ -3601,7 +3561,7 @@
         "bg": "#ec835a",
         "text": "#241f14",
         "dots": 3,
-        "weather_icon": "☁️",
+        "weather_icon": "🌧️",
         "mood_icon": "mood-serious",
         "short_label": "混み",
         "factors": [
@@ -3635,7 +3595,7 @@
         "weekday": 1,
         "weekday_label": "火",
         "has_data": true,
-        "score": 68.3,
+        "score": 56.9,
         "grade": "serious",
         "label": "やや混み",
         "bg": "#ec835a",
@@ -3645,6 +3605,11 @@
         "mood_icon": "mood-serious",
         "short_label": "混み",
         "factors": [
+          {
+            "label": "天気(雨)",
+            "direction": "down",
+            "weight": -18.96
+          },
           {
             "label": "祝日",
             "direction": "up",
@@ -3656,18 +3621,13 @@
             "weight": 8.0
           },
           {
-            "label": "天気(くもり)",
-            "direction": "down",
-            "weight": -7.58
-          },
-          {
             "label": "話題のイベント・グッズ告知",
             "direction": "up",
             "weight": 2.84
           }
         ],
-        "factors_json": "[{\"label\": \"祝日\", \"direction\": \"up\", \"weight\": 15.0}, {\"label\": \"シルバーウィーク\", \"direction\": \"up\", \"weight\": 8.0}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -7.58}, {\"label\": \"話題のイベント・グッズ告知\", \"direction\": \"up\", \"weight\": 2.84}]",
-        "factors_text": "祝日、シルバーウィーク、天気(くもり)、話題のイベント・グッズ告知"
+        "factors_json": "[{\"label\": \"天気(雨)\", \"direction\": \"down\", \"weight\": -18.96}, {\"label\": \"祝日\", \"direction\": \"up\", \"weight\": 15.0}, {\"label\": \"シルバーウィーク\", \"direction\": \"up\", \"weight\": 8.0}, {\"label\": \"話題のイベント・グッズ告知\", \"direction\": \"up\", \"weight\": 2.84}]",
+        "factors_text": "天気(雨)、祝日、シルバーウィーク、話題のイベント・グッズ告知"
       },
       {
         "date": "2026-09-23",
@@ -6919,6 +6879,36 @@
         "day": 16,
         "weekday": 5,
         "weekday_label": "土",
+        "has_data": true,
+        "score": 63.0,
+        "grade": "serious",
+        "label": "やや混み",
+        "bg": "#ec835a",
+        "text": "#241f14",
+        "dots": 3,
+        "weather_icon": "☁️",
+        "mood_icon": "mood-serious",
+        "short_label": "混み",
+        "factors": [
+          {
+            "label": "週末",
+            "direction": "up",
+            "weight": 20.0
+          },
+          {
+            "label": "天気(くもり)",
+            "direction": "down",
+            "weight": -7.0
+          }
+        ],
+        "factors_json": "[{\"label\": \"週末\", \"direction\": \"up\", \"weight\": 20.0}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -7.0}]",
+        "factors_text": "週末、天気(くもり)"
+      },
+      {
+        "date": "2027-01-17",
+        "day": 17,
+        "weekday": 6,
+        "weekday_label": "日",
         "has_data": true,
         "score": 63.0,
         "grade": "serious",
