@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T00:14:38.380619",
+  "generated_at": "2026-09-22T23:43:50.168584",
   "parks": {
     "TDL": [
       {
@@ -8,15 +8,15 @@
         "weekday": 1,
         "weekday_label": "火",
         "has_data": true,
-        "score": 87.2,
-        "grade": "critical",
-        "label": "激混み",
-        "bg": "#d03b3b",
-        "text": "#ffffff",
-        "dots": 4,
-        "weather_icon": "☀️",
-        "mood_icon": "mood-critical",
-        "short_label": "激混",
+        "score": 68.3,
+        "grade": "serious",
+        "label": "やや混み",
+        "bg": "#ec835a",
+        "text": "#241f14",
+        "dots": 3,
+        "weather_icon": "☁️",
+        "mood_icon": "mood-serious",
+        "short_label": "混み",
         "factors": [
           {
             "label": "祝日",
@@ -24,14 +24,14 @@
             "weight": 15.0
           },
           {
-            "label": "天気(晴れ)",
-            "direction": "up",
-            "weight": 11.38
-          },
-          {
             "label": "シルバーウィーク",
             "direction": "up",
             "weight": 8.0
+          },
+          {
+            "label": "天気(くもり)",
+            "direction": "down",
+            "weight": -7.58
           },
           {
             "label": "話題のイベント・グッズ告知",
@@ -39,8 +39,8 @@
             "weight": 2.84
           }
         ],
-        "factors_json": "[{\"label\": \"祝日\", \"direction\": \"up\", \"weight\": 15.0}, {\"label\": \"天気(晴れ)\", \"direction\": \"up\", \"weight\": 11.38}, {\"label\": \"シルバーウィーク\", \"direction\": \"up\", \"weight\": 8.0}, {\"label\": \"話題のイベント・グッズ告知\", \"direction\": \"up\", \"weight\": 2.84}]",
-        "factors_text": "祝日、天気(晴れ)、シルバーウィーク、話題のイベント・グッズ告知"
+        "factors_json": "[{\"label\": \"祝日\", \"direction\": \"up\", \"weight\": 15.0}, {\"label\": \"シルバーウィーク\", \"direction\": \"up\", \"weight\": 8.0}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -7.58}, {\"label\": \"話題のイベント・グッズ告知\", \"direction\": \"up\", \"weight\": 2.84}]",
+        "factors_text": "祝日、シルバーウィーク、天気(くもり)、話題のイベント・グッズ告知"
       },
       {
         "date": "2026-09-23",
@@ -3430,15 +3430,15 @@
         "weekday": 1,
         "weekday_label": "火",
         "has_data": true,
-        "score": 87.2,
-        "grade": "critical",
-        "label": "激混み",
-        "bg": "#d03b3b",
-        "text": "#ffffff",
-        "dots": 4,
-        "weather_icon": "☀️",
-        "mood_icon": "mood-critical",
-        "short_label": "激混",
+        "score": 68.3,
+        "grade": "serious",
+        "label": "やや混み",
+        "bg": "#ec835a",
+        "text": "#241f14",
+        "dots": 3,
+        "weather_icon": "☁️",
+        "mood_icon": "mood-serious",
+        "short_label": "混み",
         "factors": [
           {
             "label": "祝日",
@@ -3446,14 +3446,14 @@
             "weight": 15.0
           },
           {
-            "label": "天気(晴れ)",
-            "direction": "up",
-            "weight": 11.38
-          },
-          {
             "label": "シルバーウィーク",
             "direction": "up",
             "weight": 8.0
+          },
+          {
+            "label": "天気(くもり)",
+            "direction": "down",
+            "weight": -7.58
           },
           {
             "label": "話題のイベント・グッズ告知",
@@ -3461,8 +3461,8 @@
             "weight": 2.84
           }
         ],
-        "factors_json": "[{\"label\": \"祝日\", \"direction\": \"up\", \"weight\": 15.0}, {\"label\": \"天気(晴れ)\", \"direction\": \"up\", \"weight\": 11.38}, {\"label\": \"シルバーウィーク\", \"direction\": \"up\", \"weight\": 8.0}, {\"label\": \"話題のイベント・グッズ告知\", \"direction\": \"up\", \"weight\": 2.84}]",
-        "factors_text": "祝日、天気(晴れ)、シルバーウィーク、話題のイベント・グッズ告知"
+        "factors_json": "[{\"label\": \"祝日\", \"direction\": \"up\", \"weight\": 15.0}, {\"label\": \"シルバーウィーク\", \"direction\": \"up\", \"weight\": 8.0}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -7.58}, {\"label\": \"話題のイベント・グッズ告知\", \"direction\": \"up\", \"weight\": 2.84}]",
+        "factors_text": "祝日、シルバーウィーク、天気(くもり)、話題のイベント・グッズ告知"
       },
       {
         "date": "2026-09-23",
