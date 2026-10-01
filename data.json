@@ -1,37 +1,7 @@
 {
-  "generated_at": "2026-09-30T00:41:24.877745",
+  "generated_at": "2026-10-01T00:43:06.699729",
   "parks": {
     "TDL": [
-      {
-        "date": "2026-09-30",
-        "day": 30,
-        "weekday": 2,
-        "weekday_label": "水",
-        "has_data": true,
-        "score": 37.7,
-        "grade": "good",
-        "label": "すいてる",
-        "bg": "#0ca30c",
-        "text": "#241f14",
-        "dots": 1,
-        "weather_icon": "🌧️",
-        "mood_icon": "mood-good",
-        "short_label": "余裕",
-        "factors": [
-          {
-            "label": "天気(雨)",
-            "direction": "down",
-            "weight": -12.57
-          },
-          {
-            "label": "話題のイベント・グッズ告知",
-            "direction": "up",
-            "weight": 0.28
-          }
-        ],
-        "factors_json": "[{\"label\": \"天気(雨)\", \"direction\": \"down\", \"weight\": -12.57}, {\"label\": \"話題のイベント・グッズ告知\", \"direction\": \"up\", \"weight\": 0.28}]",
-        "factors_text": "天気(雨)、話題のイベント・グッズ告知"
-      },
       {
         "date": "2026-10-01",
         "day": 1,
@@ -173,7 +143,7 @@
         "weekday": 0,
         "weekday_label": "月",
         "has_data": true,
-        "score": 52.2,
+        "score": 43.5,
         "grade": "warning",
         "label": "ふつう",
         "bg": "#fab219",
@@ -184,18 +154,18 @@
         "short_label": "普通",
         "factors": [
           {
+            "label": "天気(雨)",
+            "direction": "down",
+            "weight": -14.5
+          },
+          {
             "label": "海外の連休(インバウンド需要)",
             "direction": "up",
             "weight": 8.0
-          },
-          {
-            "label": "天気(くもり)",
-            "direction": "down",
-            "weight": -5.8
           }
         ],
-        "factors_json": "[{\"label\": \"海外の連休(インバウンド需要)\", \"direction\": \"up\", \"weight\": 8.0}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -5.8}]",
-        "factors_text": "海外の連休(インバウンド需要)、天気(くもり)"
+        "factors_json": "[{\"label\": \"天気(雨)\", \"direction\": \"down\", \"weight\": -14.5}, {\"label\": \"海外の連休(インバウンド需要)\", \"direction\": \"up\", \"weight\": 8.0}]",
+        "factors_text": "天気(雨)、海外の連休(インバウンド需要)"
       },
       {
         "date": "2026-10-06",
@@ -3351,39 +3321,34 @@
         ],
         "factors_json": "[{\"label\": \"貸切等による短縮営業\", \"direction\": \"up\", \"weight\": 10.0}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -6.0}]",
         "factors_text": "貸切等による短縮営業、天気(くもり)"
+      },
+      {
+        "date": "2027-01-29",
+        "day": 29,
+        "weekday": 4,
+        "weekday_label": "金",
+        "has_data": true,
+        "score": 45.0,
+        "grade": "warning",
+        "label": "ふつう",
+        "bg": "#fab219",
+        "text": "#241f14",
+        "dots": 2,
+        "weather_icon": "☁️",
+        "mood_icon": "mood-warning",
+        "short_label": "普通",
+        "factors": [
+          {
+            "label": "天気(くもり)",
+            "direction": "down",
+            "weight": -5.0
+          }
+        ],
+        "factors_json": "[{\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -5.0}]",
+        "factors_text": "天気(くもり)"
       }
     ],
     "TDS": [
-      {
-        "date": "2026-09-30",
-        "day": 30,
-        "weekday": 2,
-        "weekday_label": "水",
-        "has_data": true,
-        "score": 37.7,
-        "grade": "good",
-        "label": "すいてる",
-        "bg": "#0ca30c",
-        "text": "#241f14",
-        "dots": 1,
-        "weather_icon": "🌧️",
-        "mood_icon": "mood-good",
-        "short_label": "余裕",
-        "factors": [
-          {
-            "label": "天気(雨)",
-            "direction": "down",
-            "weight": -12.57
-          },
-          {
-            "label": "話題のイベント・グッズ告知",
-            "direction": "up",
-            "weight": 0.28
-          }
-        ],
-        "factors_json": "[{\"label\": \"天気(雨)\", \"direction\": \"down\", \"weight\": -12.57}, {\"label\": \"話題のイベント・グッズ告知\", \"direction\": \"up\", \"weight\": 0.28}]",
-        "factors_text": "天気(雨)、話題のイベント・グッズ告知"
-      },
       {
         "date": "2026-10-01",
         "day": 1,
@@ -3520,7 +3485,7 @@
         "weekday": 0,
         "weekday_label": "月",
         "has_data": true,
-        "score": 52.2,
+        "score": 43.5,
         "grade": "warning",
         "label": "ふつう",
         "bg": "#fab219",
@@ -3531,18 +3496,18 @@
         "short_label": "普通",
         "factors": [
           {
+            "label": "天気(雨)",
+            "direction": "down",
+            "weight": -14.5
+          },
+          {
             "label": "海外の連休(インバウンド需要)",
             "direction": "up",
             "weight": 8.0
-          },
-          {
-            "label": "天気(くもり)",
-            "direction": "down",
-            "weight": -5.8
           }
         ],
-        "factors_json": "[{\"label\": \"海外の連休(インバウンド需要)\", \"direction\": \"up\", \"weight\": 8.0}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -5.8}]",
-        "factors_text": "海外の連休(インバウンド需要)、天気(くもり)"
+        "factors_json": "[{\"label\": \"天気(雨)\", \"direction\": \"down\", \"weight\": -14.5}, {\"label\": \"海外の連休(インバウンド需要)\", \"direction\": \"up\", \"weight\": 8.0}]",
+        "factors_text": "天気(雨)、海外の連休(インバウンド需要)"
       },
       {
         "date": "2026-10-06",
@@ -6703,6 +6668,31 @@
         ],
         "factors_json": "[{\"label\": \"貸切等による短縮営業\", \"direction\": \"up\", \"weight\": 10.0}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -6.0}]",
         "factors_text": "貸切等による短縮営業、天気(くもり)"
+      },
+      {
+        "date": "2027-01-29",
+        "day": 29,
+        "weekday": 4,
+        "weekday_label": "金",
+        "has_data": true,
+        "score": 45.0,
+        "grade": "warning",
+        "label": "ふつう",
+        "bg": "#fab219",
+        "text": "#241f14",
+        "dots": 2,
+        "weather_icon": "☁️",
+        "mood_icon": "mood-warning",
+        "short_label": "普通",
+        "factors": [
+          {
+            "label": "天気(くもり)",
+            "direction": "down",
+            "weight": -5.0
+          }
+        ],
+        "factors_json": "[{\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -5.0}]",
+        "factors_text": "天気(くもり)"
       }
     ]
   }
