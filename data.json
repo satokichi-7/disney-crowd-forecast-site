@@ -1,77 +1,7 @@
 {
-  "generated_at": "2026-10-03T23:59:40.032666",
+  "generated_at": "2026-10-05T00:05:30.021143",
   "parks": {
     "TDL": [
-      {
-        "date": "2026-10-03",
-        "day": 3,
-        "weekday": 5,
-        "weekday_label": "土",
-        "has_data": true,
-        "score": 70.2,
-        "grade": "serious",
-        "label": "やや混み",
-        "bg": "#ec835a",
-        "text": "#241f14",
-        "dots": 3,
-        "weather_icon": "☁️",
-        "mood_icon": "mood-serious",
-        "short_label": "混み",
-        "factors": [
-          {
-            "label": "週末",
-            "direction": "up",
-            "weight": 20.0
-          },
-          {
-            "label": "海外の連休(インバウンド需要)",
-            "direction": "up",
-            "weight": 8.0
-          },
-          {
-            "label": "天気(くもり)",
-            "direction": "down",
-            "weight": -7.8
-          }
-        ],
-        "factors_json": "[{\"label\": \"週末\", \"direction\": \"up\", \"weight\": 20.0}, {\"label\": \"海外の連休(インバウンド需要)\", \"direction\": \"up\", \"weight\": 8.0}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -7.8}]",
-        "factors_text": "週末、海外の連休(インバウンド需要)、天気(くもり)"
-      },
-      {
-        "date": "2026-10-04",
-        "day": 4,
-        "weekday": 6,
-        "weekday_label": "日",
-        "has_data": true,
-        "score": 70.2,
-        "grade": "serious",
-        "label": "やや混み",
-        "bg": "#ec835a",
-        "text": "#241f14",
-        "dots": 3,
-        "weather_icon": "☁️",
-        "mood_icon": "mood-serious",
-        "short_label": "混み",
-        "factors": [
-          {
-            "label": "週末",
-            "direction": "up",
-            "weight": 20.0
-          },
-          {
-            "label": "海外の連休(インバウンド需要)",
-            "direction": "up",
-            "weight": 8.0
-          },
-          {
-            "label": "天気(くもり)",
-            "direction": "down",
-            "weight": -7.8
-          }
-        ],
-        "factors_json": "[{\"label\": \"週末\", \"direction\": \"up\", \"weight\": 20.0}, {\"label\": \"海外の連休(インバウンド需要)\", \"direction\": \"up\", \"weight\": 8.0}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -7.8}]",
-        "factors_text": "週末、海外の連休(インバウンド需要)、天気(くもり)"
-      },
       {
         "date": "2026-10-05",
         "day": 5,
@@ -108,7 +38,7 @@
         "weekday": 1,
         "weekday_label": "火",
         "has_data": true,
-        "score": 43.5,
+        "score": 52.2,
         "grade": "warning",
         "label": "ふつう",
         "bg": "#fab219",
@@ -119,18 +49,18 @@
         "short_label": "普通",
         "factors": [
           {
-            "label": "天気(雨)",
-            "direction": "down",
-            "weight": -14.5
-          },
-          {
             "label": "海外の連休(インバウンド需要)",
             "direction": "up",
             "weight": 8.0
+          },
+          {
+            "label": "天気(くもり)",
+            "direction": "down",
+            "weight": -5.8
           }
         ],
-        "factors_json": "[{\"label\": \"天気(雨)\", \"direction\": \"down\", \"weight\": -14.5}, {\"label\": \"海外の連休(インバウンド需要)\", \"direction\": \"up\", \"weight\": 8.0}]",
-        "factors_text": "天気(雨)、海外の連休(インバウンド需要)"
+        "factors_json": "[{\"label\": \"海外の連休(インバウンド需要)\", \"direction\": \"up\", \"weight\": 8.0}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -5.8}]",
+        "factors_text": "海外の連休(インバウンド需要)、天気(くもり)"
       },
       {
         "date": "2026-10-07",
@@ -248,15 +178,15 @@
         "weekday": 6,
         "weekday_label": "日",
         "has_data": true,
-        "score": 63.0,
-        "grade": "serious",
-        "label": "やや混み",
-        "bg": "#ec835a",
-        "text": "#241f14",
-        "dots": 3,
-        "weather_icon": "☁️",
-        "mood_icon": "mood-serious",
-        "short_label": "混み",
+        "score": 80.5,
+        "grade": "critical",
+        "label": "激混み",
+        "bg": "#d03b3b",
+        "text": "#ffffff",
+        "dots": 4,
+        "weather_icon": "☀️",
+        "mood_icon": "mood-critical",
+        "short_label": "激混",
         "factors": [
           {
             "label": "週末",
@@ -264,13 +194,13 @@
             "weight": 20.0
           },
           {
-            "label": "天気(くもり)",
-            "direction": "down",
-            "weight": -7.0
+            "label": "天気(晴れ)",
+            "direction": "up",
+            "weight": 10.5
           }
         ],
-        "factors_json": "[{\"label\": \"週末\", \"direction\": \"up\", \"weight\": 20.0}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -7.0}]",
-        "factors_text": "週末、天気(くもり)"
+        "factors_json": "[{\"label\": \"週末\", \"direction\": \"up\", \"weight\": 20.0}, {\"label\": \"天気(晴れ)\", \"direction\": \"up\", \"weight\": 10.5}]",
+        "factors_text": "週末、天気(晴れ)"
       },
       {
         "date": "2026-10-12",
@@ -3341,80 +3271,60 @@
         ],
         "factors_json": "[{\"label\": \"週末\", \"direction\": \"up\", \"weight\": 20.0}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -7.0}]",
         "factors_text": "週末、天気(くもり)"
+      },
+      {
+        "date": "2027-02-01",
+        "day": 1,
+        "weekday": 0,
+        "weekday_label": "月",
+        "has_data": true,
+        "score": 45.0,
+        "grade": "warning",
+        "label": "ふつう",
+        "bg": "#fab219",
+        "text": "#241f14",
+        "dots": 2,
+        "weather_icon": "☁️",
+        "mood_icon": "mood-warning",
+        "short_label": "普通",
+        "factors": [
+          {
+            "label": "天気(くもり)",
+            "direction": "down",
+            "weight": -5.0
+          }
+        ],
+        "factors_json": "[{\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -5.0}]",
+        "factors_text": "天気(くもり)"
+      },
+      {
+        "date": "2027-02-02",
+        "day": 2,
+        "weekday": 1,
+        "weekday_label": "火",
+        "has_data": true,
+        "score": 45.0,
+        "grade": "warning",
+        "label": "ふつう",
+        "bg": "#fab219",
+        "text": "#241f14",
+        "dots": 2,
+        "weather_icon": "☁️",
+        "mood_icon": "mood-warning",
+        "short_label": "普通",
+        "factors": [
+          {
+            "label": "天気(くもり)",
+            "direction": "down",
+            "weight": -5.0
+          }
+        ],
+        "factors_json": "[{\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -5.0}]",
+        "factors_text": "天気(くもり)"
       }
     ],
     "TDS": [
       {
-        "date": "2026-10-03",
-        "day": 3,
-        "weekday": 5,
-        "weekday_label": "土",
-        "has_data": true,
-        "score": 70.2,
-        "grade": "serious",
-        "label": "やや混み",
-        "bg": "#ec835a",
-        "text": "#241f14",
-        "dots": 3,
-        "weather_icon": "☁️",
-        "mood_icon": "mood-serious",
-        "short_label": "混み",
-        "factors": [
-          {
-            "label": "週末",
-            "direction": "up",
-            "weight": 20.0
-          },
-          {
-            "label": "海外の連休(インバウンド需要)",
-            "direction": "up",
-            "weight": 8.0
-          },
-          {
-            "label": "天気(くもり)",
-            "direction": "down",
-            "weight": -7.8
-          }
-        ],
-        "factors_json": "[{\"label\": \"週末\", \"direction\": \"up\", \"weight\": 20.0}, {\"label\": \"海外の連休(インバウンド需要)\", \"direction\": \"up\", \"weight\": 8.0}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -7.8}]",
-        "factors_text": "週末、海外の連休(インバウンド需要)、天気(くもり)"
-      },
-      {
-        "date": "2026-10-04",
-        "day": 4,
-        "weekday": 6,
-        "weekday_label": "日",
-        "has_data": true,
-        "score": 70.2,
-        "grade": "serious",
-        "label": "やや混み",
-        "bg": "#ec835a",
-        "text": "#241f14",
-        "dots": 3,
-        "weather_icon": "☁️",
-        "mood_icon": "mood-serious",
-        "short_label": "混み",
-        "factors": [
-          {
-            "label": "週末",
-            "direction": "up",
-            "weight": 20.0
-          },
-          {
-            "label": "海外の連休(インバウンド需要)",
-            "direction": "up",
-            "weight": 8.0
-          },
-          {
-            "label": "天気(くもり)",
-            "direction": "down",
-            "weight": -7.8
-          }
-        ],
-        "factors_json": "[{\"label\": \"週末\", \"direction\": \"up\", \"weight\": 20.0}, {\"label\": \"海外の連休(インバウンド需要)\", \"direction\": \"up\", \"weight\": 8.0}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -7.8}]",
-        "factors_text": "週末、海外の連休(インバウンド需要)、天気(くもり)"
-      },
-      {
         "date": "2026-10-05",
         "day": 5,
         "weekday": 0,
@@ -3450,7 +3360,7 @@
         "weekday": 1,
         "weekday_label": "火",
         "has_data": true,
-        "score": 43.5,
+        "score": 52.2,
         "grade": "warning",
         "label": "ふつう",
         "bg": "#fab219",
@@ -3461,18 +3371,18 @@
         "short_label": "普通",
         "factors": [
           {
-            "label": "天気(雨)",
-            "direction": "down",
-            "weight": -14.5
-          },
-          {
             "label": "海外の連休(インバウンド需要)",
             "direction": "up",
             "weight": 8.0
+          },
+          {
+            "label": "天気(くもり)",
+            "direction": "down",
+            "weight": -5.8
           }
         ],
-        "factors_json": "[{\"label\": \"天気(雨)\", \"direction\": \"down\", \"weight\": -14.5}, {\"label\": \"海外の連休(インバウンド需要)\", \"direction\": \"up\", \"weight\": 8.0}]",
-        "factors_text": "天気(雨)、海外の連休(インバウンド需要)"
+        "factors_json": "[{\"label\": \"海外の連休(インバウンド需要)\", \"direction\": \"up\", \"weight\": 8.0}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -5.8}]",
+        "factors_text": "海外の連休(インバウンド需要)、天気(くもり)"
       },
       {
         "date": "2026-10-07",
@@ -3590,15 +3500,15 @@
         "weekday": 6,
         "weekday_label": "日",
         "has_data": true,
-        "score": 63.0,
-        "grade": "serious",
-        "label": "やや混み",
-        "bg": "#ec835a",
-        "text": "#241f14",
-        "dots": 3,
-        "weather_icon": "☁️",
-        "mood_icon": "mood-serious",
-        "short_label": "混み",
+        "score": 80.5,
+        "grade": "critical",
+        "label": "激混み",
+        "bg": "#d03b3b",
+        "text": "#ffffff",
+        "dots": 4,
+        "weather_icon": "☀️",
+        "mood_icon": "mood-critical",
+        "short_label": "激混",
         "factors": [
           {
             "label": "週末",
@@ -3606,13 +3516,13 @@
             "weight": 20.0
           },
           {
-            "label": "天気(くもり)",
-            "direction": "down",
-            "weight": -7.0
+            "label": "天気(晴れ)",
+            "direction": "up",
+            "weight": 10.5
           }
         ],
-        "factors_json": "[{\"label\": \"週末\", \"direction\": \"up\", \"weight\": 20.0}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -7.0}]",
-        "factors_text": "週末、天気(くもり)"
+        "factors_json": "[{\"label\": \"週末\", \"direction\": \"up\", \"weight\": 20.0}, {\"label\": \"天気(晴れ)\", \"direction\": \"up\", \"weight\": 10.5}]",
+        "factors_text": "週末、天気(晴れ)"
       },
       {
         "date": "2026-10-12",
@@ -6688,6 +6598,56 @@
         ],
         "factors_json": "[{\"label\": \"週末\", \"direction\": \"up\", \"weight\": 20.0}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -7.0}]",
         "factors_text": "週末、天気(くもり)"
+      },
+      {
+        "date": "2027-02-01",
+        "day": 1,
+        "weekday": 0,
+        "weekday_label": "月",
+        "has_data": true,
+        "score": 45.0,
+        "grade": "warning",
+        "label": "ふつう",
+        "bg": "#fab219",
+        "text": "#241f14",
+        "dots": 2,
+        "weather_icon": "☁️",
+        "mood_icon": "mood-warning",
+        "short_label": "普通",
+        "factors": [
+          {
+            "label": "天気(くもり)",
+            "direction": "down",
+            "weight": -5.0
+          }
+        ],
+        "factors_json": "[{\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -5.0}]",
+        "factors_text": "天気(くもり)"
+      },
+      {
+        "date": "2027-02-02",
+        "day": 2,
+        "weekday": 1,
+        "weekday_label": "火",
+        "has_data": true,
+        "score": 45.0,
+        "grade": "warning",
+        "label": "ふつう",
+        "bg": "#fab219",
+        "text": "#241f14",
+        "dots": 2,
+        "weather_icon": "☁️",
+        "mood_icon": "mood-warning",
+        "short_label": "普通",
+        "factors": [
+          {
+            "label": "天気(くもり)",
+            "direction": "down",
+            "weight": -5.0
+          }
+        ],
+        "factors_json": "[{\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -5.0}]",
+        "factors_text": "天気(くもり)"
       }
     ]
   }
