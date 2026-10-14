@@ -1,37 +1,7 @@
 {
-  "generated_at": "2026-10-13T02:41:14.006257",
+  "generated_at": "2026-10-14T00:30:06.478166",
   "parks": {
     "TDL": [
-      {
-        "date": "2026-10-13",
-        "day": 13,
-        "weekday": 1,
-        "weekday_label": "火",
-        "has_data": true,
-        "score": 51.2,
-        "grade": "warning",
-        "label": "ふつう",
-        "bg": "#fab219",
-        "text": "#241f14",
-        "dots": 2,
-        "weather_icon": "☁️",
-        "mood_icon": "mood-warning",
-        "short_label": "普通",
-        "factors": [
-          {
-            "label": "話題のイベント・グッズ告知",
-            "direction": "up",
-            "weight": 6.84
-          },
-          {
-            "label": "天気(くもり)",
-            "direction": "down",
-            "weight": -5.68
-          }
-        ],
-        "factors_json": "[{\"label\": \"話題のイベント・グッズ告知\", \"direction\": \"up\", \"weight\": 6.84}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -5.68}]",
-        "factors_text": "話題のイベント・グッズ告知、天気(くもり)"
-      },
       {
         "date": "2026-10-14",
         "day": 14,
@@ -3386,39 +3356,39 @@
         ],
         "factors_json": "[{\"label\": \"海外の連休(インバウンド需要)\", \"direction\": \"up\", \"weight\": 8.0}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -5.8}]",
         "factors_text": "海外の連休(インバウンド需要)、天気(くもり)"
-      }
-    ],
-    "TDS": [
+      },
       {
-        "date": "2026-10-13",
-        "day": 13,
-        "weekday": 1,
-        "weekday_label": "火",
+        "date": "2027-02-11",
+        "day": 11,
+        "weekday": 3,
+        "weekday_label": "木",
         "has_data": true,
-        "score": 51.2,
-        "grade": "warning",
-        "label": "ふつう",
-        "bg": "#fab219",
+        "score": 58.5,
+        "grade": "serious",
+        "label": "やや混み",
+        "bg": "#ec835a",
         "text": "#241f14",
-        "dots": 2,
+        "dots": 3,
         "weather_icon": "☁️",
-        "mood_icon": "mood-warning",
-        "short_label": "普通",
+        "mood_icon": "mood-serious",
+        "short_label": "混み",
         "factors": [
           {
-            "label": "話題のイベント・グッズ告知",
+            "label": "祝日",
             "direction": "up",
-            "weight": 6.84
+            "weight": 15.0
           },
           {
             "label": "天気(くもり)",
             "direction": "down",
-            "weight": -5.68
+            "weight": -6.5
           }
         ],
-        "factors_json": "[{\"label\": \"話題のイベント・グッズ告知\", \"direction\": \"up\", \"weight\": 6.84}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -5.68}]",
-        "factors_text": "話題のイベント・グッズ告知、天気(くもり)"
-      },
+        "factors_json": "[{\"label\": \"祝日\", \"direction\": \"up\", \"weight\": 15.0}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -6.5}]",
+        "factors_text": "祝日、天気(くもり)"
+      }
+    ],
+    "TDS": [
       {
         "date": "2026-10-14",
         "day": 14,
@@ -6783,6 +6753,36 @@
         ],
         "factors_json": "[{\"label\": \"海外の連休(インバウンド需要)\", \"direction\": \"up\", \"weight\": 8.0}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -5.8}]",
         "factors_text": "海外の連休(インバウンド需要)、天気(くもり)"
+      },
+      {
+        "date": "2027-02-11",
+        "day": 11,
+        "weekday": 3,
+        "weekday_label": "木",
+        "has_data": true,
+        "score": 58.5,
+        "grade": "serious",
+        "label": "やや混み",
+        "bg": "#ec835a",
+        "text": "#241f14",
+        "dots": 3,
+        "weather_icon": "☁️",
+        "mood_icon": "mood-serious",
+        "short_label": "混み",
+        "factors": [
+          {
+            "label": "祝日",
+            "direction": "up",
+            "weight": 15.0
+          },
+          {
+            "label": "天気(くもり)",
+            "direction": "down",
+            "weight": -6.5
+          }
+        ],
+        "factors_json": "[{\"label\": \"祝日\", \"direction\": \"up\", \"weight\": 15.0}, {\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -6.5}]",
+        "factors_text": "祝日、天気(くもり)"
       }
     ]
   }
