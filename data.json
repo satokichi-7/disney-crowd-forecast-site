@@ -1,42 +1,7 @@
 {
-  "generated_at": "2026-11-03T03:00:52.989424",
+  "generated_at": "2026-11-04T01:35:06.027732",
   "parks": {
     "TDL": [
-      {
-        "date": "2026-11-03",
-        "day": 3,
-        "weekday": 1,
-        "weekday_label": "火",
-        "has_data": true,
-        "score": 79.0,
-        "grade": "critical",
-        "label": "激混み",
-        "bg": "#d03b3b",
-        "text": "#ffffff",
-        "dots": 4,
-        "weather_icon": "☀️",
-        "mood_icon": "mood-critical",
-        "short_label": "激混",
-        "factors": [
-          {
-            "label": "祝日",
-            "direction": "up",
-            "weight": 15.0
-          },
-          {
-            "label": "天気(晴れ)",
-            "direction": "up",
-            "weight": 10.31
-          },
-          {
-            "label": "話題のイベント・グッズ告知",
-            "direction": "up",
-            "weight": 3.72
-          }
-        ],
-        "factors_json": "[{\"label\": \"祝日\", \"direction\": \"up\", \"weight\": 15.0}, {\"label\": \"天気(晴れ)\", \"direction\": \"up\", \"weight\": 10.31}, {\"label\": \"話題のイベント・グッズ告知\", \"direction\": \"up\", \"weight\": 3.72}]",
-        "factors_text": "祝日、天気(晴れ)、話題のイベント・グッズ告知"
-      },
       {
         "date": "2026-11-04",
         "day": 4,
@@ -3396,44 +3361,34 @@
         ],
         "factors_json": "[{\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -5.0}]",
         "factors_text": "天気(くもり)"
+      },
+      {
+        "date": "2027-03-04",
+        "day": 4,
+        "weekday": 3,
+        "weekday_label": "木",
+        "has_data": true,
+        "score": 45.0,
+        "grade": "warning",
+        "label": "ふつう",
+        "bg": "#fab219",
+        "text": "#241f14",
+        "dots": 2,
+        "weather_icon": "☁️",
+        "mood_icon": "mood-warning",
+        "short_label": "普通",
+        "factors": [
+          {
+            "label": "天気(くもり)",
+            "direction": "down",
+            "weight": -5.0
+          }
+        ],
+        "factors_json": "[{\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -5.0}]",
+        "factors_text": "天気(くもり)"
       }
     ],
     "TDS": [
-      {
-        "date": "2026-11-03",
-        "day": 3,
-        "weekday": 1,
-        "weekday_label": "火",
-        "has_data": true,
-        "score": 79.0,
-        "grade": "critical",
-        "label": "激混み",
-        "bg": "#d03b3b",
-        "text": "#ffffff",
-        "dots": 4,
-        "weather_icon": "☀️",
-        "mood_icon": "mood-critical",
-        "short_label": "激混",
-        "factors": [
-          {
-            "label": "祝日",
-            "direction": "up",
-            "weight": 15.0
-          },
-          {
-            "label": "天気(晴れ)",
-            "direction": "up",
-            "weight": 10.31
-          },
-          {
-            "label": "話題のイベント・グッズ告知",
-            "direction": "up",
-            "weight": 3.72
-          }
-        ],
-        "factors_json": "[{\"label\": \"祝日\", \"direction\": \"up\", \"weight\": 15.0}, {\"label\": \"天気(晴れ)\", \"direction\": \"up\", \"weight\": 10.31}, {\"label\": \"話題のイベント・グッズ告知\", \"direction\": \"up\", \"weight\": 3.72}]",
-        "factors_text": "祝日、天気(晴れ)、話題のイベント・グッズ告知"
-      },
       {
         "date": "2026-11-04",
         "day": 4,
@@ -6784,6 +6739,31 @@
         "day": 3,
         "weekday": 2,
         "weekday_label": "水",
+        "has_data": true,
+        "score": 45.0,
+        "grade": "warning",
+        "label": "ふつう",
+        "bg": "#fab219",
+        "text": "#241f14",
+        "dots": 2,
+        "weather_icon": "☁️",
+        "mood_icon": "mood-warning",
+        "short_label": "普通",
+        "factors": [
+          {
+            "label": "天気(くもり)",
+            "direction": "down",
+            "weight": -5.0
+          }
+        ],
+        "factors_json": "[{\"label\": \"天気(くもり)\", \"direction\": \"down\", \"weight\": -5.0}]",
+        "factors_text": "天気(くもり)"
+      },
+      {
+        "date": "2027-03-04",
+        "day": 4,
+        "weekday": 3,
+        "weekday_label": "木",
         "has_data": true,
         "score": 45.0,
         "grade": "warning",
